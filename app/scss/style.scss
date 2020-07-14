@@ -1,0 +1,92 @@
+@font-face {
+  	font-family: 'circe-regular';
+  	src: url('circe-regular.eot?#iefix') format('embedded-opentype'), 
+       url('circe-regular.woff') format('woff'),
+       url('circe-regular.ttf')  format('truetype'),
+       url('circe-regular.svg#circe-regular') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+}
+@font-face {
+  	font-family: 'circe-bold';
+  	src: url('circe-bold.eot?#iefix') format('embedded-opentype'), 
+       url('circe-bold.woff') format('woff'),
+       url('circe-bold.ttf')  format('truetype'),
+       url('circe-bold.svg#circe-bold') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+}
+
+
+
+// Core variables and mixins
+
+@import "components/vars";
+
+@import "bootstrap/normalize";
+@import "bootstrap/grid";
+
+@import "components/body";
+
+
+
+// a[href^="http://maps.google.com/maps"]{display:none !important}
+// a[href^="https://maps.google.com/maps"]{display:none !important}
+// .gmnoprint a, .gmnoprint span, .gm-style-cc {
+//     display:none;
+// }
+// .gmnoprint div {
+//     background:none !important;
+// }
+
+
+@import "components/header";
+
+
+.layout{
+	// display: table;
+	// table-layout: fixed;
+ //  	height: 100%;
+ //  	width: 100%;
+  	flex: 1 0 auto;
+}
+
+
+
+// .wrapper{
+// 	display: table-row;
+// 	height: 100%;
+// }
+.container-fluid{
+	max-width: 1920px;
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+	width: 100%;
+}
+
+
+// .page-content{
+// 	display: table-cell;
+// 	height: 100%;
+// }
+
+
+
+
+
+
+
+@import "components/workarea";
+
+@import "components/footer";
+
+
+
+
+@import "components/media";
+
+
+
+
+
