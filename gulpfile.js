@@ -68,7 +68,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', ['browser-sync','css-libs', 'scripts',], function() {
-    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss'], ['sass']); // Наблюдение за sass файлами
+    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss', 'app/scss/pages/*.scss'], ['sass']); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);

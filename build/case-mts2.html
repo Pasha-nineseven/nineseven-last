@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="top-logo"></a>
+						<a href="#" class="menu-btn">
+							<span class="burger-icon"></span>
+						</a>
+						<nav class="top-nav">
+							<a href="#" class="top-nav__item">Кейсы</a>
+							<a href="#" class="top-nav__item">Компания</a>
+							<a href="#" class="top-nav__item">Контакты</a>
+							<a href="#" class="top-nav__item">Автодилерам</a>
+							<a href="#" class="top-nav__item">Аналитика</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page-content workarea">
+				<div class="container-fluid">
+					<div class="case-top">
+						<div class="indent">
+							<div class="case-top__wrap">
+								<div class="case-top__icon">
+									<img src="img/svg/mts-t.svg" alt="">
+								</div>
+								<div class="case-top__txt">
+									Треть онлайн-покупок всех смартфонов в стране совершают в интернет-магазине МТС. Для бесперебойной работы проекта мы предоставляем бесперебойный продакшен и поддержку уже на протяжении 5 лет.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-title">
+						<div class="indent">
+							<h1>
+								Разработка интернет-магазина<br> shop.mts.by
+							</h1>
+						</div>
+					</div>
+					<!-- CONTENT-PART -->
+					<div class="incut">
+						<div class="indent">
+							<div class="incut__inner">
+								За 5 лет цель и задача поменялась, но изначально требовалось сделать удобный с точки зрения мастабирования проект который может наращивать свои мощности на ближайшие 5-7 лет.
+							</div>
+						</div>
+					</div>
+					<div class="case-pre">
+						<div class="indent">
+							<div class="case-pre__in">
+								В условиях тендера было порядка 100 страниц документации функционала, основные требования сводились к базовым для магазина вещам: товарный каталог, корзина, личный кабинет, частичная интеграция с 1С через SOAP.
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="plan">
+						<div class="indent">
+							<div class="platform-img">
+								<img src="img/svg/bitrix.svg" alt="">
+							</div>
+
+							<div class="row">
+								<div class="col-lg-6 plan-top__item">
+									Вопросов по выбору платформы не было, так как клиент уже провел исследование и определился с платформой. Движок Битрикс отлично справляется с товарной базой до 10 000 позиций, поэтому от нас только требовалась грамотная интеграция.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h3>Архитектура магазина</h3>
+							<img src="img/svg/architect.svg" alt="">
+							<div class="row optimization-more">
+								<div class="col-lg-6 optimization-more__item">
+									Товары ведутся непосредственно в Битрикс, для актуализации товаров по остаткам и ценам мы написали ежедневный CSV-импорт, который отдаёт нам 1С.
+								</div>
+								<div class="col-lg-6 optimization-more__item">
+									Работа и учет с заказами ведется в 1С, поэтому для интеграции нужно было написать SOAP-клиент, который будет передавать информацию в 1С.
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="p-roadmap">
+						<div class="indent">
+							<h3>Планируем дорожную карту</h3>
+							<div class="optimization__msg">
+								По договору на проект были жесткие сроки со штрафами за просрочку, так как клиент терял деньги из-за плохой работы старого магазина. Чтобы не выбиться из сроков, этапы разделили по мере роста сложности.
+							</div>
+
+							<div class="p-roadmap__wrap">
+								<div class="p-roadmap__item">
+									<div class="p-roadmap__in">
+										<div class="p-roadmap__top">1-й этап</div>
+										<div class="p-roadmap__txt">
+											Подготовка HTML-шаблонов, первичная натяжка на Битрикс
+										</div>
+									</div>
+								</div>
+								<div class="p-roadmap__item">
+									<div class="p-roadmap__in">
+										<div class="p-roadmap__top">2-й этап</div>
+										<div class="p-roadmap__txt">
+											Создание структуры в Битрикс, набивка статичных разделов контентом
+										</div>
+									</div>
+								</div>
+								<div class="p-roadmap__item">
+									<div class="p-roadmap__in">
+										<div class="p-roadmap__top">3-й этап</div>
+										<div class="p-roadmap__txt">
+											Сборка товарного каталога, настройка работы фильтров, импорт цен
+										</div>
+									</div>
+								</div>
+								<div class="p-roadmap__item">
+									<div class="p-roadmap__in">
+										<div class="p-roadmap__top">4-й этап</div>
+										<div class="p-roadmap__txt">
+											Реализация личного кабинета, корзина, оформление заказов
+										</div>
+									</div>
+								</div>
+								<div class="p-roadmap__item">
+									<div class="p-roadmap__in">
+										<div class="p-roadmap__top">5-й этап</div>
+										<div class="p-roadmap__txt">
+											Проброс заказов в 1С, множественные цены, перелинковка СКУ
+										</div>
+									</div>
+								</div>
+							</div>
+							<br><br>
+							<div class="optimization__msg">
+								Очередность обычно выстраивается по принципу «как можно раньше пустить клиента в админку и предоставить работу над каталогом», так как каталог — это 90% работ. Таким образом, на этапах корзины и интеграции с 1С у нас уже есть реальный каталог, а это снижает процент ошибок при интеграции.
+							</div>
+						</div>
+					</div>
+
+					<div class="template">
+						<div class="indent">
+							<h3>Готовим шаблоны</h3>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Интересный факт: дизайн разрабатывался еще в 2014 году, но из-за универсальной подачи с преобладанием светлых областей и акцентом на товары не выглядит сильно устаревшим в 2020 году. Выдает только зауженная контент-область. Все-таки за шесть лет стандарты разрешений подросли.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts27.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Продуктовая подача достаточно стандартная. Фильтрация, товарная сетка 3 на 7, короткие характеристики под товарами, 
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts28.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item"></div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts29.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Сравнение с выделением побед, всё по-взрослому. 
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts30.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Сердце магазина — это процесс оформления товаров. На итоговом продукте не видно эволюции, но каждый шаг и поле активно обсуждались, ведь лишние поля — это минус конверсии. Активная работа с расширенной Google Analytics и внедрение продажи в 1 клик позволило увеличить конверсию <strong>более чем на 30%</strong>.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts31.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Кроме классических товаров, продаются сим-карты. У них своя подача и свой тип товара.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts32.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Статические страницы акций снабдили виджетом для привязки товаров к акциям. Можно динамически формировать список акционных товаров.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts33.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Типовые для магазинов вещи: профиль, наборы адресов доставок, история заказов, избранное.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts34.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Поисковый движок может работать в классическом режиме, но может и подсказывать популярные позиции. Это повышает переходы и конверсию.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-mts35.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="plan">
+						<div class="indent">
+							<h3>А теперь то же самое, но для смартфонов</h3>
+							<div class="row plan-top">
+								<div class="col-lg-6 plan-top__item">
+									В 2015-м адаптивная верстка еще не была так распространена, повсеместно встречались WPA-сайты. Для МТС мы разработали отдельную мобильную версию. Она использует единую базу, но свои шаблоны, специально адаптированные для телефонов. Перед дизайнерами стояла задача обеспечить лучший вид для ширины 320px.
+								</div>
+							</div>
+							<div class="row plan-images">
+								<div class="col-lg-2">
+									<img src="img/content/template-mts36.png" alt="">
+									<img src="img/content/template-mts37.png" alt="">
+								</div>
+								<div class="col-lg-2">
+									<img src="img/content/template-mts38.png" alt="">
+								</div>
+								<div class="col-lg-2">
+									<img src="img/content/template-mts39.png" alt="">
+								</div>
+								<div class="col-lg-2">
+									<img src="img/content/template-mts40.png" alt="">
+								</div>
+								<div class="col-lg-2">
+									<img src="img/content/template-mts41.png" alt="">
+									<img src="img/content/template-mts42.png" alt="">
+								</div>
+								<div class="col-lg-2">
+									<img src="img/content/template-mts43.png" alt="">
+								</div>
+							</div>
+							<div class="order__txt">
+								Переходы между мобильной и основной версией сделаны бесшовно. При входе на основную версию с мобильного устройства вас перекинет на мобильную страницу автоматически.
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h3>Технические решения и особеннности проекта</h3>
+							<div class="row optimization-more">
+								<div class="col-lg-6 optimization-more__item">
+									Разработка подобных проектов всегда идёт от клиента, поэтому технические решения нужно дорабатывать под клиента, его процессы и структуру.
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="optimization">
+						<div class="indent">
+							<h4>13 цен у каждого товара</h4>
+							<div class="row">
+								<div class="col-lg-4 optimization-more__item">
+									<p>
+										Самая большая особенность данного проекта это — его работа с ценами. Из-за того, что это не просто магазин, а сайт оператора, у него на каждый товар может быть восемь цен!
+									</p>
+									<p>
+										Например, если вы абонент МТС, то можете покупать по акции. Это специальные цены, с дисконтом. Практически любой товар можно купить в рассрочку на 7, 12 или 24 месяца. А некоторые товары с рассрочкой даже на 36 месяцев!
+									</p>
+									<p>
+										Итого у нас есть обычные цены, цены с акцией и у каждой еще три цены рассрочкой. И еще особая цена на черную пятницу. Всего 13.
+									</p>
+								</div>
+								<div class="col-lg-4 optimization-more__item plan-images">
+									<img src="img/content/template-mts44.png" alt="">
+								</div>
+								<div class="col-lg-4 optimization-more__item">
+									<p>
+										Для хранения такого объёма, мы доработали стандартную схему торгового каталога, расширив каждый товар своим набором цен, а так же их проектом из 1С. Таким образом клиент может выгрузкой управлять каждым типом цен независимо и в любой момент времени.
+									</p>
+									<p>
+										Все цены работают нативно с ядром битрикс, поэтому механика оформления корзины, купоны, скидки и прочие фишки Битрикса по-прежнему работают с данными ценами.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="optimization">
+						<div class="indent">
+							<h4>Как SKU, но не SKU</h4>
+							<div class="row">
+								<div class="col-lg-4 optimization-more__item">
+									<img src="img/content/template-mts45.png" alt="">
+								</div>
+								<div class="col-lg-4 optimization-more__item plan-images">
+									Электроника и бытовая техника иногда отличаются только несколькими характеристиками. У Битрикса для этого есть готовая схема «товар — торговое предложение», но из-за особенностей хранения товаров нам такое решение не подходило. Мы разработали свой модуль объединения.
+								</div>
+								<div class="col-lg-4 optimization-more__item">
+									<img src="img/content/template-mts46.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h4>Печать ценников</h4>
+							<div class="row">
+								<div class="col-lg-4 optimization-more__item">
+									<p>
+										Проект shop.mts.by — это не только онлайн-торговля, но и крупнейшая в стране сеть отделений. Для них мы разработали модуль печати ценников на местах.
+									</p>
+									<p>
+										Менеджеры МТС могут обновлять цены в магазинах центразованно через наш модуль.
+									</p>
+								</div>
+								<div class="col-lg-8 optimization-more__item plan-images">
+									<img src="img/content/template-mts47.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h4>Полная интеграция с Onliner</h4>
+							<div class="row">
+								<div class="col-lg-4 optimization-more__item">
+									Мы полностью интегрировали торговый каталог сайта с Onliner.  У клиента единая точка входа — панель Битрикс. Товары к выгрузке можно формировать прямо из админки. А заказы, оформленные на Onliner автоматически, формируются в заказы в магазине. Смена статусов отображается автоматом на onliner.by.
+								</div>
+								<div class="col-lg-8 optimization-more__item plan-images">
+									<img src="img/content/template-mts48.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h4>Авторизация MobileID</h4>
+							<div class="row">
+								<div class="col-lg-4 optimization-more__item">
+									Мы спроектировали и интегрировали авторизацию не только через популярные соцсети, но также по протоколу MobileID, который позволяет авторизовываться по номеру телефона с подтверждением через вашу сим-карту.
+								</div>
+								<div class="col-lg-8 optimization-more__item plan-images">
+									<img src="img/content/template-mts49.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="plan">
+						<div class="indent">
+							<div class="row plan-top">
+								<div class="col-lg-6 plan-top__item">
+									Кроме этого, мы разрабатываем для клиента модули, повышающие эффективность работы бэк-офиса.
+								</div>
+							</div>
+							<div class="row plan-txt">
+								<div class="col-lg-4 plan-txt__item">
+									<h4>Модуль скоринга</h4>
+									Система автоматически, на основе оформленного заказа, формирует запрос в систему скоринга и помогает консультантам, уменьшая объемы ручного скоринга.
+								</div>
+								<div class="col-lg-4 plan-txt__item">
+									<h4>Модуль очереди обработки заказов</h4>
+									Модуль принимает заказы и формирует из них распределенную очередь по всем консультантам с учетом занятости и важности заказа.
+								</div>
+								<div class="col-lg-4 plan-txt__item">
+									<h4>Модуль расчета консультантов</h4>
+									Модуль формирует отчеты расчета с консультантами и готовит закрывающие документы.
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h3>Надежность системы</h3>
+							<div class="row">
+								<div class="col-lg-6 optimization-more__item">
+									<p>
+										Хороший проект должен быть не только удобным, ускорять работу для сотрудников, но работать безотказно. Интернет-торговля — это бизнес, где каждая минута простоя выливает в потерянные заказы и негативные отзывы.
+									</p>
+									<p>
+										Построить надежную систему помогают наработки 1С-Битрикс и умелое использование технологий.
+									</p>
+								</div>
+							</div>
+							<br>
+							<br>
+							<div class="cont-sqheme">
+								<img src="img/svg/sqh3.svg" alt="">
+							</div>
+							<div class="order__txt m-lg">
+								Все узкие места (каталог и товары) активно кэшируются. Количество незакэшированных запросов не превышает 25-30 на страницу. Кеш храним в memcached, что значильно ускоряет считывание кеша. Кроме этого на проекте настроена технология композитного кеширования от 1С-Битрикс.
+							</div>
+						</div>
+					</div>
+
+					<div class="plan">
+						<div class="indent">
+							<div class="row plan-top m-center">
+								<div class="col-lg-4 plan-top__item">
+									<div class="load-img">
+										<img src="img/content/load1.png" alt="">
+									</div>
+									Самое сложное для такого проекта — пережить черную пятницу. Как правило, это многократный рост нагрузки. Если обычная нагрузка составляет 100 одновременных соединений, то в черную пятницу может быть 1000 и более. shop.mts.by проходит эту проверку без падений.
+								</div>
+								<div class="col-lg-4 plan-top__item">
+									<div class="load-img">
+										<img src="img/content/load2.png" alt="">
+									</div>
+									<p>
+										Чтобы вы понимали, насколько это сложно, сверху скриншот другого популярного конкурента в черную пятницу 2019 года.
+									</p>
+									<p>
+										Ошибка 503 означает дословно «Большое число запросов к веб-серверу». Значит, поток запросов такой большой, что программа не справляется с их обработкой.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="team">
+						<div class="indent">
+							<h3>Команда проекта</h3>
+							<div class="team__wrap">
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Руководители проекта</div>
+										<div class="team__person">Дима Хоружко</div>
+										<div class="team__person">Иван Самойлик</div>
+										<div class="team__person">Юра Иов</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Верстка</div>
+										<div class="team__person">Сергей Герасимов</div>
+										<div class="team__person">Павел Кряквин</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Команда клиента</div>
+										<div class="team__person">Оксана Хачиян</div>
+										<div class="team__person">Александр Тишков</div>
+										<div class="team__person">Эдуард Романюк</div>
+										<div class="team__person">Сергей Латышевич</div>
+										<div class="team__person">Павел Сотников</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Дизайн</div>
+										<div class="team__person">Сергей Шишпор</div>
+										<div class="team__person">Дима Хоружко</div>
+										<div class="team__person">Леша Синкевич</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">PHP разработчики</div>
+										<div class="team__person">Павел Пенкрат</div>
+										<div class="team__person">Стас Вовк</div>
+										<div class="team__person">Денис Астапенко</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!--end CONTENT-PART -->
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		<footer class="page-footer">
+			<div class="container-fluid">
+				footer
+			</div>
+		</footer>
+			
+		
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+		<script src="js/pages.js"></script>
+	</body>
+</html>

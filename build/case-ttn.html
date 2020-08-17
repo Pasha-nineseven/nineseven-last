@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="top-logo"></a>
+						<a href="#" class="menu-btn">
+							<span class="burger-icon"></span>
+						</a>
+						<nav class="top-nav">
+							<a href="#" class="top-nav__item">Кейсы</a>
+							<a href="#" class="top-nav__item">Компания</a>
+							<a href="#" class="top-nav__item">Контакты</a>
+							<a href="#" class="top-nav__item">Автодилерам</a>
+							<a href="#" class="top-nav__item">Аналитика</a>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page-content workarea">
+				<div class="container-fluid">
+					<div class="case-top">
+						<div class="indent">
+							<div class="case-top__wrap">
+								<div class="case-top__icon">
+									<img src="img/svg/t-ttn.svg" alt="">
+								</div>
+								<div class="case-top__txt">
+									Онлайн-гипермакет ttn.by входит в топ-10 крупнейших магазинов бытовой техники Беларуси. Используемый движок на базе платформы shop.by не устраивал с точки зрения масштабируемости.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-title">
+						<div class="indent">
+							<h1>
+								Разработка интернет-гипермакета<br> TTN.by
+							</h1>
+						</div>
+					</div>
+					<!-- CONTENT-PART -->
+					<div class="incut">
+						<div class="indent">
+							<div class="incut__inner">
+								Нужно было собрать движок, рассчитанный на 160 000 товаров, ежесуточную посещаемостью не менее 10 000 и с возможностями расширения под автоматизацию бизнесов.
+							</div>
+						</div>
+					</div>
+					<div class="case-pre">
+						<div class="indent">
+							<div class="case-pre__in">
+								Интернет-магазины — это особый тип интернет-сайтов. Чаще всего успешные интернет-магазины похожи друг на друга, так как это уже устоявшийся рынок и в целом база для правильного UX.
+							</div>
+						</div>
+					</div>
+
+					<div class="plan">
+						<div class="indent">
+							<div class="row">
+								<div class="col-lg-6 plan-top__item">
+									<div class="platform-img">
+										<img src="img/svg/yii.svg" alt="">
+									</div>
+									<p>
+										Для этого проекта мы использовали фреймворк Yii — потому что хорошо его знаем и потому что <span class="highlighted">он один из самых быстрых.</span>
+									</p>
+									<p>
+										Для частичной экономии времени, чтобы не собирать заново базовые вещи вроде Access control, хранение товаров, и административную панель мы подобрали собранный на Yii2 движок магазина. Выбор пал на платформу DotPlant.
+									</p>
+								</div>
+								<div class="col-lg-6 plan-top__item">
+									<div class="platform-img">
+										<img src="img/svg/bitrix.svg" alt="">
+									</div>
+									<p>
+										Изначально клиент хотел использовать для сайта движок 1С-Битрикс. К счастью, нам удалось его отговорить. Пускай и не с первого раза.
+									</p>
+									<p>
+										Была попытка запуска на движке Битрикс, но выяснилось, что на такие объемы товарного каталога он не рассчитан. Поэтому все касающееся каталога пришлось бы переписать, а это нивелировало все преимущества движка: обновления, модули, интеграции из коробки и магазин приложений.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h3>Планируем архитектуру проекта</h3>
+							<div class="order__txt">
+								В основе бэкенда DotPlant, он написан на Yii2 с использованием БД MySQL. В архитектуру сразу нужно было закладывать множество импортов разного назначения.
+							</div>
+							<br><br>
+							<img src="img/svg/sqh6.svg" alt="">
+							
+
+							<div class="row optimization-more">
+								<div class="col-lg-6 optimization-more__item">
+									Особенностью реализации было использование поискового движка. Для обработки запросов Sphinx использует специальные индексные файлы, который создаёт из базы данных сайта. 
+								</div>
+								<div class="col-lg-6 optimization-more__item">
+									Для быстрой работы каталога мы создали на Sphinx специальный индекс для листинга каталога, который обновляется каждую ночь и по итогу позволяет за доли секунды получить список любой категории. Это работает намного быстрее чем стандартная отдача каталога через PHP и MySQL.
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="plan">
+						<div class="indent">
+							<div class="row plan-txt">
+								<div class="col-lg-3 plan-txt__item">
+									<div class="template__img__item">
+										<img src="img/content/ttn1.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-9 plan-txt__item">
+									<p>
+										Второй особенностью проекта была работа с фильтром. Для гипермакета крайне важно создать удобный подборщик, а это значит, что нужно было решить, как это всё будет управляться. Нужно было реализовать следующий функционал:
+									</p>
+									<div class="class-list">
+										<div class="dest__item">По каким свойства фильтруем в принципе</div>
+										<div class="dest__item">Какие свойства показываем сразу, какие скрываем в «дополнительно» и в каком порядке</div>
+										<div class="dest__item">Какие значения списочных свойств показываем сразу, а какие прячем в «остальные варианты»</div>
+										<div class="dest__item">На какие из значений списочных свойств делаем акцент в дизайне (выделение жирным)</div>
+										<div class="dest__item">Как параметр должен выглядеть в фильтре: ползунок, поле ввода, селект, чекбоксы</div>
+										<div class="dest__item">Возможность создания комбинированных списков: чекбоксы и поле ввода значения</div>
+										<div class="dest__item">Задавать max-min для числовых характеристик</div>
+										<div class="dest__item">Подсказки в фильтре для характеристик</div>
+									</div><br>
+									<p>
+										Данный функционал у DotPlant нас не устраивал, поэтому мы его переписали полностью. Данные параметры клиент настраивает CSV-выгрузкой, потому что работать с таким объёмом данных через админку было бы очень долго.
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h3>Планируем дорожную карту</h3>
+							<div class="row optimization-more">
+								<div class="col-lg-6 optimization-more__item">
+									Проект объемный, поэтому работа велась по гибкой методологии. В основе — разбивка на этапы, объёмом не более 100 часов. Первичный план содержал 10 этапов. Примерная разбивка этапов была такой:
+								</div>
+								<br>
+								<br>
+								<div class="col-lg-12 road-list">
+									<ol>
+										<li>Импорты каталогов со старого движка на новый</li>
+										<li>Настройка поискового индекса для отображения каталога, остальные импорты</li>
+										<li>Реализация отзывов, сравнение товаров</li>
+										<li>Корзина, оформление заказов</li>
+										<li>Личный кабинет</li>
+										<li>Наполнение каталога, шлифовка работы с каталогом и фильтрами</li>
+										<li>Выбор и доработка шаблонов</li>
+									</ol>
+								</div>
+								<div class="col-lg-6 optimization-more__item">
+									<p>
+										Как вы могли заметить, дизайном мы занялись только на седьмом этапе, спустя порядка 600 часов разработки.
+									</p>
+									<p>
+										На практике спринт/этап выглядит так:
+									</p>
+								</div>
+							</div>
+							<br>
+							<br>
+							<div class="plan-images">
+								<img src="img/content/ttn2.jpg" alt="">
+							</div>
+							
+						</div>
+					</div>
+
+					<div class="template">
+						<div class="indent">
+							<h3>Готовим шаблон</h3>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										<p>
+											Мы не планировали разрабатывать уникальный дизайн, так как в этом нет особого смысла. Для проекта главное — грамотный UX, функционал, надежность и быстродействие.
+										</p>
+										<p>
+											Для экономии мы использовали готовые html-шаблоны для гипермаркетов и отталкиваясь от них, делали доработки уже под нашу структуру и функционал командой дизайнера и верстальщика. В среднем нам удалось сэкономить на этом не меньше 200 часов.
+										</p>
+										<p>
+											Шаблоны дорабатывали и отдавали на приёмку сразу в html.
+										</p>
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn1.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="template">
+						<div class="indent">
+							<h3>UX — формируем положительный опыт использования</h3>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										<p>
+											Шаблонами все вопросы не закрыть, поэтому некоторые вещи приходилось собирать с чистого листа.
+										</p>
+										<p>
+											Оформление заказа одной страницей, сразу в корзине. Не нужно бегать по отдельным страницам.
+										</p>
+										<p>
+											При том, что оформление заказа нельзя назвать урезанным:
+										</p>
+										<div class="class-list">
+											<div class="dest__item">Промо-коды к корзине</div>
+											<div class="dest__item">Дисконтная-карта</div>
+											<div class="dest__item">Список самовывозов прямо на карте</div>
+											<div class="dest__item">Удобное время доставки</div>
+											<div class="dest__item">Различные типы оплаты</div>
+										</div>
+										<p>
+											Пользователи оценили внимание:
+										</p>
+										<div class="template__img__item">
+											<img src="img/content/ttn3.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn2.jpg" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Для работы с удобным временем доставки на бэкенде была реализована целая система возможности доставки магазином в определенные промежутки, которая отражают реальную загруженность компании с учетом региональности (ttn.by работает на всю Беларусь).
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn3.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										90% обращений с сайтом через поиск. Он должен быстро находить и сразу подсказывать, что искать или где.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn4.jpg" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										У клиента много отзывов, важно было их сохранить и перенести на новый сайт
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn5.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Клиент ежемесячно делал выборки по популярным товарам и выгружал рейтинги, по которым мы формировали топ, который подсказывает, что пользуется спросом.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn6.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Магазин помнит, что вы просматривали, если нужно что-то вспомнить, в личном кабинете есть история.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn7.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Не просто сравнение, а сравнение с выделением побед. Для этого у клиента в админке есть специальная возможность для настройки «лучших» характеристик.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn8.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Часто заказываете на разные адреса? Внесите в личном кабинете несколько адресов и выбирайте при заказе нужный.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn9.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Для каждого раздела настраиваются свои ключевые характеристики для вывода их в листинге товаров.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn10.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization">
+						<div class="indent">
+							<h3>Фильтруем по-умному</h3>
+							<div class="row optimization-more">
+								<div class="col-lg-6 optimization-more__item">
+									<p>
+										Главной фишкой нового сайта должен был стать фильтр. Клиент хотел, чтобы все значения товаров просчитывались наперед и показывались все возможное комбинации. При этом фильтр уже должен учитывать ранее выбранные значения.
+									</p>
+									<p>
+										Путей решения данной задачи несколько, первый — это просчитать все возможные цифры заранее. Проблема в том, что комбинаций огромное множество, и считать это всё наперед заняло бы прилично процессорного времени.
+									</p>
+									<p>
+										Второй вариант, считать это динамически. То есть фактически при каждой загрузке страницы по каждому из доступных значений характеристик товара нужно было запустить поиск и посчитать количество найденных товаров. Но если это делать через MySQL и PHP, который не умеет работать в многопоточном режиме, то наши тесты показали, что один такой запрос на самую большую категорию ноутбуки, с 16 тысячами товаров, занимал 30-40 секунд.
+									</p>
+									<p>
+										Мы решили доработать архитектуру поиска данных значений:
+									</p>
+								</div>
+								<div class="col-lg-6 optimization-more__item">
+									<div class="smart">
+										<div class="smart__item">
+											<div class="smart__top">Скорость расчета на PHP</div>
+											<div class="smart__txt">40+ сек.</div>
+										</div>
+										<div class="smart__item">
+											<div class="smart__top">Расчет на Sphinx+NodeJS</div>
+											<div class="smart__txt">до 2 сек.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<br><br>
+							<div class="optimization__list m-smart">
+								<div class="optimization__item">
+									<div class="optimization__in">Индекс каталога SphinxSearch</div>
+								</div>
+								<div class="optimization__item">
+									<div class="optimization__in">NodeJS в многопоточном режиме получает из индекса результаты поисков по каждому свойству фильтра</div>
+								</div>
+								<div class="optimization__item">
+									<div class="optimization__in">
+										Фронт сайта через JS подхватывает JSON-массив рассчитаных значений и расставляет их в фильтре асинхронно к загрузке каталога
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="optimization m-total">
+						<div class="indent">
+							<div class="row optimization-more">
+								<div class="col-lg-3 optimization-more__item">
+									<h4>Как итог, ttn.by который смог</h4>
+									<img src="img/content/ttn4.png" alt="">
+								</div>
+								<div class="col-lg-4 optimization-more__item optimization-middle">
+									<p>
+										Чтобы вывести цифры для производителей, скрипт должен вызвать 4 раза поиск по каждому из них.
+									</p>
+									<div class="total-list">
+										<div class="total-item">Raspberry <span>(2)</span></div>
+										<div class="total-item">Lenovo <span>(57)</span></div>
+										<div class="total-item">Packard Bell <span>(1)</span></div>
+										<div class="total-item">Rednox <span>(14)</span></div>
+									</div>
+								</div>
+								<div class="col-lg-3 optimization-more__item">
+									<h4>Onliner который не смог</h4>
+									<img src="img/content/ttn5.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="template">
+						<div class="indent">
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										Бонусом ещё реализована система ярлыков, администратор для разных категорий готовит пре-сеты фильтра для быстрого подбора.
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn11.jpg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="template__wrap">
+								<div class="template__info">
+									<div class="template__info__item">
+										И ярылки для SEO-адресов
+									</div>
+								</div>
+								<div class="template__img">
+									<div class="template__img__item">
+										<img src="img/content/template-ttn12.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="plan">
+						<div class="indent">
+							<h3>Отзыв клиента</h3>
+							<div class="section-list m-slider">
+								<div class="recommend-slider-wrap">
+									<div class="recommend-slider">
+										<div class="recommend-slider__item">
+											<a href="#" class="recommend-slider__img">
+												<img src="img/content/rev1.png" alt="">
+											</a>
+											<div class="recommend-slider__info">
+												<div class="recommend-slider__top">
+													Владимир Бутко, Заместитель директора
+												</div>
+												<div class="recommend-slider__txt">
+													Internal stakeholders are pleased with the website. Nineseven delivered a high-quality product within a short timeframe. Their flexible, collaborative approach set them apart from other providers.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="team">
+						<div class="indent">
+							<h3>Команда проекта</h3>
+							<div class="team__wrap">
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Руководитель проекта</div>
+										<div class="team__person">Юра Иов</div>
+										<div class="team__person">Дима Хоружко</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">PHP разработчик</div>
+										<div class="team__person">Леша Никитин</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Команда клиента</div>
+										<div class="team__person">Владимир Бутко</div>
+										<div class="team__person">Кристина Липская</div>
+										<div class="team__person">Ольга Богданчик</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Архитекторы</div>
+										<div class="team__person">Дима Хоружко</div>
+										<div class="team__person">Игорь Билиба</div>
+									</div>
+									<br><br>
+									<div class="team__line">
+										<div class="team__top">Ведущий разработчик</div>
+										<div class="team__person">Игорь Билиба</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Дизайн, UX</div>
+										<div class="team__person">Сергей Шишпор</div>
+										<div class="team__person">Дима Хоружко</div>
+									</div>
+									<br><br>
+									<div class="team__line">
+										<div class="team__top">Верстка</div>
+										<div class="team__person">Павел Кряквин</div>
+										<div class="team__person">Влад Портной</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!--end CONTENT-PART -->
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		<footer class="page-footer">
+			<div class="container-fluid">
+				footer
+			</div>
+		</footer>
+			
+		
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+		<script src="js/pages.js"></script>
+	</body>
+</html>
