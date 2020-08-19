@@ -71,6 +71,12 @@
 	.order__txt{
 		max-width: 975px;
 	}
+	h2{
+		margin-bottom: 30px;
+	}
+	h3{
+		margin-bottom: 40px;
+	}
 }
 
 .optimization-more{
@@ -97,6 +103,16 @@
 	}
 	&.m-image{
 		padding-bottom: 0;
+	}
+	&.m-autodealer{
+		padding: 70px 0 120px;
+    	margin-bottom: 60px;
+		h3{
+			margin-bottom: 55px;
+		}
+		.platform-img {
+		    margin-bottom: 53px;
+		}
 	}
 }
 .plan-top{
@@ -470,6 +486,12 @@
 			min-width: 50%;
 		}
 	}
+	&.row{
+		.template__info{
+			width: auto;
+			min-width: auto;
+		}
+	}
 }
 .template__info{
 	width: 530px;
@@ -477,6 +499,7 @@
 	padding-right: 25px;
 	font-size: 24px;
 	line-height: 35px;
+	
 }
 .template__img{
 	img{

@@ -384,6 +384,9 @@
 	.structure {
 	    padding: 30px;
 	}
+	.plan.m-autodealer{
+		padding: 30px;
+	}
 }
 
 @media screen and (max-width: 1150px){
@@ -729,6 +732,9 @@
 	}
 }
 @media screen and (max-width: 768px){
+	.page-title {
+	    margin-bottom: 40px;
+	}
 	.workarea h2 {
 	    font-size: 30px;
 	}
@@ -1136,6 +1142,25 @@
 	}
 	.cases__in {
 	    min-height: 350px;
+	}
+	.sentence-dealer.m-wrap .dealer-link {
+	    margin-right: 0;
+	    padding-right: 20px;
+	    width: 50%;
+	    text-align: center;
+	}
+	.dealer-link img {
+	    display: inline-block;
+	}
+	.plan-top__item {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+	.plan.m-autodealer h3 {
+	    margin-bottom: 20px;
+	}
+	.plan.m-autodealer .platform-img{
+		margin-bottom: 20px;
 	}
 }
 

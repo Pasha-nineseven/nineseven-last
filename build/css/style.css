@@ -3533,7 +3533,7 @@ textarea, input {
   padding-right: calc(8.33333% - 20px); }
 
 .page-title {
-  margin-bottom: 25px; }
+  margin-bottom: 70px; }
   .page-title h1 {
     margin-bottom: 0; }
 
@@ -3541,10 +3541,10 @@ textarea, input {
   margin-bottom: 70px; }
 
 .sentence-wrap {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .sentence-project__wrap {
   display: -webkit-box;
@@ -3562,7 +3562,7 @@ textarea, input {
 
 .sentence-project__num {
   font-size: 96px;
-  margin-right: 20px;
+  margin-right: 13px;
   line-height: 1; }
 
 .sentence-project__info {
@@ -3589,9 +3589,10 @@ textarea, input {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
-            justify-content: flex-start; }
+            justify-content: flex-start;
+    margin-bottom: -50px; }
     .sentence-dealer.m-wrap .dealer-link {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       margin-right: 40px; }
 
 .dealer-link {
@@ -3629,8 +3630,9 @@ textarea, input {
   background: #F6F4F2;
   border-radius: 8px;
   font-size: 24px;
-  margin-bottom: 80px;
-  padding: 33px 0 37px 0; }
+  line-height: 35px;
+  margin-bottom: 43px;
+  padding: 33px 0 20px 0; }
 
 .more__num {
   font-size: 96px;
@@ -4961,7 +4963,7 @@ textarea, input {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-bottom: 40px; }
+  margin-bottom: 60px; }
 
 .cases-toggle__item {
   font-size: 24px;
@@ -4991,12 +4993,12 @@ textarea, input {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-right: -30px;
-  margin-bottom: 70px; }
+  margin-bottom: 47px; }
 
 .cases-item {
   width: 50%;
   padding-right: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 45px; }
   .cases-item.m-white .cases__top,
   .cases-item.m-white .cases__title {
     color: #fff; }
@@ -5025,7 +5027,7 @@ textarea, input {
   margin-bottom: 15px; }
 
 .cases__title {
-  font-weight: bold;
+  font-family: 'circe-bold';
   font-size: 48px;
   line-height: 1.1; }
 
@@ -5149,6 +5151,12 @@ textarea, input {
 .optimization .order__txt {
   max-width: 975px; }
 
+.optimization h2 {
+  margin-bottom: 30px; }
+
+.optimization h3 {
+  margin-bottom: 40px; }
+
 .optimization-more {
   padding-top: 50px; }
 
@@ -5169,6 +5177,13 @@ textarea, input {
     padding-left: 0; }
   .plan.m-image {
     padding-bottom: 0; }
+  .plan.m-autodealer {
+    padding: 70px 0 120px;
+    margin-bottom: 60px; }
+    .plan.m-autodealer h3 {
+      margin-bottom: 55px; }
+    .plan.m-autodealer .platform-img {
+      margin-bottom: 53px; }
 
 .plan-top {
   margin-bottom: 70px; }
@@ -5534,6 +5549,9 @@ textarea, input {
   .template__wrap.m-half .template__info {
     width: 50%;
     min-width: 50%; }
+  .template__wrap.row .template__info {
+    width: auto;
+    min-width: auto; }
 
 .template__info {
   width: 530px;
@@ -6537,6 +6555,8 @@ textarea, input {
   .link-case__in {
     padding: 50px 30px; }
   .structure {
+    padding: 30px; }
+  .plan.m-autodealer {
     padding: 30px; } }
 
 @media screen and (max-width: 1150px) {
@@ -6814,6 +6834,8 @@ textarea, input {
     min-height: 250px; } }
 
 @media screen and (max-width: 768px) {
+  .page-title {
+    margin-bottom: 40px; }
   .workarea h2 {
     font-size: 30px; }
   .work__wrap {
@@ -7163,7 +7185,21 @@ textarea, input {
     width: 100%;
     padding-right: 0; }
   .cases__in {
-    min-height: 350px; } }
+    min-height: 350px; }
+  .sentence-dealer.m-wrap .dealer-link {
+    margin-right: 0;
+    padding-right: 20px;
+    width: 50%;
+    text-align: center; }
+  .dealer-link img {
+    display: inline-block; }
+  .plan-top__item {
+    font-size: 20px;
+    line-height: 24px; }
+  .plan.m-autodealer h3 {
+    margin-bottom: 20px; }
+  .plan.m-autodealer .platform-img {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 576px) {
   .page-header {

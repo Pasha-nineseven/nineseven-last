@@ -81,7 +81,7 @@
 }
 
 .page-title{
-	margin-bottom: 25px;
+	margin-bottom: 70px;
 	h1{
 		margin-bottom: 0;
 	}
@@ -93,7 +93,7 @@
 	margin-bottom: 70px;
 }
 .sentence-wrap{
-	align-items: center;
+	align-items: flex-start;
 }
 .sentence-project__wrap{
 	display: flex;
@@ -106,7 +106,7 @@
 }
 .sentence-project__num{
 	font-size: 96px;
-	margin-right: 20px;
+	margin-right: 13px;
 	line-height: 1;
 }
 .sentence-project__info{
@@ -120,8 +120,9 @@
 	&.m-wrap{
 		flex-wrap:wrap;
 		justify-content: flex-start;
+		margin-bottom: -50px;
 		.dealer-link {
-		    margin-bottom: 40px;
+		    margin-bottom: 50px;
 		    margin-right: 40px;
 		}
 	}
@@ -165,8 +166,9 @@
     background: #F6F4F2;
     border-radius: 8px;
     font-size: 24px;
-    margin-bottom: 80px;
-    padding: 33px 0 37px 0;
+    line-height: 35px;
+    margin-bottom: 43px;
+    padding: 33px 0 20px 0;
 }
 .more__num{
 	font-size: 96px;
@@ -1404,7 +1406,7 @@
 .cases-toggle{
 	display: flex;
 	flex-wrap:wrap;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 .cases-toggle__item{
 	font-size: 24px;
@@ -1433,13 +1435,13 @@
 	display: flex;
 	flex-wrap:wrap;
 	margin-right: -30px;
-	margin-bottom: 70px;
+	margin-bottom: 47px;
 }
 
 .cases-item{
 	width: 50%;
 	padding-right: 30px;
-	margin-bottom: 30px;
+	margin-bottom: 45px;
 	&.m-white{
 		.cases__top,
 		.cases__title{
@@ -1475,7 +1477,7 @@
 	    margin-bottom: 15px;
 }
 .cases__title{
-	font-weight: bold;
+	font-family: 'circe-bold';
 	font-size: 48px;
 	line-height: 1.1;
 }
