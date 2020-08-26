@@ -5092,6 +5092,118 @@ textarea, input {
   line-height: 53px;
   margin-bottom: 35px; }
 
+.destination {
+  margin-bottom: 80px; }
+
+.destination__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -30px; }
+
+.destination__item {
+  width: 50%;
+  padding-right: 30px; }
+
+.destination__in {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #141414;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 29px 40px 15px 47px;
+  position: relative; }
+  .destination__in.m-red {
+    background: #E4002B; }
+    .destination__in.m-red .destination-b__link {
+      background: #fff; }
+  .destination__in.m-grey {
+    background: #989D9E; }
+    .destination__in.m-grey .destination-b__link {
+      background: #141414; }
+      .destination__in.m-grey .destination-b__link:before {
+        background: url(../img/svg/arr-wh.svg) center no-repeat; }
+
+.destination__title {
+  font-size: 36px;
+  line-height: 53px;
+  margin-bottom: 17px; }
+  .destination__title.m-white {
+    color: #fff; }
+
+.destination-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: 10px; }
+
+.destination-list__item {
+  margin-right: 25px;
+  margin-bottom: 15px; }
+  .destination-list__item:last-child {
+    margin-right: 0; }
+  .destination-list__item img {
+    display: block; }
+
+.destination-b {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.destination-b__link {
+  display: inline-block;
+  width: 76px;
+  min-width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  position: relative; }
+  .destination-b__link:before {
+    content: "";
+    display: inline-block;
+    width: 63px;
+    height: 16px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: url(../img/svg/arr-bl.svg) center no-repeat; }
+
 .case-top {
   background: #F6F4F2;
   border-radius: 8px;
@@ -6492,7 +6604,12 @@ textarea, input {
   .cases__title {
     font-size: 28px; }
   .cases__in {
-    min-height: 300px; } }
+    min-height: 300px; }
+  .destination__title {
+    font-size: 30px;
+    line-height: 36px; }
+  .destination__in {
+    padding: 20px 25px 15px 25px; } }
 
 @media screen and (max-width: 1300px) {
   .k-sqheme__msg {
@@ -6831,7 +6948,15 @@ textarea, input {
   .cases-info {
     padding: 25px 40px; }
   .cases__in {
-    min-height: 250px; } }
+    min-height: 250px; }
+  .destination__wrap {
+    margin-right: 0; }
+  .destination__item {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px; }
+    .destination__item:last-child {
+      margin-bottom: 0; } }
 
 @media screen and (max-width: 768px) {
   .page-title {
@@ -7199,7 +7324,12 @@ textarea, input {
   .plan.m-autodealer h3 {
     margin-bottom: 20px; }
   .plan.m-autodealer .platform-img {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .destination {
+    margin-bottom: 40px; }
+  .destination__title {
+    font-size: 24px;
+    line-height: 30px; } }
 
 @media screen and (max-width: 576px) {
   .page-header {
@@ -7376,4 +7506,20 @@ textarea, input {
   .auto-update__item {
     font-size: 20px;
     line-height: 24px;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .destination-list {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .destination-list__item {
+    margin-right: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
