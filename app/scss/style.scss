@@ -1623,6 +1623,24 @@
 	}
 }
 
+.design{
+	&.m-index{
+		padding: 62px 0 102px;
+		.services-title{
+
+		}
+		.services-link{
+			padding: 0 30px;
+			&:after{
+				bottom: 0;
+			}
+		}
+		.services-info {
+		    padding-right: 83px;
+		}
+	}
+}
+
 @import "pages/case";
 
 @import "components/footer";

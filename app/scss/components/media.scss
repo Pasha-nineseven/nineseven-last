@@ -188,6 +188,35 @@
 	.services-info {
 	    padding-right: 45px;
 	}
+	.design.m-index{
+		padding: 40px 0;
+		.services-link {
+		    padding: 0;
+		}
+		.section-prev {
+		    width: 300px;
+		    min-width: 300px;
+		}
+		.work__link{
+			font-size: 16px;
+		}
+		.design.m-index .services-info {
+		    padding-right: 55px;
+		}
+		.services-list {
+		    align-items: flex-start;
+		}
+	}
+
+	.copyright {
+	    font-size: 20px;
+	    line-height: 26px;
+	    margin-right: 60px;
+	}
+	.page-footer__link {
+	    font-size: 20px;
+	    line-height: 26px;
+	}
 }
 
 @media screen and (max-width: 1400px){
@@ -321,6 +350,18 @@
 	    line-height: 22px;
 	    padding: 15px;
 	}
+	.page-footer__b{
+		flex-wrap:wrap;
+	}
+	.copyright{
+		width: 100%;
+		
+		order: 2;
+	}
+	.page-footer__add{
+		order: 1;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 1200px){
@@ -394,6 +435,9 @@
 	.plan.m-autodealer{
 		padding: 30px;
 	}
+	.design.m-index{
+		padding: 30px;
+	}
 }
 
 @media screen and (max-width: 1150px){
@@ -415,6 +459,10 @@
 	}
 	.recommend-slider-wrap {
 	    padding-left: 0;
+	}
+	.design.m-index .section-prev {
+	    width: 100%;
+	    min-width: 100%;
 	}
 }
 
@@ -1186,6 +1234,61 @@
 	.destination__title {
 	    font-size: 24px;
 	    line-height: 30px;
+	}
+	.design.m-index .services-link:after {
+	    bottom: -15px;
+	    right: -15px;
+	}
+	.design.m-index .services-info {
+	    padding-right: 33px;
+	}
+	.design.m-index .section-title{
+		br{
+			display: none;
+		}
+	}
+	.page-footer{
+		padding: 40px 0;
+	}
+	.page-footer__link {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin-right: 20px;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
+	}
+	.page-footer__nav{
+		margin-bottom: 0;
+	}
+	.copyright {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin-right: 0;
+	}
+	.page-footer__wrap{
+		align-items: flex-end;
+	}
+	.show-link{
+		padding-left: 57px;
+	}
+	.page-footer__nav,
+	.page-footer__add{
+	    margin-right: -77px;
+	}
+	.presentation,
+	.show-link{
+	    margin-right: 0;
+	    max-width: 100%;
+	        min-width: 100%;
+	    min-height: 50px;
+	    margin-bottom: 10px;
+	    display: flex;
+    	align-items: center;
+	    &:before{
+		    top: 50%;
+		    transform: translateY(-50%);
+	    }
 	}
 }
 
