@@ -44,6 +44,25 @@ $(document).ready(function() {
     };
 
 
+    //REC slider
+    if ($( ".sentence-dealer__slider" ).length>0) {
+        var $slider_sntnc = $('.sentence-dealer__slider');
+        $slider_sntnc.slick({
+            dots: false,
+            arrows:false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            pauseOnHover:false,
+            infinite:true,
+            fade:true,
+        });
+
+    };
+
+
 
     if ($( ".rest-slider" ).length>0) {
         var $slider_rec = $('.rest-slider');
@@ -65,7 +84,7 @@ $(document).ready(function() {
 
 
 
-    $('body').on('click','.cases-toggle__item', function(e){
+    $('body').on('click','.filter-item', function(e){
         e.preventDefault();
         $('.cases-toggle__item').removeClass('active');
         $(this).addClass('active');
@@ -93,19 +112,101 @@ $(document).ready(function() {
             });
         });
     }
+
+
+
+
+    $('.scroll-item').on('click', function() {
+
+        var scrollAnchor = $(this).attr('data-scroll'),
+            scrollPoint = $('.scroll-section[data-anchor="' + scrollAnchor + '"]').offset().top - 100;
+
+        $('body,html').animate({
+            scrollTop: scrollPoint
+        }, 500);
+
+        return false;
+
+    })
+
+
+    $(window).scroll(function() {
+        var windscroll = $(window).scrollTop();
+        if (windscroll >= 100) {
+            $('.scroll-section').each(function(i) {
+                if ($(this).position().top <= windscroll) {
+                    $('.scroll-item.active').removeClass('active');
+                    $('.scroll-item').eq(i).addClass('active');
+                }
+            });
+        } else {
+            $('.scroll-item.active').removeClass('active');
+            $('.scroll-item:first').addClass('active');
+        }
+    }).scroll();
+
+
+
+    $(".animated_el").each(function() {
+        if (isStartIntoView($(this))) {
+            $(this).addClass("is-ready");
+        }
+    });
+
+
+
+
+    
+
+
+    $('.animated_el').appear();
+
+    $(document.body).on('appear', '.animated_el', function(e, $affected) {
+        $(this).addClass('is-ready');
+    });
+
+    // $(document.body).on('disappear', 'section h3', function(e, $affected) {
+        
+    // });
+
 });
 
 
-
-
-$(window).resize(function () {
-
-});
-
-// $(window).load(function(){
-
-// });
 
 // functions
+function isStartIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+// function isScrolledIntoView(elem) {
+//     var docViewTop = $(window).scrollTop();
+//     var docViewBottom = docViewTop + $(window).height();
+
+//    // console.log("docViewBottom= "+docViewBottom);
+
+//     var elemTop = $(elem).offset().top;
+//     var elemBottom = elemTop + $(elem).height();
+
+//     return ((elemBottom < docViewBottom) && (elemTop >= docViewTop));
+// }
+
+// $(function() {
+//     $('.animated_el').appear();
 
 
+//     $(document.body).on('appear', '.animated_el', function(e, $affected) {
+//         // this code is executed for each appeared element
+//         $(this).addClass('is-ready');
+
+
+//     });
+
+//     $(document.body).on('disappear', 'section h3', function(e, $affected) {
+        
+//     });
+// });

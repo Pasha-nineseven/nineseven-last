@@ -31,6 +31,7 @@ gulp.task('scripts', function(){
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
         'app/libs/fancybox/jquery.fancybox.js',
+        'app/libs/appear/index.js',
         'app/libs/slick/slick.min.js',
     ])
     .pipe(concat('libs.min.js'))
