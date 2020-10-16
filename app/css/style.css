@@ -5042,7 +5042,9 @@ textarea, input {
           flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 0;
+  background: #fff;
+  padding: 20px 0 0 0;
   z-index: 15; }
 
 .cases-toggle__item {
@@ -6711,6 +6713,13 @@ textarea, input {
     border: 2px solid #000;
     border-radius: 50%; }
 
+@media screen and (max-width: 1920px) {
+  .cases-toggle__item {
+    font-size: 20px;
+    margin-right: 10px; }
+    .cases-toggle__item:last-child {
+      margin-right: 0; } }
+
 @media screen and (max-width: 1800px) {
   .process-view__item {
     font-size: 20px;
@@ -6837,7 +6846,9 @@ textarea, input {
   .cases__title {
     font-size: 40px; }
   .cases__in {
-    min-height: 400px; } }
+    min-height: 400px; }
+  .cases-toggle__item {
+    padding: 8px 10px; } }
 
 @media screen and (max-width: 1450px) {
   .news-cutting {
@@ -6964,7 +6975,10 @@ textarea, input {
     font-size: 30px;
     line-height: 36px; }
   .destination__in {
-    padding: 20px 25px 15px 25px; } }
+    padding: 20px 25px 15px 25px; }
+  .cases-toggle__item {
+    padding: 6px 7px;
+    font-size: 18px; } }
 
 @media screen and (max-width: 1300px) {
   .k-sqheme__msg {
@@ -7118,7 +7132,11 @@ textarea, input {
   .templates-centered {
     margin: 0 -60px 20px -30px; }
   .templates-centered__item {
-    padding-right: 30px; } }
+    padding-right: 30px; }
+  .cases-toggle__item {
+    padding: 3px 5px;
+    font-size: 16px;
+    line-height: 30px; } }
 
 @media screen and (max-width: 1024px) {
   .container-fluid {
@@ -7335,10 +7353,20 @@ textarea, input {
     margin-bottom: 30px; }
     .optimization-middle:before, .optimization-middle:after {
       display: none; }
+  .cases-toggle .indent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto; }
   .cases-toggle__item {
-    font-size: 18px;
+    padding: 2px 3px;
+    font-size: 16px;
     line-height: 25px;
-    padding: 5px 15px; }
+    margin-right: 5px;
+    white-space: nowrap; }
+    .cases-toggle__item:last-child {
+      margin-right: 0; }
   .cases-info {
     padding: 25px 40px; }
   .cases__in {
@@ -7350,7 +7378,9 @@ textarea, input {
     padding-right: 0;
     margin-bottom: 20px; }
     .destination__item:last-child {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+  .sentence-dealer {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 768px) {
   .page-title {
@@ -7916,7 +7946,12 @@ textarea, input {
     opacity: 0;
     visibility: hidden;
     width: 0;
-    height: 0; } }
+    height: 0; }
+  .process-view__start,
+  .process-view__design,
+  .process-view__analitic,
+  .process-view__develop {
+    padding: 15px; } }
 
 @media screen and (max-width: 600px) {
   .recommend-slider__link {
