@@ -144,69 +144,35 @@ $(document).ready(function() {
             $('.scroll-item:first').addClass('active');
         }
     }).scroll();
-
-
-
-    $(".animated_el").each(function() {
-        if (isStartIntoView($(this))) {
-            $(this).addClass("is-ready");
-        }
-    });
-
-
-
-
-    
-
-
-    $('.animated_el').appear();
-
-    $(document.body).on('appear', '.animated_el', function(e, $affected) {
-        $(this).addClass('is-ready');
-    });
-
-    // $(document.body).on('disappear', 'section h3', function(e, $affected) {
-        
-    // });
-
 });
 
 
 
-// functions
-function isStartIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+$(function() {
+    var $animation_elements = $('.animated_el');
+    var $window = $(window);
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+    function check_if_in_view() {
+        var window_height = $window.height();
+        console.log(window_height);
+        var window_top_position = $window.scrollTop();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
-// function isScrolledIntoView(elem) {
-//     var docViewTop = $(window).scrollTop();
-//     var docViewBottom = docViewTop + $(window).height();
+        var window_bottom_position = (window_top_position + window_height);
+     
+        $.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+         
+            if (element_top_position <= window_bottom_position) {
+                $element.addClass('is-ready');
+            } else {
+                $element.removeClass('is-ready');
+            }
+        });
+    }
 
-//    // console.log("docViewBottom= "+docViewBottom);
-
-//     var elemTop = $(elem).offset().top;
-//     var elemBottom = elemTop + $(elem).height();
-
-//     return ((elemBottom < docViewBottom) && (elemTop >= docViewTop));
-// }
-
-// $(function() {
-//     $('.animated_el').appear();
-
-
-//     $(document.body).on('appear', '.animated_el', function(e, $affected) {
-//         // this code is executed for each appeared element
-//         $(this).addClass('is-ready');
-
-
-//     });
-
-//     $(document.body).on('disappear', 'section h3', function(e, $affected) {
-        
-//     });
-// });
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+});
