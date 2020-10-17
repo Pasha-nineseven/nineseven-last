@@ -1495,27 +1495,16 @@
 	}
 	.cases-list{
 		&.m-cases{
-			margin:0 -20px 40px;
+			margin:0 0 40px;
 		}
 	}
-	// /* Hide scrollbar for Chrome, Safari and Opera */
-	// .cases-toggle.m-filter::-webkit-scrollbar {
-	//   	opacity: 0;
-	// }
-
-	// /* Hide scrollbar for IE, Edge and Firefox */
-	// .cases-toggle.m-filter {
-	//   	-ms-overflow-style: none;  /* IE and Edge */
-	//   	scrollbar-width: none;  /* Firefox */
-	// }
 	.cases-toggle.m-filter::-webkit-scrollbar {
 	        opacity: 0;
     	visibility: hidden;
 	    width: 0;
 	    height: 0;
-	    background: transparent;  /* Optional: just make scrollbar invisible */
+	    background: transparent;
 	}
-	/* Optional: show position indicator in red */
 	.cases-toggle.m-filter::-webkit-scrollbar-thumb {
 	    background: transparent;
 	        opacity: 0;

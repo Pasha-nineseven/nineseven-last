@@ -162,8 +162,9 @@ $(function() {
         $.each($animation_elements, function() {
             var $element = $(this);
             var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
-            var element_bottom_position = (element_top_position + element_height);
+            var element_top_position = $element.offset().top - 30;
+            var element_bottom_position = ((element_top_position) + element_height);
+            console.log(element_top_position)
          
             if (element_top_position <= window_bottom_position) {
                 $element.addClass('is-ready');

@@ -7932,15 +7932,13 @@ textarea, input {
       white-space: nowrap;
       margin-bottom: 0; }
   .cases-list.m-cases {
-    margin: 0 -20px 40px; }
+    margin: 0 0 40px; }
   .cases-toggle.m-filter::-webkit-scrollbar {
     opacity: 0;
     visibility: hidden;
     width: 0;
     height: 0;
-    background: transparent;
-    /* Optional: just make scrollbar invisible */ }
-  /* Optional: show position indicator in red */
+    background: transparent; }
   .cases-toggle.m-filter::-webkit-scrollbar-thumb {
     background: transparent;
     opacity: 0;
