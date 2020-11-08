@@ -5637,7 +5637,15 @@ textarea, input {
 
 .format__img {
   margin-bottom: 23px;
-  height: 100px; }
+  height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
   .format__img img {
     display: block;
     max-width: 100%;
@@ -5676,6 +5684,22 @@ textarea, input {
     position: absolute;
     top: 11px;
     right: 20px; }
+
+.format__in {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
 
 .news-in {
   display: -webkit-box;

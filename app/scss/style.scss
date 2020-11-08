@@ -2047,6 +2047,8 @@
 .format__img{
 	margin-bottom: 23px;
 	height: 100px;
+	    display: flex;
+    align-items: flex-end;
 	img{
 		display: block;
 		max-width: 100%;
@@ -2096,6 +2098,12 @@
 	        top: 11px;
 	    right: 20px;
 	}
+}
+.format__in{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .news-in{
