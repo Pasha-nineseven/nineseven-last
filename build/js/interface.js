@@ -129,6 +129,15 @@ $(document).ready(function() {
 
     })
 
+    $('body').on('click','.section-toggle__link', function(e){
+        e.preventDefault();
+        var num = $(this).data('num');
+        $(".section-toggle__link").removeClass('active');
+        $(this).addClass('active');
+        $(".services-item").removeClass('active');
+        $("#service"+num).addClass('active');
+    });
+
 
     $(window).scroll(function() {
         var windscroll = $(window).scrollTop();
@@ -154,7 +163,7 @@ $(function() {
 
     function check_if_in_view() {
         var window_height = $window.height();
-        console.log(window_height);
+        //console.log(window_height);
         var window_top_position = $window.scrollTop();
 
         var window_bottom_position = (window_top_position + window_height);
@@ -164,7 +173,7 @@ $(function() {
             var element_height = $element.outerHeight();
             var element_top_position = $element.offset().top - 30;
             var element_bottom_position = ((element_top_position) + element_height);
-            console.log(element_top_position)
+            //console.log(element_top_position)
          
             if (element_top_position <= window_bottom_position) {
                 $element.addClass('is-ready');

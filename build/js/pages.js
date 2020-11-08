@@ -27,5 +27,7 @@ $('body').append(
 		<li><a href="cases.html">Cases</a></li> \
 		<li><a href="autodiler.html">Autodiler</a></li> \
 		<li><a href="ecommerce.html">Ecommerce</a></li> \
+		<li><a href="news.html">News</a></li> \
+		<li><a href="news-in.html">News-in</a></li> \
 	</ol> \
 </div>');
