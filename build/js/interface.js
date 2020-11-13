@@ -139,6 +139,29 @@ $(document).ready(function() {
     });
 
 
+    //NEWS-IN slider
+    if ($( ".news-in-media-slider" ).length>0) {
+        var $slider_m = $('.news-in-media-slider');
+        $slider_m.slick({
+            dots: true,
+            arrows:false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            fade:true,
+            //autoplay: true,
+            //autoplaySpeed: 5000,
+            //pauseOnHover:false,
+        });
+
+        var slideCount = $slider_m.slick("getSlick").slideCount;
+
+        if (slideCount<2) {
+            $('.slick-dots').hide();
+        }
+    };
+
+
     $(window).scroll(function() {
         var windscroll = $(window).scrollTop();
         if (windscroll >= 100) {
