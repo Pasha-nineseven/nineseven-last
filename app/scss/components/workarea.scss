@@ -80,6 +80,9 @@
 				}
 			}
 		}
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 	blockquote{
 		display: block;

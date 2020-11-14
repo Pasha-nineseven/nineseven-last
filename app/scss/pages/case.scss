@@ -512,6 +512,9 @@
 	&:last-child{
 		margin-bottom: 0;
 	}
+	img{
+		max-width: 100%;
+	}
 }
 .plan-images{
 	img{
@@ -1097,7 +1100,7 @@
 
 .road-list{
 	font-size: 24px;
-    line-height: 35px;
+    line-height: 28px;
     padding-top: 30px;
     margin-bottom: 20px;
 	ol{
@@ -1111,16 +1114,14 @@
 		    padding-left: 56px;
 		    position: relative;
 		    margin-bottom: 15px;
-		    font-size: 18px;
-		    line-height: 27px;
 		    &:before{
 				counter-increment: list_2;
 				content: counters(list_2, ".");
 				position: absolute;
 				left: 2px;
-    			top: -2px;
+    			top: 0;
 				color: #fff;
-				font-size: 18px;
+				font-size: 24px;
 				line-height: 1;
 				width: 27px;
 				min-width: 27px;

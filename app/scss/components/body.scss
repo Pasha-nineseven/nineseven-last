@@ -41,9 +41,9 @@ a{
 	text-decoration: none;
 	&:not([class]){
 		color: #E4002B;
-		// &:hover{
-		// 	color: #056493;
-		// }
+		&:hover{
+			color: #91001B;
+		}
 	}
 }
 
