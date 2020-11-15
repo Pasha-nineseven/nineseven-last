@@ -30,5 +30,6 @@ $('body').append(
 		<li><a href="news.html">News</a></li> \
 		<li><a href="news-in.html">News-in</a></li> \
 		<li><a href="news-in2.html">News-in2</a></li> \
+		<li><a href="news-in3.html">News-in3</a></li> \
 	</ol> \
 </div>');
