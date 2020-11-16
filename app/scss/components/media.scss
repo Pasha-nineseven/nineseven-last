@@ -1701,17 +1701,39 @@
 	}
 	.news-in{
 		flex-wrap:wrap;
-		display: block;
+		flex-direction: column;
+		padding-top: 0;
+		overflow: hidden;
+	}
+	.news-in-media-slider {
+	    padding-top: 20px;
 	}
 	.news-in__aside{
 		width: 100%;
 		min-width: 100%;
-		order: 1;
+		order: 2;
 		margin-bottom: 20px;
 	}
 	.news-in__col {
 	    padding-right: 0;
-	    order: 2;
+	    order: 1;
+	    overflow: hidden;
+	        width: 100%;
+	}
+	.news-in-media-slider .slick-list {
+	    margin: 0;
+	}
+	.news-in-media-slider.slick-initialized{
+		display: block;
+	}
+	.news-in.m-vertical .news-in__aside {
+	    padding-top: 0;
+	}
+	.aside-item{
+		padding-top: 30px;
+	}
+	.aside-item__img {
+	    margin-top: 0;
 	}
 	body{
 		font-size: 18px;
