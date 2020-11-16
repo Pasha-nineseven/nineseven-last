@@ -2372,6 +2372,9 @@
 			background: url(../img/svg/back-h.svg) no-repeat;
 		}
 	}
+	&+.news-in{
+		padding-top: 0;
+	}
 }
 
 .view-link-wrap{
@@ -2438,6 +2441,7 @@
 	display: inline-block;
 	color: #fff;
 	text-transform: uppercase;
+	font-size: 18px;
 	&:after {
 	    content: "";
 	    display: inline-block;
@@ -2476,7 +2480,8 @@
 		.dealer-hint{
 			opacity: 1;
 			visibility: visible;
-			transform: translateY(-10px);
+			//transform: translateY(-10px);
+			transform: translate(-50%, -10px);
 		}
 	}
 }
@@ -2487,16 +2492,18 @@
 	background: #F6F4F2;
 	border-radius: 8px;
 	position: absolute;
-	left: -27px;
+	//left: -27px;
 	bottom: calc(100% + 20px); 
 	color: #141414;
 	padding: 15px 27px;
-	width: calc(100% + 54px);
+	//width: calc(100% + 54px);
 	opacity: 0;
 	visibility: hidden;
-	transform: translateY(10px);
+	transform: translate(-50%, 10px);
 	transition: all .3s ease;
 	margin-bottom: -10px;
+	width: 300px;
+	left: 50%;
 	&:after{
 		content: "";
 		width: 0;

@@ -97,6 +97,20 @@ $(document).ready(function() {
             $('.cases-item[data-category="'+filter+'"]').show();
         }
     });
+    if ($('.cases-toggle.m-filter').length>0) {
+        if(window.location.hash){
+            let filter = window.location.hash.split("#").join('');
+            $('.cases-toggle__item').removeClass('active');
+            $('.cases-toggle__item[data-filter="'+filter+'"]').addClass('active');
+
+            if (filter == 'all') {
+                $('.cases-item').show();
+            } else{
+                $('.cases-item').hide();
+                $('.cases-item[data-category="'+filter+'"]').show();
+            }
+        }
+    }
 
 
 
@@ -191,6 +205,20 @@ $(document).ready(function() {
         $(this).parents('.recommend-show-wrap').prev('.recommend-more').addClass('visible');
         $(this).parents('.recommend-show-wrap').hide();
     });
+
+
+
+    if ($('.news-in').length>0) {
+        $('.news-in a').each(function() {
+            var l_host = new RegExp('/' + window.location.host + '/');
+            if (!l_host.test(this.href) && this.href.indexOf('http://daily.mango.rocks/') !== 0) {
+                $(this).attr("target","_blank");
+                $(this).attr("rel","nofollow");
+            }
+        });
+    }
+
+    
 });
 
 function setHeight() {
