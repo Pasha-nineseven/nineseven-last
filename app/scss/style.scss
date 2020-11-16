@@ -39,24 +39,10 @@
 
 
 
-// a[href^="http://maps.google.com/maps"]{display:none !important}
-// a[href^="https://maps.google.com/maps"]{display:none !important}
-// .gmnoprint a, .gmnoprint span, .gm-style-cc {
-//     display:none;
-// }
-// .gmnoprint div {
-//     background:none !important;
-// }
-
-
 @import "components/header";
 @import "components/workarea";
 
 .layout{
-	// display: table;
-	// table-layout: fixed;
- //  	height: 100%;
- //  	width: 100%;
   	flex: 1 0 auto;
   	overflow-x: hidden;
 }
@@ -70,10 +56,6 @@
 	}
 }
 
-// .wrapper{
-// 	display: table-row;
-// 	height: 100%;
-// }
 .container-fluid{
 	max-width: 1920px;
 	padding-left: 40px;
@@ -2315,7 +2297,7 @@
 	}
 	.slick-list{
 		order:2;
-		margin: 0 -15px;
+		    margin: 0 -15px -15px -9px;
 	}
 	.slick-dots{
 		order: 1;
@@ -2397,7 +2379,7 @@
 }
 
 .view-link-wrap{
-	display: inline-flex;
+	display: inline-block;
 	margin-bottom: 45px;
 	background: #F6F4F2;
 	border-radius: 4px;
