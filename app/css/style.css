@@ -8120,7 +8120,27 @@ textarea, input {
     line-height: 24px;
     padding: 2px 15px; }
   .p-news__in {
-    padding: 15px; } }
+    padding: 15px; }
+  .dest__item:before {
+    top: 4px; }
+  .optimization .order__txt {
+    margin-bottom: 30px; }
+  .case-pre,
+  .case-top__txt,
+  .plan-top__item,
+  .optimization__msg,
+  .optimization-more__item,
+  .template__info,
+  .dest__item,
+  .another__txt,
+  .plan-txt__item,
+  .road-list li,
+  .blocks-txt,
+  .ecosystem__top,
+  .essence__item,
+  .case-compare__title {
+    font-size: 24px;
+    line-height: 28px; } }
 
 @media screen and (max-width: 992px) {
   .news__wrap {
@@ -8451,9 +8471,6 @@ textarea, input {
     font-size: 40px; }
   .incut {
     margin-bottom: 18px; }
-  .incut__inner {
-    font-size: 20px;
-    line-height: 28px; }
   .process-view__analitic:after {
     display: none; }
   .process-view__col {
@@ -8676,8 +8693,6 @@ textarea, input {
   .plan.m-style:after {
     display: none; }
   .template__info__item {
-    font-size: 20px;
-    line-height: 28px;
     margin-bottom: 18px; }
   .another {
     -webkit-flex-wrap: wrap;
@@ -9010,7 +9025,7 @@ textarea, input {
     top: 1px;
     font-size: 20px; }
   .dest__item:before {
-    top: 5px; }
+    top: 2px; }
   .optimization img {
     margin-bottom: 30px; }
     .optimization img:last-child {
@@ -9024,7 +9039,34 @@ textarea, input {
   .view-link-wrap {
     display: inline-block; }
     .view-link-wrap a {
-      margin-left: 5px; } }
+      margin-left: 5px; }
+  .template__wrap.m-half .template__info {
+    width: 100%;
+    min-width: 100%; }
+  .case-pre,
+  .case-top__txt,
+  .plan-top__item,
+  .optimization__msg,
+  .optimization-more__item,
+  .template__info,
+  .dest__item,
+  .another__txt,
+  .plan-txt__item,
+  .incut__inner,
+  .road-list li,
+  .template__info__item,
+  .recommend-slider__top,
+  .p-roadmap__txt,
+  .blocks-txt,
+  .m-dealer .ecosystem__top,
+  .ecosystem__top,
+  .essence__item,
+  .case-compare__title {
+    font-size: 20px;
+    line-height: 24px; }
+  .plan__txt {
+    font-size: 18px;
+    line-height: 22px; } }
 
 @media screen and (max-width: 700px) {
   .section-toggle {
@@ -9266,10 +9308,8 @@ textarea, input {
     padding-right: 0;
     text-align: left;
     margin-bottom: 50px; }
-    .optimization__item:last-child {
-      margin-bottom: 0; }
-      .optimization__item:last-child:after {
-        display: none; }
+    .optimization__item:last-child:after {
+      display: none; }
     .optimization__item:after {
       content: "";
       width: 36px;
@@ -9279,7 +9319,7 @@ textarea, input {
       position: absolute;
       top: -webkit-calc(100% + 17px);
       top: calc(100% + 17px);
-      right: 50%;
+      right: 50% !important;
       -webkit-transform: translateY(0) translateX(50%) rotate(90deg);
           -ms-transform: translateY(0) translateX(50%) rotate(90deg);
               transform: translateY(0) translateX(50%) rotate(90deg); }
@@ -9300,12 +9340,6 @@ textarea, input {
     text-align: center; }
   .link-case__in {
     padding: 30px 15px; }
-  .case-top__txt {
-    font-size: 20px;
-    line-height: 28px; }
-  .case-pre {
-    font-size: 20px;
-    line-height: 24px; }
   .optimization__list.m-complex {
     margin-right: 0; }
   .optimization__list.m-complex .optimization__item {
