@@ -31,8 +31,6 @@
 .case-pre{
 	margin-bottom: 40px;
 	
-	font-size: 24px;
-	line-height: 35px;
 	p{
 		&:last-child{
 			margin-bottom: 0;
@@ -47,8 +45,7 @@
 	margin-bottom: 40px;
 }
 .case-compare__title{
-	font-size: 24px;
-	line-height: 35px;
+
 }
 
 .case-compare__img{
@@ -83,8 +80,6 @@
 	padding-top: 50px;
 }
 .optimization-more__item{
-	font-size: 24px;
-	line-height: 35px;
 	img{
 		max-width: 100%;
 	}
@@ -120,8 +115,6 @@
 
 }
 .plan-top__item{
-	font-size: 24px;
-	line-height: 35px;
 	&.m-j-center{
 		display: flex;
 		justify-content: center;
@@ -181,8 +174,6 @@
 	width: 100%;
 	background: #FFFFFF;
 	border-radius: 8px;
-	font-size: 24px;
-	line-height: 35px;
 	text-align: center;
 	padding: 27px;
 	margin-bottom: 20px;
@@ -231,7 +222,7 @@
     // min-width: 264px;
     min-width: 20%;
      max-width: 275px;
-    min-height: 275px;
+    
     margin-bottom: 20px;
 }
 .p-roadmap__in{
@@ -245,11 +236,11 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    padding: 62px 10px;
+    //height: 100%;
 }
 .p-roadmap__top{
-	font-size: 24px;
-	line-height: 35px;
+
 	text-align: center;
 
 	font-family: 'circe-bold';
@@ -259,8 +250,7 @@
 }
 
 .p-roadmap__txt{
-	font-size: 24px;
-	line-height: 35px;
+
 }
 
 .essence{
@@ -302,8 +292,7 @@
 }
 .dest__item{
 	width: 33.333%;
-	font-size: 24px;
-	line-height: 35px;
+
     position: relative;
     padding-left: 55px;
     margin-bottom: 15px;
@@ -391,8 +380,6 @@
 	background: #F6F4F2;
 	border-radius: 8px;
 	padding: 30px;
-	font-size: 24px;
-	line-height: 35px;
 	text-align: center;
 	height: 100%;
 	display: flex;
@@ -416,8 +403,6 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 24px;
-    line-height: 35px;
     padding: 30px;
     position: absolute;
     right: 0;
@@ -452,8 +437,6 @@
 .link-case__btn{
 	display: inline-block;
 	margin-bottom: 20px;
-	font-size: 24px;
-	line-height: 35px;
 	background: #0099DC;
 	color: #fff;
 	padding: 5px 30px;
@@ -497,8 +480,6 @@
 	width: 530px;
 	min-width: 530px;
 	padding-right: 25px;
-	font-size: 24px;
-	line-height: 35px;
 	
 }
 .template__img{
@@ -602,8 +583,6 @@
     border: 3px dashed #E4002B;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 24px;
-    line-height: 35px;
     padding: 30px;
 }
 
@@ -657,8 +636,6 @@
 	}
 }
 .another__txt{
-	font-size: 24px;
-	line-height: 35px;
 	max-width: 770px;
 }
 
@@ -666,8 +643,7 @@
 	margin-bottom: 40px;
 }
 .plan-txt__item{
-	font-size: 24px;
-	line-height: 35px;
+
 }
 
 .arrow-top{
@@ -708,8 +684,6 @@
 }
 
 .p-roadmap__week{
-	font-size: 24px;
-	line-height: 35px;
 	padding-top: 30px;
 	text-align: center;
 }
@@ -828,8 +802,6 @@
 	margin-right: -30px;
 }
 .public-sqheme__list__top{
-	font-size: 24px;
-	line-height: 35px;
 	color: #E4002B;
 	margin-bottom: 13px;
 	
@@ -840,8 +812,6 @@
 	padding-right: 30px;
 	width: 50%;
 	margin-bottom: 30px;
-	font-size: 24px;
-	line-height: 35px;
 	span{
 		display: block;
 		padding: 27px 48px;
@@ -960,8 +930,6 @@
 	height: 124px;
 	background: #F6F4F2;
 	border-radius: 8px;
-	font-size: 24px;
-	line-height: 35px;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -981,8 +949,6 @@
 	}
 }
 .ecosystem__title{
-	font-size: 24px;
-	line-height: 35px;
 	color: #E4002B;
 	text-align: center;
 	margin-bottom: 13px;
@@ -1002,8 +968,6 @@
 	width: 33.333%;
 	padding-right: 17px;
 	margin-bottom: 17px;
-	font-size: 24px;
-	line-height: 35px;
 }
 .ecosystem__in{
 	background: #F6F4F2;
@@ -1069,8 +1033,7 @@
 
 
 .blocks-txt{
-	font-size: 24px;
-	line-height: 35px;
+
 }
 
 
@@ -1150,8 +1113,6 @@
 
 .smart__top{
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 35px;
 	color: #E4002B;
 	margin-bottom: 30px;
 }

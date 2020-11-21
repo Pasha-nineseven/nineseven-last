@@ -78,8 +78,6 @@
 	    font-size: 30px;
 	}
 	.services-el {
-	    font-size: 18px;
-	    line-height: 22px;
 	    margin-bottom: 10px;
 	}
 	.recommend-slider-wrap {
@@ -285,10 +283,6 @@
 	.work__list {
 	    padding-left: 40px;
 	}
-	.news__title {
-	    font-size: 20px;
-	    line-height: 24px;
-	}
 	.process__info {
 	    margin-right: 20px;
 	}
@@ -399,8 +393,6 @@
 	    height: 50%;
 	}
 	.order__txt{
-		font-size: 18px;
-	    line-height: 22px;
 	    padding: 15px;
 	}
 	.page-footer__b{
@@ -483,9 +475,6 @@
 	.news,
 	.more{
 	    padding: 30px;
-	}
-	.more{
-		font-size: 20px;
 	}
 	.more__num {
 	    font-size: 60px;
@@ -656,9 +645,6 @@
 }
 
 @media screen and (max-width: 1024px){
-	// .news__video {
-	//     width: 35%;
-	// }
 	.container-fluid{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -789,26 +775,7 @@
 	.optimization .order__txt {
 	    margin-bottom: 30px;
 	}
-	.case-pre,
-	.case-top__txt,
-	.plan-top__item,
-	.optimization__msg,
-	.optimization-more__item,
-	.template__info,
-	.dest__item,
-	.another__txt,
-	.plan-txt__item,
-	.road-list li,
-	.blocks-txt,
-	.ecosystem__top,
-	.essence__item,
-	.case-compare__title{
-	    font-size: 24px;
-	    line-height: 28px;
-	}
-	
 }
-
 @media screen and (max-width: 992px){
 	.news__wrap{
 		align-items: flex-start;
@@ -918,7 +885,7 @@
 	.order__count{
 		width: 100%;
 		min-width: 100%;
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 		    padding: 0;
 	}
 	.order__txt{
@@ -1754,9 +1721,6 @@
 	.aside-item__img {
 	    margin-top: 0;
 	}
-	body{
-		font-size: 18px;
-	}
 	.index-links__txt.m-more {
 	    text-align: center;
 	    justify-content: center;
@@ -1870,39 +1834,28 @@
 	    width: 100%;
 	    min-width: 100%;
 	}
-	.case-pre,
-	.case-top__txt,
-	.plan-top__item,
-	.optimization__msg,
-	.optimization-more__item,
-	.template__info,
-	.dest__item,
-	.another__txt,
-	.plan-txt__item,
-	.incut__inner,
-	.road-list li,
-	.template__info__item,
-	.recommend-slider__top,
-	.p-roadmap__txt,
-	.blocks-txt,
-	.m-dealer .ecosystem__top,
-	.ecosystem__top,
-	.essence__item,
-	.case-compare__title{
-	    font-size: 20px;
-	    line-height: 24px;
+	.work__title{
+		br{
+			display: none;
+		}
 	}
-	.plan__txt {
-	    font-size: 18px;
-	    line-height: 22px;
+	.page-title{
+		br{
+			display: none;
+		}
 	}
-	
+	body{
+		font-size: 20px;
+	}
+	.workarea{
+		line-height: 1.1;
+	}
 }
 
 @media screen and (max-width:700px){
 	.section-toggle {
 		width: 100%;
-	    margin: 0;
+	    margin: 30px 0;
 	    padding: 0px 0px 65px 110px;
 	}
 	.design.m-index .services-item{
@@ -2038,10 +1991,6 @@
 		&:last-child{
 			margin-bottom: 0;
 		}
-	}
-	.more__txt{
-		font-size: 20px;
-		line-height: 24px;
 	}
 	.more__num {
 	    margin-right: 15px;
@@ -2221,7 +2170,7 @@
 	    }
 	}
 	.order__count {
-	    font-size: 70px;
+	    font-size: 48px;
 	    line-height: 50px;
 	}
 
@@ -2330,5 +2279,12 @@
 	}
 	.view-link-wrap {
 	    display: block;
+	}
+
+	.workarea {
+	    line-height: 1.4;
+	}
+	body {
+	    font-size: 18px;
 	}
 }
