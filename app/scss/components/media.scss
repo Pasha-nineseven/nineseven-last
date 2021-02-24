@@ -142,10 +142,7 @@
 	}
 	.p-roadmap__txt {
 	    font-size: 18px;
-	    line-height: 24px;
-	}
-	.p-roadmap__item {
-	    min-height: 230px;
+	    line-height: 1.4;
 	}
 	.workarea h3.services-title{
 		font-size: 30px;
@@ -313,10 +310,6 @@
 	    width: 650px;
 	    min-width: 650px;
 	}
-	.sq__msg {
-	    font-size: 18px;
-	    line-height: 22px;
-	}
 	.optimization__in {
 	    padding: 15px;
 	    font-size: 18px;
@@ -427,10 +420,6 @@
 	    	}
 	    }
 	}
-	.format-views__item {
-	    font-size: 18px;
-	    line-height: 22px;
-	}
 	.news-in__col {
 	    padding-right: 50px;
 	}
@@ -512,10 +501,6 @@
 	}
 	.design{
 		padding: 30px;
-	}
-	.design__txt {
-	    font-size: 20px;
-	    line-height: 24px;
 	}
 	.plan{
 		padding: 30px;
@@ -627,8 +612,6 @@
 	    columns: 1;
 	}
 	.sq__msg {
-	    font-size: 16px;
-	    line-height: 18px;
 	    width: 400px;
 	}
 	.templates-centered {
@@ -660,8 +643,8 @@
 		font-size: 40px;
 	}
 	.incut__inner {
-	    font-size: 24px;
-	    line-height: 28px;
+	    font-size: inherit;
+	    line-height: inherit;
 	}
 	.process__wrap{
 		flex-wrap:wrap;
@@ -776,6 +759,7 @@
 	    margin-bottom: 30px;
 	}
 }
+
 @media screen and (max-width: 992px){
 	.news__wrap{
 		align-items: flex-start;
@@ -793,8 +777,6 @@
 	}
 	.page-services__item {
 	    padding-left: 40px;
-	    font-size: 20px;
-	    line-height: 26px;
 	    &:before{
 	    	top: 3px;
 	    }
@@ -871,8 +853,8 @@
 	}
 	.service-sqheme-top__in {
 	    padding: 15px;
-	    font-size: 20px;
-	    line-height: 24px;
+	    font-size: inherit;
+	    line-height: inherit;
 	}
 	.k-sqheme__msg{
 		    position: static;
@@ -1011,7 +993,7 @@
 	    margin-bottom: 40px;
 	}
 	.plan-txt {
-	    margin-bottom: 0;
+	    margin-bottom: 20px;
 	}
 	.optimization-more {
 	    padding-top: 0;
@@ -1030,6 +1012,19 @@
 	}
 	.news-in__col .news-in-media-slider {
 	    padding-top: 45px;
+	}
+	.road-list,
+	.optimization__in,
+	.plan__txt,
+	.plan__title,
+	.analysis__add,
+	.analysis__item,
+	.page-services__txt,
+	.methodology-top__item,
+	.roadmap__item ol li,
+	.process-view__item{
+		font-size: inherit;
+		line-height: inherit;
 	}
 }
 
@@ -1287,9 +1282,10 @@
 	.page-services__title {
 	    font-size: 26px;
 	}
-	.page-services__pre {
-	    font-size: 20px;
-	    line-height: 26px;
+	.page-services__pre,
+	.store__txt{
+	    font-size: inherit;
+	    line-height: inherit;
 	}
 	.page-services{
 		padding: 0; 
@@ -1392,8 +1388,6 @@
 	    margin-bottom: 20px;
 	}
 	.analysis__add {
-	    font-size: 24px;
-	    line-height: 30px;
 	    padding-left: 0;
 	    width: 100%;
 	}
@@ -1532,10 +1526,6 @@
 	}
 	.dealer-link img {
 	    display: inline-block;
-	}
-	.plan-top__item {
-	    font-size: 20px;
-	    line-height: 24px;
 	}
 	.plan.m-autodealer h3 {
 	    margin-bottom: 20px;
@@ -1774,18 +1764,7 @@
 	.news-in-media{
 		margin-bottom: 40px;
 	}
-	.optimization-more__item {
-    	font-size: 20px;
-	    line-height: 28px;
-	}
-	.plan-txt__item {
-	    font-size: 20px;
-	    line-height: 28px;
-	}
-	.dest__item {
-	    font-size: 20px;
-	    line-height: 28px;
-	}
+
 	.workarea p{
 		margin-bottom: 18px;
 		&:last-child{
@@ -1794,13 +1773,6 @@
 	}
 	.optimization-more {
 	    padding-top: 0;
-	}
-	.road-list {
-	    font-size:20px;
-	}
-	.case-pre {
-	    font-size: 20px;
-	    line-height: 28px;
 	}
 	.road-list ol li:before {
 	    top: 1px;
@@ -1849,6 +1821,24 @@
 	}
 	.workarea{
 		line-height: 1.1;
+	}
+	.blocks ol li{
+		line-height: 1.1;
+	}
+	.workarea ul:not(.slick-dots) li:before {
+		top: 9px;
+	}
+	.support ol li {
+		font-size: 20px;
+		line-height: 1.1;
+	}
+	.propose {
+		font-size: inherit;
+		line-height: inherit;
+	}
+	.p-roadmap__txt{
+		font-size: inherit;
+		line-height: inherit;
 	}
 }
 
@@ -2005,8 +1995,8 @@
 		padding: 20px;
 	}
 	.news__title {
-	    font-size: 16px;
-	    line-height: 18px;
+	    font-size: inherit;
+	    line-height: inherit;
 	}
 	.news__link {
 	    padding: 2px 5px 2px 20px;
@@ -2212,8 +2202,6 @@
 	    min-height: 250px;
 	}
 	.auto-update__item {
-	    font-size: 20px;
-	    line-height: 24px;
 	    margin-right: 0;
 	}
 	.destination-list{
@@ -2286,5 +2274,28 @@
 	}
 	body {
 	    font-size: 18px;
+	}
+	.road-list{
+		font-size: 18px;
+	}
+	.ecosystem__item {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.blocks ol li,
+	.optimization__in{
+		line-height: 1.4;
+	}
+	.workarea ul:not(.slick-dots) li:before {
+		top: 10px;
+	}
+	.support ol li {
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.road-list ol li,
+	.workarea ul:not(.slick-dots) li,
+	.dest__item{
+		padding-left: 40px;
 	}
 }

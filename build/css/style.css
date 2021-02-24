@@ -6287,7 +6287,8 @@ textarea, input {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 62px 10px; }
+  padding: 30px 10px;
+  min-height: 245px; }
 
 .p-roadmap__top {
   text-align: center;
@@ -7505,9 +7506,7 @@ textarea, input {
     padding-left: 30px; }
   .p-roadmap__txt {
     font-size: 18px;
-    line-height: 24px; }
-  .p-roadmap__item {
-    min-height: 230px; }
+    line-height: 1.4; }
   .workarea h3.services-title {
     font-size: 30px; }
   .design h3.services-title {
@@ -7630,9 +7629,6 @@ textarea, input {
   .analysis__list {
     width: 650px;
     min-width: 650px; }
-  .sq__msg {
-    font-size: 18px;
-    line-height: 22px; }
   .optimization__in {
     padding: 15px;
     font-size: 18px;
@@ -7716,9 +7712,6 @@ textarea, input {
     padding-right: 50px; }
   .format-views__item .format-views__item:last-child .format-views__txt {
     padding-right: 0; }
-  .format-views__item {
-    font-size: 18px;
-    line-height: 22px; }
   .news-in__col {
     padding-right: 50px; }
   .index-links__txt {
@@ -7770,9 +7763,6 @@ textarea, input {
     padding-left: 40px; }
   .design {
     padding: 30px; }
-  .design__txt {
-    font-size: 20px;
-    line-height: 24px; }
   .plan {
     padding: 30px; }
   .p-roadmap {
@@ -7857,8 +7847,6 @@ textarea, input {
     -webkit-columns: 1;
             columns: 1; }
   .sq__msg {
-    font-size: 16px;
-    line-height: 18px;
     width: 400px; }
   .templates-centered {
     margin: 0 -60px 20px -30px; }
@@ -7881,8 +7869,8 @@ textarea, input {
   .workarea h1 {
     font-size: 40px; }
   .incut__inner {
-    font-size: 24px;
-    line-height: 28px; }
+    font-size: inherit;
+    line-height: inherit; }
   .process__wrap {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -7996,9 +7984,7 @@ textarea, input {
   .page-services__title {
     margin-bottom: 20px; }
   .page-services__item {
-    padding-left: 40px;
-    font-size: 20px;
-    line-height: 26px; }
+    padding-left: 40px; }
     .page-services__item:before {
       top: 3px; }
   .page-services__col.m-lg {
@@ -8057,8 +8043,8 @@ textarea, input {
     width: 100%; }
   .service-sqheme-top__in {
     padding: 15px;
-    font-size: 20px;
-    line-height: 24px; }
+    font-size: inherit;
+    line-height: inherit; }
   .k-sqheme__msg {
     position: static;
     width: 100%;
@@ -8159,7 +8145,7 @@ textarea, input {
   .plan {
     margin-bottom: 40px; }
   .plan-txt {
-    margin-bottom: 0; }
+    margin-bottom: 20px; }
   .optimization-more {
     padding-top: 0; }
   .optimization h3 {
@@ -8171,7 +8157,19 @@ textarea, input {
   .template__wrap {
     margin-bottom: 40px; }
   .news-in__col .news-in-media-slider {
-    padding-top: 45px; } }
+    padding-top: 45px; }
+  .road-list,
+  .optimization__in,
+  .plan__txt,
+  .plan__title,
+  .analysis__add,
+  .analysis__item,
+  .page-services__txt,
+  .methodology-top__item,
+  .roadmap__item ol li,
+  .process-view__item {
+    font-size: inherit;
+    line-height: inherit; } }
 
 @media screen and (max-width: 768px) {
   .page-title {
@@ -8388,9 +8386,10 @@ textarea, input {
         display: none; }
   .page-services__title {
     font-size: 26px; }
-  .page-services__pre {
-    font-size: 20px;
-    line-height: 26px; }
+  .page-services__pre,
+  .store__txt {
+    font-size: inherit;
+    line-height: inherit; }
   .page-services {
     padding: 0; }
   .roadmap__list {
@@ -8482,8 +8481,6 @@ textarea, input {
     min-width: 100%;
     margin-bottom: 20px; }
   .analysis__add {
-    font-size: 24px;
-    line-height: 30px;
     padding-left: 0;
     width: 100%; }
   .format__list {
@@ -8608,9 +8605,6 @@ textarea, input {
     text-align: center; }
   .dealer-link img {
     display: inline-block; }
-  .plan-top__item {
-    font-size: 20px;
-    line-height: 24px; }
   .plan.m-autodealer h3 {
     margin-bottom: 20px; }
   .plan.m-autodealer .platform-img {
@@ -8838,26 +8832,12 @@ textarea, input {
     padding-bottom: 0; }
   .news-in-media {
     margin-bottom: 40px; }
-  .optimization-more__item {
-    font-size: 20px;
-    line-height: 28px; }
-  .plan-txt__item {
-    font-size: 20px;
-    line-height: 28px; }
-  .dest__item {
-    font-size: 20px;
-    line-height: 28px; }
   .workarea p {
     margin-bottom: 18px; }
     .workarea p:last-child {
       margin-bottom: 0; }
   .optimization-more {
     padding-top: 0; }
-  .road-list {
-    font-size: 20px; }
-  .case-pre {
-    font-size: 20px;
-    line-height: 28px; }
   .road-list ol li:before {
     top: 1px;
     font-size: 20px; }
@@ -8887,7 +8867,20 @@ textarea, input {
   body {
     font-size: 20px; }
   .workarea {
-    line-height: 1.1; } }
+    line-height: 1.1; }
+  .blocks ol li {
+    line-height: 1.1; }
+  .workarea ul:not(.slick-dots) li:before {
+    top: 9px; }
+  .support ol li {
+    font-size: 20px;
+    line-height: 1.1; }
+  .propose {
+    font-size: inherit;
+    line-height: inherit; }
+  .p-roadmap__txt {
+    font-size: inherit;
+    line-height: inherit; } }
 
 @media screen and (max-width: 700px) {
   .section-toggle {
@@ -9017,8 +9010,8 @@ textarea, input {
   .news {
     padding: 20px; }
   .news__title {
-    font-size: 16px;
-    line-height: 18px; }
+    font-size: inherit;
+    line-height: inherit; }
   .news__link {
     padding: 2px 5px 2px 20px; }
   .news-cutting__link {
@@ -9192,8 +9185,6 @@ textarea, input {
   .cases__in {
     min-height: 250px; }
   .auto-update__item {
-    font-size: 20px;
-    line-height: 24px;
     margin-right: 0; }
   .destination-list {
     -webkit-box-flex: 1;
@@ -9265,4 +9256,21 @@ textarea, input {
   .workarea {
     line-height: 1.4; }
   body {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .road-list {
+    font-size: 18px; }
+  .ecosystem__item {
+    font-size: 18px;
+    line-height: 1.4; }
+  .blocks ol li,
+  .optimization__in {
+    line-height: 1.4; }
+  .workarea ul:not(.slick-dots) li:before {
+    top: 10px; }
+  .support ol li {
+    font-size: 18px;
+    line-height: 1.4; }
+  .road-list ol li,
+  .workarea ul:not(.slick-dots) li,
+  .dest__item {
+    padding-left: 40px; } }
