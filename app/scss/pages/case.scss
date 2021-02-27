@@ -217,27 +217,24 @@
 }
 
 .p-roadmap__item{
-	    padding: 0 15px;
-    flex-grow: 1;
-    // min-width: 264px;
-    min-width: 20%;
-     max-width: 275px;
-    
+	width: 265px;
+    min-width: 265px;
+    max-width: 265px;
+    margin-right: 60px;
     margin-bottom: 20px;
 }
 .p-roadmap__in{
 	background: #fff;
     border-radius: 50%;
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 23px;
     //min-height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 30px 10px;
-    min-height: 245px;
+    min-height: 265px;
 }
 .p-roadmap__top{
 
@@ -998,7 +995,7 @@
 				content: counters(list_2, ".");
 				position: absolute;
 				left: 2px;
-    			top: -2px;
+    			top: 1px;
 				color: #fff;
 				font-size: 18px;
 				line-height: 1;

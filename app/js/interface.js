@@ -1,8 +1,6 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
-	// $("body").on("click", ".test", function(e){
-	// 	e.preventDefault();
-	// })
+
 	//POPUP-VIDEO
     $(".js-play-btn").fancybox({
         speed : 330,
@@ -218,7 +216,10 @@ $(document).ready(function() {
         });
     }
 
-    
+    $("body").on("click", ".top-nav.active .top-nav__item.m-sub", function(e){
+		$(this).find('.submenu').slideToggle();
+        $(this).toggleClass('toggled');
+	})
 });
 
 function setHeight() {

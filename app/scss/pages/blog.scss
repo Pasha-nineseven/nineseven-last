@@ -1,0 +1,116 @@
+.blog-wrap{
+    margin-right: -66px;
+    column-count:2;
+}
+
+.blog-item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
+    padding-right: 66px;
+    // width: 50%;
+    width: 100%;
+    margin-bottom: 48px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    
+    &.m-complex{
+        //width: 50%;
+        //padding: 0;
+        //margin-right: -66px;
+        //display: flex;
+        .blog-wrapper{
+            display: flex;
+            //margin-right: -66px;
+        }
+        .blog-title{
+            font-size: 24px;
+        }
+        .blog-in{
+            padding-right: 66px;
+        }
+    }
+    .aside-item{
+        &.m-flex{
+            align-items: center;
+        }
+        .aside-item__img {
+            width: 36px;
+            min-width: 36px;
+            height: 36px;
+            margin-right: 20px;
+            margin-top: 0;
+        }
+    }
+    
+}
+.blog-in{
+    display: block;
+    width: 100%;
+    padding-bottom: 62px;
+    border-bottom: 1px solid #F6F4F2;
+    //border-bottom: 1px solid red;
+    color: #141414;
+    &:hover{
+        .blog-title{
+            color: #E4002B;
+        }
+    }
+}
+
+.blog-img{
+    display: inline-block;
+    background: #F6F4F2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 26px;
+    img{
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.blog-hash{
+    color: #E4002B;
+    margin-bottom:11px;
+    font-size: 18px;
+}
+.blog-title{
+    font-size: 36px;
+    font-family: 'circe-bold';
+    margin-bottom: 7px;
+    transition: color .3s ease;
+}
+.blog-info{
+    font-size: 24px;
+    margin-bottom: 26px;
+    max-width: 670px;
+}
+
+.blog-more{
+    font-size: 18px;
+    padding-top: 15px;
+    span{
+        color: #E4002B;
+    }
+}
+
+.news-in{
+    &.m-blog{
+        .blog-wrap{
+            display: flex;
+            flex-wrap:wrap;
+            column-count:1;
+        }
+        .blog-item{
+            width: 50%;
+        }
+        .blog-title{
+            line-height: 1.15;
+        }
+        .blog-in{
+            border-bottom: 0;
+        }
+    }
+}
