@@ -104,6 +104,8 @@
 	pointer-events: none;
 	transition: opacity .3s ease;
 	background: #fff;
+	width: 100%;
+    min-width: 100%;
 }
 .submenu__link{
 	display: block;
@@ -159,5 +161,20 @@
 	}
 	&:after{
 		top: 8px;
+	}
+}
+
+.top-nav-toggle{
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background: url(../img/svg/sub.svg) center no-repeat;
+    cursor: pointer;
+    background-size: 17px 17px;
+	transition: all .3s ease;
+	&.toggled{
+		background: url(../img/svg/sub-h.svg) center no-repeat;
+		background-size: 17px 17px;
 	}
 }

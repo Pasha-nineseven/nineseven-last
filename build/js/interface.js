@@ -216,9 +216,9 @@ $(document).ready(function() {
         });
     }
 
-    $("body").on("click", ".top-nav.active .top-nav__item.m-sub", function(e){
-		$(this).find('.submenu').slideToggle();
-        $(this).toggleClass('toggled');
+    $("body").on("click", ".top-nav.active .top-nav__item.m-sub .top-nav-toggle", function(e){
+		$(this).parents('.top-nav__item').find('.submenu').slideToggle();
+        $(this).parents('.top-nav__item').toggleClass('toggled');
 	})
 });
 
