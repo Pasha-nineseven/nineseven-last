@@ -1,0 +1,24 @@
+@import "variables";
+
+// Подключение нужных SCSS исходников Bootstrap
+@import "bootstrap/normalize";
+@import "bootstrap/grid";
+
+@import "components/body";
+@import "components/workarea";
+@import "components/header";
+
+// Подключение своих SCSS файлов
+@import "style";
+
+
+//PAGES
+@import "pages/case";
+@import "pages/blog";
+
+//COMPONENTS
+@import "components/footer";
+@import "components/media";
+
+
+
