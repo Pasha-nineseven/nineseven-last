@@ -1,9 +1,9 @@
 //links pages
 $('body').append(
 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
+		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none;font-size:14px" onclick="$(this).parent().hide()">Close X</a> \
 	<style> \
-		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
+		#pages { padding: 10px 20px 0 50px; font-size: 14px; } \
 		#pages a { text-decoration: none; } \
 		#pages li { margin: 5px 0; } \
 	</style> \
@@ -34,5 +34,8 @@ $('body').append(
 		<li><a href="blog.html">Blog</a></li> \
 		<li><a href="blog-in.html">Blog-in</a></li> \
 		<li><a href="case-santa.html">Case-santa</a></li> \
+		<li><a href="case-antarion.html">Case-antarion</a></li> \
+		<li><a href="case-atlantm.html">Case-atlantm</a></li> \
+		<li><a href="case-18mts.html">Case-18mts</a></li> \
 	</ol> \
 </div>');

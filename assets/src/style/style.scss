@@ -811,6 +811,14 @@
 .page-services__list{
   display: flex;
   margin-right: -30px;
+  &.m-task{
+    flex-wrap:wrap;
+    margin-bottom: 50px;
+    .page-services__col{
+      width: 50%;
+      margin-bottom: 20px;
+    }
+  }
 }
 .page-services__col{
   width: 33.333%;
@@ -2514,7 +2522,10 @@
   }
 }
 .info-pre{
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  &.m-half{
+    max-width: 50%;
+  }
 }
 
 .complex-img{
