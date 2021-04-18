@@ -13,6 +13,7 @@ $('body').append(
 		<li><a href="services1.html">Services1</a></li> \
 		<li><a href="services2.html">Services2</a></li> \
 		<li><a href="services3.html">Services3</a></li> \
+		<li><a href="services4.html">Services4</a></li> \
 		<li><a href="work.html">Work</a></li> \
 		<li><a href="case-abamet.html">Case-abamet</a></li> \
 		<li><a href="case-vw.html">Case-vw</a></li> \
@@ -37,5 +38,6 @@ $('body').append(
 		<li><a href="case-antarion.html">Case-antarion</a></li> \
 		<li><a href="case-atlantm.html">Case-atlantm</a></li> \
 		<li><a href="case-18mts.html">Case-18mts</a></li> \
+		<li><a href="branch.html">Branch</a></li> \
 	</ol> \
 </div>');

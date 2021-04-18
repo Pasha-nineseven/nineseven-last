@@ -31,6 +31,7 @@
         }
     }
     .aside-item{
+        
         &.m-flex{
             align-items: center;
         }
@@ -49,13 +50,16 @@
     width: 100%;
     padding-bottom: 62px;
     border-bottom: 1px solid #F6F4F2;
-    //border-bottom: 1px solid red;
     color: #141414;
     &:hover{
         .blog-title{
             color: #E4002B;
         }
     }
+    .aside-edition{
+        margin: 20px 0;
+    }
+
 }
 
 .blog-img{
@@ -112,5 +116,18 @@
         .blog-in{
             border-bottom: 0;
         }
+    }
+}
+
+.aside-edition{
+    margin-bottom: 35px;
+    img{
+        display: block;
+    }
+}
+.aside-edition__link{
+    display: block;
+    img{
+        display: block;
     }
 }

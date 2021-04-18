@@ -97,7 +97,10 @@
 .plan{
 	background: #F6F4F2;
 	margin-bottom: 70px;
-	padding: 65px 0;
+	padding: 80px 0 60px;
+	h2{
+		margin-bottom: 45px;
+	}
 	.recommend-slider-wrap{
 		padding-left: 0;
 		max-width: 1020px;
@@ -199,6 +202,7 @@
 			margin-bottom: 0;
 		}
 	}
+	
 }
 
 
@@ -674,7 +678,9 @@
 	margin-bottom: 40px;
 }
 .plan-txt__item{
-
+	h4{
+		margin-bottom: 33px;
+	}
 }
 
 .arrow-top{
