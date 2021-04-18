@@ -295,6 +295,9 @@
 	.techno__pre .get-in {
 		right: -115px;
 	}
+	.modern-more-mess {
+		padding: 20px;
+	}
 }
 
 @media screen and (max-width: 1400px){
@@ -443,6 +446,12 @@
 	}
 }
 
+
+@media screen and (max-width: 1350px){
+	.t-benefits__img {
+		height: 300px;
+	}
+}
 @media screen and (max-width: 1320px){
 	.industries-slider {
 		padding-left: 135px;
@@ -1036,6 +1045,24 @@
 	.incut-version__txt {
 		font-size: inherit;
 		line-height: inherit;
+	}
+	.t-benefits__item {
+		margin-bottom: 40px;
+	}
+	.t-benefits__title{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.t-benefits__img {
+		min-height: 215px;
+	}
+	.plan{
+		&+.recommend{
+			padding-top: 0;
+		}
+	}
+	.modern-more-mess{
+		font-size: inherit;
 	}
 }
 
@@ -2453,16 +2480,34 @@
 		margin-bottom: 40px;
 	}
 	.plan{
-		
-			.plan-img {
-				margin-bottom: 20px;
-				height: 80px;
-				width: 100px;
-				img{
-					max-height: 100%;
-				}
+		.plan-img {
+			margin-bottom: 20px;
+			height: 80px;
+			width: 100px;
+			img{
+				max-height: 100%;
 			}
-	
+		}
+	}
+	.recommend-slider__img {
+		width: 100px;
+		min-width: 100px;
+		height: 100px;
+	}
+	.recommend-slider__info {
+		padding-left: 65px;
+	}
+	.recommend-slider .slick-dots {
+		margin: 25px 0 0 0;
+		padding-left: 65px;
+	}
+	.t-benefits__title {
+		font-size: 24px;
+	}
+	.t-benefits__img {
+		min-height: auto;
+		height: 200px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -2663,10 +2708,7 @@
 		width: 170px;
 		height: 170px;
 	}
-	.cases-add {
-		bottom: 0px;
-		padding: 20px;
-	}
+	
 	.realize__item{
 		width: 100%;
 		padding-right: 0;
@@ -2757,13 +2799,6 @@
 	    height: 13px;
 	    background-size: contain;
 	    left: 5px;
-	}
-	.recommend-slider__img {
-	       width: 100%;
-	    min-width: 100%;
-	    height: 60px;
-	    margin-right: 0;
-	    margin-bottom: 20px;
 	}
 	.recommend-slider__info {
 	    padding-top: 0;
@@ -3064,5 +3099,34 @@
 	}
 	.cases-more__icon {
 		margin-bottom: 15px;
+	}
+	.t-benefits__wrap {
+		margin-right: 0;
+	}
+	.t-benefits__item {
+		margin-bottom: 20px;
+		padding-right: 0;
+		width: 100%;
+	}
+	.modern__txt{
+		max-width: 100%;
+	}
+	.optimal-img__more{
+		font-size: 18px;
+	}
+	.optimal-img__more:before {
+		width: 105px;
+		height: 105px;
+		left: -65px;
+	}
+	.cases-add {
+		bottom: 0px;
+		padding: 20px;
+		position: relative;
+	}
+	.cases__title{
+		br{
+			display: none;
+		}
 	}
 }
