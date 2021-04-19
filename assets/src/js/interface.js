@@ -241,7 +241,7 @@ $(document).ready(function() {
     };
 
     if($('.index-top-services__item').length>0){
-        $('.index-top-services__item').cycle(3000, 'active');
+        $('.index-top-services__item').cycle(2000, 'active');
     }
     //INDEX_TOP_SLIDER
     if ($( ".index-top-slider-wrap" ).length>0) {
@@ -305,7 +305,7 @@ $(document).ready(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: false,
-            variableWidth: true,
+            // variableWidth: true,
             centerMode:true,
             speed: 250,
             autoplay: true,

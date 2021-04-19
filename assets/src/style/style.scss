@@ -2872,6 +2872,11 @@
 	justify-content: center;
 	border-radius: 8px;
 	overflow: hidden;
+	&:hover{
+		.index-video__bg{
+			transform: scale(1.08);
+		}
+	}
 }
 .index-video__bg{
 	position: absolute;
@@ -2882,6 +2887,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	transition: transform .3s ease;
 	&:before{
 		content: "";
 		display: block;
