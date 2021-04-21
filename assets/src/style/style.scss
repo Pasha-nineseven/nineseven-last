@@ -2992,6 +2992,10 @@
 		padding: 0 45px 0 0;
 	}
 }
+	.modern__item-three{
+		width: 33%;
+}
+
 .modern__txt{
 	font-size: 24px;
     line-height: 1.42;
@@ -3027,6 +3031,10 @@
 		position: relative;
 		z-index: 2;
 	}
+}
+
+.modern__txt-three{
+	max-width: 400px;
 }
 
 .audit{
