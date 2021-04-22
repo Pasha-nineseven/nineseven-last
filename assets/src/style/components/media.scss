@@ -3126,3 +3126,19 @@
 		}
 	}
 }
+@media screen and (max-width:500px){
+	.page-footer__item {
+		margin-right: 0;
+		width: 100%;
+	}
+	.page-footer__b {
+		flex-wrap: wrap;
+		padding-right: 60px;
+	}
+	.page-footer-socials {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		right: 20px;
+	}
+}
