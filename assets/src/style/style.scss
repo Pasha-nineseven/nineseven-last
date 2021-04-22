@@ -2987,6 +2987,10 @@
 		padding: 0 45px 0 0;
 	}
 }
+	.three-in-row{
+		width: 33% !important;
+}
+
 .modern__txt{
 	font-size: 24px;
     line-height: 1.42;
@@ -3022,6 +3026,10 @@
 		position: relative;
 		z-index: 2;
 	}
+}
+
+.modern__txt-three{
+	max-width: 400px;
 }
 
 .audit{
@@ -3218,6 +3226,7 @@
 .cases-more__item{
 	width: 25%;
 	padding-right: 29px;
+	padding-bottom: 20px;
 }
 .cases-more__in{
 	width: 100%;
@@ -3239,8 +3248,9 @@
 }
 .cases-more__title{
 	font-size: 36px;
-	margin-bottom: 6px;
+	margin-bottom: 20px;
 	font-family: 'circe-bold';
+	line-height: 1.1;
 }
 .cases-more__txt{
 
