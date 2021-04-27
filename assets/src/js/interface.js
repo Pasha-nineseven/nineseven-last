@@ -244,7 +244,7 @@ $(document).ready(function() {
     if($('.index-top-services__item').length>0){
         var interval;
         var slides = $('.index-top-services__item'),
-        counter = 0;
+        counter = 1;
         slides.eq(0).addClass('active');
         $('.index-top-services__item').on('mouseenter touchstart', function() {
             clearInterval(interval);
