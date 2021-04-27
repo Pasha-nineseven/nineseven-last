@@ -41,7 +41,7 @@ $(document).ready(function() {
     };
 
 
-    //REC slider
+    //sentence-dealer slider
     if ($( ".sentence-dealer__slider" ).length>0) {
         var $slider_sntnc = $('.sentence-dealer__slider');
         $slider_sntnc.slick({
@@ -205,16 +205,6 @@ $(document).ready(function() {
 
 
 
-    if ($('.news-in').length>0) {
-        $('.news-in a').each(function() {
-            var l_host = new RegExp('/' + window.location.host + '/');
-            if (!l_host.test(this.href) && this.href.indexOf('http://daily.mango.rocks/') !== 0) {
-                $(this).attr("target","_blank");
-                $(this).attr("rel","nofollow");
-            }
-        });
-    }
-
     $("body").on("click", ".top-nav.active .top-nav__item.m-sub .top-nav-toggle", function(e){
 		$(this).parents('.top-nav__item').find('.submenu').slideToggle();
         $(this).parents('.top-nav__item').toggleClass('toggled');
@@ -237,14 +227,25 @@ $(document).ready(function() {
             pauseOnHover:false,
             infinite:true,
         });
+        $slider_in.slick('slickPause');
 
+        $(window).scroll(function() {
+            var hT = $slider_in.offset().top,
+                hH = $slider_in.outerHeight(),
+                wH = $(window).height(),
+                wS = $(this).scrollTop();
+            if (wS > (hT+hH-wH)){
+                // console.log('play')
+                $slider_in.slick('slickPlay');
+            }
+         });
     };
 
     if($('.index-top-services__item').length>0){
         var interval;
         var slides = $('.index-top-services__item'),
         counter = 0;
-
+        slides.eq(0).addClass('active');
         $('.index-top-services__item').on('mouseenter touchstart', function() {
             clearInterval(interval);
             slides.removeClass('active');  
@@ -260,15 +261,15 @@ $(document).ready(function() {
                 counter++;
     
                 if (counter == slides.length) counter = 0;
-            }, 2000);
+            }, 3000);
         });
         interval = setInterval(function(){
             slides.removeClass('active');
             slides.eq(counter).addClass('active');
             counter++;
-
             if (counter == slides.length) counter = 0;
-        }, 2000);
+        }, 3000);
+        
         
     }
     //INDEX_TOP_SLIDER
@@ -288,7 +289,8 @@ $(document).ready(function() {
             arrows:false,
             focusOnSelect: true,
             autoplay: true,
-            autoplaySpeed: 3500,
+            autoplaySpeed: 2500,
+            pauseOnHover:false,
             responsive: [
                 {
                     breakpoint: 1300,
@@ -337,7 +339,7 @@ $(document).ready(function() {
             centerMode:true,
             speed: 250,
             autoplay: true,
-            autoplaySpeed: 3500,
+            autoplaySpeed: 3000,
         });
     };
 
