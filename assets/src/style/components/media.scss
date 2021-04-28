@@ -2505,6 +2505,9 @@
 		height: 200px;
 		margin-bottom: 20px;
 	}
+	.three-in-row{
+		width: 50% !important;
+	}
 }
 
 @media screen and (max-width:700px){
@@ -3124,6 +3127,9 @@
 		br{
 			display: none;
 		}
+	}
+	.three-in-row{
+		width: 100% !important;
 	}
 }
 @media screen and (max-width:500px){
