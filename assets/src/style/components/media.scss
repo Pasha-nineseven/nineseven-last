@@ -2686,6 +2686,9 @@
 		&:last-child{
 			margin-bottom: 0;
 		}
+		&.slick-cloned{
+			display: none;
+		}
 	}
 	.industries__txt {
 		max-width: 100%;

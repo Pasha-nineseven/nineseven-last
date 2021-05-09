@@ -340,6 +340,14 @@ $(document).ready(function() {
             speed: 250,
             autoplay: true,
             autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        autoplay: false,
+                    }
+                },
+            ]
         });
     };
 
