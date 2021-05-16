@@ -398,6 +398,33 @@ $(document).ready(function() {
         });
 
 	};
+
+
+
+    //TEMPLATE SLIDER
+    if ($( ".template-slider" ).length>0) {
+        var $slider_t = $('.template-slider');
+
+        $slider_t.slick({
+            dots: true,
+            arrows:false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            // variableWidth:true,
+            // speed: 250,
+            // autoplay: true,
+            // autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        // autoplay: false,
+                    }
+                },
+            ]
+        });
+    };
 });
 
 function setHeight() {

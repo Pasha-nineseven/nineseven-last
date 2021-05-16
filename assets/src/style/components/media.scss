@@ -933,6 +933,9 @@
 	.template__info {
 	    width: 300px;
 	    min-width: 300px;
+		&.m-lg{
+			margin-right: 20px;
+		}
 	}
 
 	.public-sqheme {
@@ -1826,6 +1829,10 @@
 	    min-width: 100%;
 	    padding-right: 0;
 	    margin-bottom: 20px;
+		&.m-lg{
+			width: 100%;
+			min-width: 100%;
+		}
 	}
 	.template__wrap{
 		flex-wrap:wrap;
@@ -2507,6 +2514,12 @@
 	}
 	.three-in-row{
 		width: 50% !important;
+	}
+	.case-compare__img.m-right{
+		display: block;
+	}
+	.template__wrap.m-proto .template-outwards {
+		margin-left: 0;
 	}
 }
 
