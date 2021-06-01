@@ -479,6 +479,9 @@
 			padding: 85px;
 		}
 	}
+	&+.recommend{
+		padding-top: 15px;
+	}
 }
 .order__txt__in{
 	max-width: 1045px;
@@ -868,6 +871,9 @@
 }
 
 .platform-img{
+	min-height: 67px;
+    display: inline-flex;
+    align-items: center;
 	margin-bottom: 30px;
 	img{
 		display: block;

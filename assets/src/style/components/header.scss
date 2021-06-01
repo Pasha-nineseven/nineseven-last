@@ -28,7 +28,8 @@
 .top-logo-msg{
 	font-size: 24px;
 	color: #E4002B;
-	margin-left: 130px;
+	margin-left: 135px;
+	line-height: 0.8;
 }
 
 .top-nav{
@@ -96,7 +97,7 @@
 	color: #E4002B;
 	transition: color .3s ease;
 	border-top: 2px solid transparent;
-	padding-top: 20px;
+	padding-top: 22px;
 	&:hover{
 		color: #90001B;
 	}

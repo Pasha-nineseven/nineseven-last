@@ -40,5 +40,14 @@ $('body').append(
 		<li><a href="case-18mts.html">Case-18mts</a></li> \
 		<li><a href="branch.html">Branch</a></li> \
 		<li><a href="case-megatop.html">Case-megatop</a></li> \
+		<li><a href="ecommerce-consult.html">Консалтинг</a></li> \
+		<li><a href="develop-im.html">разработка</a></li> \
+		<li><a href="analytics.html">Аналитика</a></li> \
+		<li><a href="email.html">емеил-маркетинг</a></li> \
+		<li><a href="support.html">техподдержка</a></li> \
+		<li><a href="branch-autodealer.html">отр-автодилеры</a></li> \
+		<li><a href="branch-retail.html">отр-ретейл</a></li> \
+		<li><a href="branch-telecom.html">отр-телеком</a></li> \
+		<li><a href="branch-finance.html">отр-финансы</a></li> \
 	</ol> \
 </div>');
