@@ -2825,12 +2825,15 @@
 	.industries-slider{
 		padding-right: 0;
     	margin-bottom: 30px;
+		// .slick-list{
+		// 	transform: none;
+		// }
+		// .slick-track{
+		// 	width: 100%!important;
+		// 	transform: none!important;
+		// }
 		.slick-list{
-			transform: none;
-		}
-		.slick-track{
-			width: 100%!important;
-			transform: none!important;
+			overflow: hidden;
 		}
 	}
 	.index-industries{
@@ -2850,9 +2853,9 @@
 		&:last-child{
 			margin-bottom: 0;
 		}
-		&.slick-cloned{
-			display: none;
-		}
+		// &.slick-cloned{
+		// 	display: none;
+		// }
 	}
 	.industries__txt {
 		max-width: 100%;
@@ -2908,6 +2911,12 @@
 	.plan .plan-img {
 		height: auto;
 		width: auto;
+	}
+	.mobile-target{
+		pointer-events: all;
+	}
+	.cases-more__title {
+		margin-bottom: 12px;
 	}
 }
 
