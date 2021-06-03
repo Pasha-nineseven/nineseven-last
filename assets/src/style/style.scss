@@ -3420,6 +3420,18 @@
 			padding: 0 40px;
 		}
 	}
+	&.m-sqheme{
+		padding: 80px;
+		img{
+			display: block;
+			max-width: 100%;
+		}
+	}
+	.template{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
 }
 .optimal-img__more{
 	max-width: 230px;

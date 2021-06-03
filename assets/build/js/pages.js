@@ -49,5 +49,6 @@ $('body').append(
 		<li><a href="branch-retail.html">отр-ретейл</a></li> \
 		<li><a href="branch-telecom.html">отр-телеком</a></li> \
 		<li><a href="branch-finance.html">отр-финансы</a></li> \
+		<li><a href="case-mtbank.html">case-mtbank</a></li> \
 	</ol> \
 </div>');
