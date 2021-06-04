@@ -2158,7 +2158,9 @@
 .news-in__col{
   padding-right: 165px;
   order: 1;
-  overflow: hidden;
+  //overflow: hidden;
+	width: 100%;
+	min-width: 0; 
   flex: 1;
   font-family: 'circe-regular', Arial, sans-serif;
   q{
@@ -2211,7 +2213,7 @@
   }
   img{
 	  max-width: 100%;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
   }
 }
 
