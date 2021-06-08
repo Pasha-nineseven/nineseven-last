@@ -320,6 +320,11 @@
 	.modern-more-mess {
 		padding: 20px;
 	}
+	.page-footer-socials__title {
+		font-size: 20px;
+		line-height: 26px;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 1400px){
@@ -3352,12 +3357,27 @@
 	}
 	.page-footer__b {
 		flex-wrap: wrap;
-		padding-right: 60px;
+	}
+	.page-footer__wrap {
+		flex-wrap: wrap;
 	}
 	.page-footer-socials {
 		display: flex;
 		position: absolute;
-		bottom: 0;
-		right: 20px;
+		bottom: 57px;
+		left: 20px;
+	}
+	.copyright {
+		margin-top: 25px;
+		max-width: 280px;
+	}
+	.page-footer-socials__title{
+		margin: 0 15px 0 0;
+	}
+	.page-footer-socials__item{
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
 	}
 }

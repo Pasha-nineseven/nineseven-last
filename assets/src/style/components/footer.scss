@@ -17,13 +17,17 @@
 
 
 .page-footer-socials{
+	text-align: center;
+}
+.page-footer-socials__wrap{
 	display: flex;
+	justify-content: center;
 }
 
 .page-footer-socials__item{
-	width: 26px;
-	height: 26px;
-	margin-right: 25px;
+	width: 27px;
+	height: 27px;
+	margin-right: 37px;
 	transition: background .3s ease;
 	position: relative;
 	&:last-child{
@@ -31,45 +35,60 @@
 	}
 	&.m-insta{
 		span{
-			background: url(../img/svg/insta.svg) center no-repeat;
+			background: url(../img/svg/insta.svg) center/contain no-repeat;
 		}
 		&:hover{
 			span{
-				background: url(../img/svg/insta.svg) center no-repeat;
+				background: url(../img/svg/insta.svg) center/contain no-repeat;
 			}
 			&:after{
 				opacity: 1;
 				visibility: visible;
-				transform: translateY(-50%) scale(1);
+				transform: translate(-50%,-50%) scale(1);
 			}
 		}
 	}
 	&.m-fb{
 		span{
-			background: url(../img/svg/fb.svg) center no-repeat;
+			background: url(../img/svg/fb.svg) center/contain no-repeat;
 		}
 		&:hover{
 			span{
-				background: url(../img/svg/fb.svg) center no-repeat;
+				background: url(../img/svg/fb.svg) center/contain no-repeat;
 			}
 			&:after{
 				opacity: 1;
 				visibility: visible;
-				transform: translateY(-50%) scale(1);
+				transform: translate(-50%,-50%) scale(1);
+			}
+		}
+	}
+	&.m-tg{
+		span{
+			background: url(../img/svg/tg.svg) center/contain no-repeat;
+		}
+		&:hover{
+			span{
+				background: url(../img/svg/tg.svg) center/contain no-repeat;
+			}
+			&:after{
+				opacity: 1;
+				visibility: visible;
+				transform: translate(-50%,-50%) scale(1);
 			}
 		}
 	}
 	&:after{
 	    content: "";
 	    display: block;
-	    width: 72px;
-	    height: 72px;
+	    width: 55px;
+	    height: 55px;
 	    background: #fff;
 	    border-radius: 50%;
 	    position: absolute;
-	    left: -23px;
+	    left: 50%;
 	    top: 50%;
-	    transform: translateY(-50%) scale(0);
+	    transform: translate(-50%,-50%) scale(0);
 	    z-index: 0;
 	    opacity: 0;
 	    visibility: hidden;
@@ -235,4 +254,12 @@
 	&:hover{
 		color: #000;
 	}
+}
+
+.page-footer-socials__title{
+	font-size: 24px;
+	color: #FFFFFF;
+	margin-bottom: 24px;
+	font-family: circe-bold;
+	white-space: nowrap;
 }
