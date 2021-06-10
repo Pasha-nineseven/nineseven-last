@@ -3360,22 +3360,27 @@
 	}
 	.page-footer__wrap {
 		flex-wrap: wrap;
+		width: 100%;
 	}
 	.page-footer-socials {
 		display: flex;
+		flex-wrap:wrap;
 		position: absolute;
-		bottom: 57px;
+		bottom: 60px;
 		left: 20px;
 	}
 	.copyright {
-		margin-top: 25px;
+		margin-top: 60px;
 		max-width: 280px;
 	}
 	.page-footer-socials__title{
-		margin: 0 15px 0 0;
+		margin: 0;
+    	width: 100%;
+		text-align: left;
+		margin-bottom: 10px;
 	}
 	.page-footer-socials__item{
-		margin-right: 10px;
+		margin-right: 20px;
 		&:last-child{
 			margin-right: 0;
 		}
