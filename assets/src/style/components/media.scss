@@ -243,6 +243,17 @@
 	.p-roadmap__image {
 		margin-top: -120px;
 	}
+	.s-services__title {
+		margin-bottom: 20px;
+		font-size: 32px;
+		min-height: 70px;
+	}
+	.s-services__in {
+		padding: 20px 20px 50px;
+	}
+	.s-services__item {
+		min-height: 420px;
+	}
 }
 
 @media screen and (max-width: 1450px){
@@ -907,6 +918,10 @@
 	.modern__list{
 		margin-right: 0;
 	}
+	.s-services__item {
+		width: 50%;
+		min-height: 390px;
+	}
 }
 
 @media screen and (max-width: 1024px){
@@ -1166,6 +1181,12 @@
 	}
 	.plan.m-sqheme {
 		padding: 40px;
+	}
+	.s-services__item {
+		min-height: 350px;
+	}
+	.s-services__more{
+		margin-bottom: 30px;
 	}
 }
 
@@ -2699,6 +2720,36 @@
 	}
 	.p-news__item {
 		width: 50%;
+	}
+	.s-services__item {
+		min-height: auto;
+		width: 100%;
+		padding-right: 0;
+	}
+	.s-services__list{
+		margin-right: 0;
+	}
+	.s-services__title{
+		min-height: inherit;
+	}
+	.s-services__more {
+		margin-bottom: 20px;
+		min-height: inherit;
+	}
+	.s-services-client{
+		margin-bottom: 0;
+	}
+	.s-services-arr{
+		bottom: 25px;
+	}
+	.s-services-client__item {
+		margin: 0 15px 15px 0;
+	}
+	.s-services-arr {
+		width: 110px;
+	}
+	.s-services__item:hover .s-services-arr {
+		width: 170px;
 	}
 }
 
