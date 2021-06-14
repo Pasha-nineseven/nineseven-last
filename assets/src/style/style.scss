@@ -3585,6 +3585,9 @@
 		max-height: 100%;
 		display: block;
 	}
+	&.m-bottom{
+		align-items: flex-end;
+	}
 }
 .t-benefits__title{
 	font-size: 36px;
@@ -3726,6 +3729,11 @@
 	border-radius: 8px;
 	padding: 30px 50px;
 	width: 540px;
+	&.m-dashed{
+		background: transparent;
+		border: 3px dashed #e4002b;
+		padding: 30px;
+	}
 }
 
 .infogr__img{
@@ -3819,5 +3827,21 @@
 		background: url(../img/svg/arr.svg) center no-repeat;
 		background-size: cover;
 		margin: -0.05px 0 0 -3.5px;
+	}
+}
+
+.ya-share2__container ul li:before,
+.ya-share2__container ul:not(.slick-dots) li:before{
+	display: none!important;
+}
+
+
+.news-in__col{
+	h2,h3,h4{
+		>p{
+			font-size: inherit;
+			font-family: inherit;
+			margin-bottom: inherit;
+		}
 	}
 }
