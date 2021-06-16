@@ -1188,8 +1188,11 @@
 	.s-services__more{
 		margin-bottom: 30px;
 	}
-	.p-news__in{
-		padding: 30px;
+	.p-news__title{
+		margin-bottom: 30px;
+		.m-cover &{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -3027,6 +3030,9 @@
 	.sentence-dealer.m-wrap .dealer-link {
 		width: auto;
 		margin-bottom: 20px;
+	}
+	.p-news__add{
+		margin-bottom: 30px;
 	}
 }
 
