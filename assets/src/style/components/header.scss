@@ -99,7 +99,7 @@
 	border-top: 2px solid transparent;
 	padding-top: 22px;
 	&:hover{
-		color: #90001B;
+		color: #141414;
 	}
 }
 
@@ -189,5 +189,18 @@
 	&.toggled{
 		background: url(../img/svg/sub-h.svg) center no-repeat;
 		background-size: 17px 17px;
+	}
+}
+
+.top-search{
+	display: inline-block;
+	min-width: 25px;
+	width: 25px;
+    height: 25px;
+    background: url(../img/svg/search-h.svg) center no-repeat;
+    transition: background .3s ease;
+	margin: 30px 40px 0 10px;
+	&:hover{
+		background: url(../img/svg/t-search-h.svg) center no-repeat;
 	}
 }
