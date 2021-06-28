@@ -254,6 +254,9 @@
 	.s-services__item {
 		min-height: 420px;
 	}
+	// .top-search-form {
+	// 	width: 74%;
+	// }
 }
 
 @media screen and (max-width: 1450px){
@@ -1213,6 +1216,13 @@
 	.search-form__wrap input[type=submit]{
 		top: 15px;
 	}
+	.top-search-form{
+		input[type=submit]{
+			.page-header &{
+				top: 13px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -1516,6 +1526,9 @@
 	.top-search {
 		margin: 24px 10px 0 0;
 	}
+	// .top-search-form {
+	// 	top: 12px;
+	// }
 }
 
 @media screen and (max-width: 900px){
@@ -2860,6 +2873,9 @@
 	}
 	.search-form__wrap input[type=submit]{
 		top: 11px;
+	}
+	.top-search-wrap{
+		display: none;
 	}
 }
 

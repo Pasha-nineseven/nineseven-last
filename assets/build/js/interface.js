@@ -18,6 +18,16 @@ $(document).ready(function() {
         $('body').toggleClass('hidden');
     });
 
+    //SEARCH
+    $('body').on('click','.top-search', function(e){
+        e.preventDefault();
+        $('.top-search-form').addClass('active');
+    });
+    $('body').on('click','.search-form__close', function(e){
+        e.preventDefault();
+        $('.top-search-form').removeClass('active');
+    });
+
 
     //REC slider
     if ($( ".recommend-slider" ).length>0) {
