@@ -2486,7 +2486,7 @@
   display: inline-flex;
   align-items: center;
   color: #E4002B;
-  margin: 65px 0;
+  margin: 50px 0;
   font-family: 'circe-regular', Arial, sans-serif;
   &:before{
 	  content: "";
@@ -4153,5 +4153,26 @@
 	&.active{
 		color: #e4002b;
 		pointer-events: none;
+	}
+}
+
+.more-button-wrap{
+	margin: 30px 0;
+	&+.back-section{
+		margin-top:10px;
+	}
+}
+.more-button{
+	display: inline-block;
+	font-size: 24px;
+	color: #141414;
+	font-family: 'circe-bold';
+	border: 3px solid #E4002B;
+	border-radius: 4px;
+	padding: 12px 27px;
+	transition: all .3s ease;
+	&:hover{
+		background: #E4002B;
+		color: #fff;
 	}
 }
