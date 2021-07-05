@@ -2964,7 +2964,7 @@
 .index-top{
 	background: #E4002B;
 	border-radius: 8px;
-	padding: 70px 0 103px;
+	padding: 80px 0;
 	margin-bottom: 95px;
 	color: #fff;
 }
@@ -3080,7 +3080,7 @@
 }
 .index-top-slider-view__txt{
 	font-size: 36px;
-	max-width: 550px;
+	margin-bottom: 73px;
 }
 
 .cases-index{
@@ -4175,4 +4175,13 @@
 		background: #E4002B;
 		color: #fff;
 	}
+}
+
+
+.index-top-services-top{
+	color: #fff;
+	font-size: 22px;
+	font-family: 'circe-bold';
+	margin-bottom: 20px;
+	display: none;
 }
