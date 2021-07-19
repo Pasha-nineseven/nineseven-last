@@ -340,24 +340,20 @@ $(document).ready(function() {
 
         $slider_i.slick({
             infinite: true,
-            dots: false,
+            dots: true,
             arrows:false,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: false,
-            // variableWidth: true,
-            centerMode:true,
             speed: 250,
+            fade: true,
             autoplay: true,
             autoplaySpeed: 3000,
-            // responsive: [
-            //     {
-            //         breakpoint: 600,
-            //         settings: {
-            //             autoplay: false,
-            //         }
-            //     },
-            // ]
+            pauseOnHover: false,
+            customPaging : function(slider, i) {
+                var thumb = $(slider.$slides[i]).find('.slider-nav');
+                return thumb;
+            },
         });
     };
 
