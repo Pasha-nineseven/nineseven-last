@@ -186,7 +186,9 @@
 }
 
 @media screen and (max-width: 1700px){
-
+	.b-analysis__in:after {
+		width: 90px;
+	}
 }
 
 @media screen and (max-width: 1600px){
@@ -532,6 +534,28 @@
 		min-width: 600px;
 		width: 600px;
 	}
+	.b-specialization__title {
+		font-size: 140px;
+		line-height: 110px;
+	}
+	.b-pre__num {
+		font-size: 190px;
+	}
+	.b-pre__title {
+		font-size: 44px;
+	}
+	.b-service-problems__item {
+		margin-bottom: 25px;
+		font-size: 20px;
+		width: 50%;
+	}
+	.b-specialization__img {
+		width: 310px;
+		min-width: 310px;
+	}
+	.b-analysis__in:after {
+		width: 135px;
+	}
 }
 
 
@@ -840,6 +864,52 @@
 	.top-search {
 		margin: 24px 20px 0 0;
 	}
+	.b-top__info {
+		font-size: 20px;
+	}
+	.b-pre {
+		padding-top: 50px;
+	}
+	.b-service__top {
+		padding: 40px 40px 0;
+		margin-bottom: 250px;
+	}
+	.b-service-img {
+		bottom: -180px;
+		margin-top: -200px;
+	}
+	.b-service-problems__list,
+	.b-service-add__img{
+		padding-left: 0;
+	}
+	.b-exp__top {
+		padding: 40px;
+	}
+	.b-service-add__info {
+		font-size: inherit;
+		line-height: inherit;
+	}
+	.b-service-add{
+		padding: 20px;
+	}
+	.b-exp-list{
+		padding-left: 0;
+	}
+	.b-analytics-add__txt {
+		font-size: 28px;
+		max-width: 100%;
+	}
+	.b-analytics-add-special__top{
+		font-size: 28px;
+	}
+	.b-analysis-more p {
+		font-size: inherit;
+		max-width: 100%;
+		margin-bottom: inherit;
+	}
+	.b-analysis-more {
+		padding: 40px;
+	}
 }
 
 @media screen and (max-width: 1150px){
@@ -880,6 +950,17 @@
 	}
 	.design.m-index {
 	    padding: 30px 30px 20px;
+	}
+	.b-analysis__in:after {
+		width: 100px;
+		top: 56px;
+	}
+	.b-analysis__num {
+		font-size: 115px;
+		top: 55px;
+	}
+	.b-analysis__txt {
+		margin: -6px 0 0 0;
 	}
 }
 
@@ -1287,6 +1368,43 @@
 	.industries-view__list {
 		justify-content: space-between;
 		flex-wrap: wrap;
+	}
+	.benefits-pager__link {
+		font-size: 24px;
+		padding-left: 55px;
+		&:before {
+			width: 43px;
+			height: 17px;
+			top: 7px;
+		}
+	}
+	.b-specialization__title {
+		font-size: 95px;
+		line-height: 20px;
+	}
+	.b-top{
+		margin-bottom: 40px;
+	}
+	.b-specialization__txt {
+		font-size: inherit;
+	}
+	.b-specialization__item {
+		width: 50%;
+		padding-right: 25px;
+		margin-bottom: 25px;
+	}
+	.b-exp-item {
+		width: 33.33%;
+		margin-bottom: 40px;
+	}
+	.b-exp-year__item {
+		padding-right: 50px;
+	}
+	.b-exp-year__txt {
+		max-width: 100%;
+	}
+	.b-analysis__txt {
+		font-size: inherit;
 	}
 }
 
@@ -3051,6 +3169,186 @@
 	.page-header{
 		margin-bottom: 0;
 	}
+	.benefits-pager__link {
+		font-size: 20px;
+		padding-left: 40px;
+		&:before{
+			width: 32px;
+			height: 13px;
+			top: 2px;
+		}
+	}
+	.benefits-pager {
+		margin-bottom: 40px;
+	}
+	.b-top__item {
+		width: 100%;
+		&:first-child{
+			margin-bottom: 25px;
+		}
+	}
+	.benefits-pager__item{
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.b-pre{
+		padding-top: 20px;
+	}
+	.b-pre__num {
+		font-size: 100px;
+		line-height: 30px;
+	}
+	.b-pre__title {
+		font-size: 28px;
+	}
+	.b-top__info {
+		font-size: inherit;
+		max-width: 100%;
+	}
+	.b-service-problems__title {
+		font-size: inherit;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	.b-service-add__img {
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 30px;
+		text-align: center;
+		img{
+			display: inline-block;
+		}
+	}
+	.b-service-add__info {
+		width: 100%;
+		max-width: 100%;
+	}
+	.b-service-problems__item {
+		margin-bottom: 25px;
+		font-size: inherit;
+		line-height: inherit;
+		width: 100%;
+		padding: 0 0 0 45px;
+		&:before{
+			width: 25px;
+			height: 25px;
+			top: -4px;
+			background-size: cover;
+		}
+	}
+	.b-service-img {
+		bottom: -135px;
+		margin-top: -185px;
+	}
+	.b-service__top {
+		margin-bottom: 180px;
+	}
+	.b-service,
+	.b-specialization,
+	.b-exp,
+	.b-exp__top,
+	.b-analytics .b-top,
+	.b-analytics{
+		margin-bottom: 40px;
+	}
+	.p-benefits {
+		padding-bottom: 50px;
+	}
+	.b-top {
+		margin-bottom: 40px;
+	}
+	.b-specialization-view {
+		position: relative;
+	}
+	.b-specialization__img {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 100%;
+    	opacity: 0.1;
+		pointer-events: none;
+	}
+	.b-specialization__list{
+		margin-right: 0;
+	}
+	.b-specialization__item {
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 25px;
+	}
+	.b-exp__top .b-top {
+		margin-bottom: 40px;
+	}
+	.b-exp-item{
+		width: 50%;
+	}
+	.b-exp-link {
+		display: flex;
+		justify-content: center;
+		padding: 0 20px;
+	}
+	.b-exp-year__item {
+		padding-right: 0;
+		width: 100%;
+	}
+	.b-exp-year{
+		position: relative;
+		padding-left: 20px;
+		&:after{
+			content: "";
+			background: #f6f4f2;
+			opacity: .3;
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+	}
+	.b-exp-year__item:first-child .b-exp-year__top:after{
+		display: none;
+	}
+	.b-analytics-add-special__top,
+	.b-analytics-add__txt{
+		font-size: 20px;
+	}
+	.b-analytics-add-special {
+		font-size: inherit;
+		max-width: 100%;
+	}
+	.b-analytics-add__item {
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.b-analytics__item {
+		padding: 10px 0 10px 35px;
+		font-size: inherit;
+	}
+	.b-analytics__item:before {
+		top: 9px;
+		font-size: 20px;
+	}
+	.b-exp__top .b-pre__title,
+	.b-analytics .b-pre__title,
+	.b-analysis .b-pre__title{
+		font-size: 28px;
+	}
+	.b-analytics-add-wrap {
+		background-size: contain;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.b-analysis .b-top{
+		margin-bottom: 40px;
+	}
 }
 
 @media screen and (max-width:700px){
@@ -3085,9 +3383,31 @@
 			height: 40px;
 		}
 	}
+	.b-analysis__slider-wrap .s-total {
+		font-size: 18px;
+	}
+	.b-analysis__slider-wrap .s-current {
+		font-size: 24px;
+		line-height: 22px;
+	}
+	.b-analysis__slider{
+		padding-right: 200px;
+		.slick-list{
+			overflow: visible;
+		}
+	}
+	.b-analysis__num {
+		font-size: 80px;
+	}
+	.b-analysis__in:after{
+		top: 40px;
+	}
 }
 
 @media screen and (max-width:600px){
+	.b-analysis__slider {
+		padding-right: 100px;
+	}
 	.recommend-slider__link {
 	    font-size: 18px;
 	    line-height: 22px;
@@ -3301,6 +3621,61 @@
 	}
 	.industries__cat {
 		font-size: 40px;
+	}
+	.benefits-pager__item {
+		width: 100%;
+		margin-bottom: 20px;
+		padding-right: 0;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.benefits-pager__link{
+		font-size: 18px;
+		&:before{
+			top: 4px;
+		}
+	}
+	.b-service-img {
+		bottom: -80px;
+		margin-top: -130px;
+	}
+	.b-service__top {
+		margin-bottom: 120px;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 40px 20px 0;
+	}
+	.b-service-add {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.b-service-add__img {
+		padding: 0 20px;
+	}
+	.b-specialization__title {
+		font-size: 60px;
+		margin-bottom: 45px;
+	}
+	.b-specialization__top {
+		font-size: 20px;
+	}
+	.b-specialization__arr {
+		width: 100px;
+		margin-top:15px;
+	}
+	.b-specialization__link:hover .b-specialization__arr {
+		width: 120px;
+	}
+	.b-exp__top {
+		padding: 20px;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.b-analysis-more {
+		padding: 20px;
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 }
 
@@ -3763,5 +4138,14 @@
 	}
 	.page-footer-sub {
 		padding-top: 20px;
+	}
+}
+
+@media screen and (max-width:400px){
+	.b-specialization__title {
+		font-size: 45px;
+	}
+	.b-analysis__in:after {
+		width: 70px;
 	}
 }

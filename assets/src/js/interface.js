@@ -237,18 +237,6 @@ $(document).ready(function() {
             pauseOnHover:false,
             infinite:true,
         });
-        // $slider_in.slick('slickPause');
-
-        // $(window).scroll(function() {
-        //     var hT = $slider_in.offset().top,
-        //         hH = $slider_in.outerHeight(),
-        //         wH = $(window).height(),
-        //         wS = $(this).scrollTop();
-        //     if (wS > (hT+hH-wH)){
-        //         // console.log('play')
-        //         $slider_in.slick('slickPlay');
-        //     }
-        //  });
     };
 
     if($('.index-top-services__item').length>0){
@@ -387,18 +375,18 @@ $(document).ready(function() {
             // infinite:true,
             responsive: [
 			    {
-			      breakpoint: 1024,
-			      settings: {
-			        slidesToShow: 2,
-            		slidesToScroll: 1,
-			      }
+			        breakpoint: 1024,
+			        settings: {
+			            slidesToShow: 2,
+            		    slidesToScroll: 1,
+			        }
 			    },
 			    {
-			      breakpoint: 576,
-			      settings: {
-			        slidesToShow: 1,
-            		slidesToScroll: 1,
-			      }
+			        breakpoint: 576,
+			        settings: {
+			            slidesToShow: 1,
+            		    slidesToScroll: 1,
+			        }
 			    },
 			]
         });
@@ -417,10 +405,6 @@ $(document).ready(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: false,
-            // variableWidth:true,
-            // speed: 250,
-            // autoplay: true,
-            // autoplaySpeed: 3000,
             responsive: [
                 {
                     breakpoint: 600,
@@ -431,6 +415,60 @@ $(document).ready(function() {
             ]
         });
     };
+    //ANALISIS SLIDER
+	if ($('.b-analysis__slider').length>0) {
+		var $statusTop = $('.b-analysis-pagingInfo .s-current');
+		var $statusTotalTop = $('.b-analysis-pagingInfo .s-total');
+    	var $sliderTop = $('.b-analysis__slider');
+        
+    	$sliderTop.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+            let i = (currentSlide ? currentSlide : 0) + 1;
+            $statusTop.text('0' + i + '/');
+            $statusTotalTop.text('0' + slick.slideCount);
+        });
+	    $sliderTop.slick({
+	        infinite: true,
+	        slidesToShow: 4,
+            slidesToScroll: 1,
+	        lazyLoad: 'progressive',
+	        arrows:true,
+	        useTransform:true,
+	        equalizeHeight: false,
+	        speed: 500,
+	        pauseOnHover:false,
+	        prevArrow: $(".js-top-prev"),
+      		nextArrow: $(".js-top-next"),
+              responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 650,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+            ]
+	    });
+	}
+
+    $('body').on('click','.benefits-pager__link', function(e){
+        e.preventDefault();
+        var aid = $(this).attr("href");
+        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+    });
 });
 
 function setHeight() {
@@ -438,8 +476,6 @@ function setHeight() {
     var height = jqel.attr("data-height");
     jqel.css("height", height);
 }
-
-
 
 $(function() {
     var $animation_elements = $('.animated_el');
