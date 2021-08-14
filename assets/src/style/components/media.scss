@@ -1808,6 +1808,38 @@
 	.t-experience ul:not(.slick-dots) li:before{
 		top: 8px;
 	}
+	.p-architect-txt{
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.t-experience__users {
+		margin-bottom: 30px;
+	}
+	.t-template-in{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.smart-filter{
+		h4{
+			&:empty{
+				display: none;
+			}
+		}
+	}
+	.template-simple__item {
+		margin-bottom: 20px;
+	}
+	.t-template-compare{
+		img{
+			&+.t-template-compare__txt{
+				padding-top: 20px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -3592,6 +3624,14 @@
 	.peculiarities ul:not(.slick-dots) li:before,
 	.t-experience ul:not(.slick-dots) li:before{
 		top: 5px;
+	}
+	.t-template-item__wrap{
+		p{
+			margin-bottom: 18px;
+			&:last-child{
+				margin-bottom: 18px;
+			}
+		}
 	}
 }
 
