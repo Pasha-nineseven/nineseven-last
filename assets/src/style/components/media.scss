@@ -566,6 +566,9 @@
 	.b-analysis__in:after {
 		width: 135px;
 	}
+	.p-architect-indent {
+		padding-left: 160px;
+	}
 }
 
 
@@ -948,7 +951,7 @@
 	}
 	.p-case-top__icon{
 		margin-left: 30px;
-		width: 160px;
+		width: 200px;
 	}
 	.speed__count{
 		font-size: 70px;
@@ -956,6 +959,12 @@
 	.vacanсies-short {
 		width: 370px;
 		min-width: 370px;
+	}
+	.p-case-top__link {
+		font-size: 18px;
+	}
+	.p-architect-indent {
+		padding-left: 0;
 	}
 }
 
@@ -1111,6 +1120,13 @@
 		height: 15px;
 		left: calc(100% - 21px);
 		background-size: contain;
+	}
+	.p-architect__step {
+		width: 33.333%;
+		padding-right: 30px;
+	}
+	.p-architect__num:after{
+		left: -10px;
 	}
 }
 
@@ -1877,6 +1893,31 @@
 		width: 100%;
 		min-width: 100%;
 		margin-bottom: 40px;
+	}
+	.t-collect .t-template__img:last-child {
+		padding-top: 20px;
+	}
+	.incut__inner.m-mb {
+		margin-bottom: 30px;
+		
+	}
+
+	.t-template-item-sm{
+		&.m-bl{
+			.t-template-in{
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	.t-template-item-sm.m-bl ul:not(.slick-dots) li,
+	.workarea ul:not(.slick-dots).m-blue li{
+		padding-left: 30px;
+	}
+	.t-template-item-sm.m-bl ul:not(.slick-dots) li:before,
+	.workarea ul:not(.slick-dots).m-blue li:before{
+		top: 6px;
 	}
 }
 
@@ -3656,7 +3697,11 @@
 	.speed__count {
 		font-size: 40px;
 	}
-	.p-architect, .p-case-top, .smart-filter, .t-experience, .t-template-item-sm, .t-template-item-sm.m-b-padd, .t-template-search {
+	.t-template-item-sm{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.p-architect, .p-case-top, .smart-filter, .t-experience, .t-template-item-sm.m-bl,.t-template-item-sm.m-gr, .t-template-item-sm.m-b-padd, .t-template-search {
 		padding: 20px;
 	}
 	.peculiarities ul:not(.slick-dots) li:before,
@@ -3671,6 +3716,42 @@
 			}
 		}
 	}
+	.p-case-top__link {
+		font-size: inherit;
+		margin-top: 20px;
+	}
+	.p-architect__num {
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.p-architect__step {
+		width: 50%;
+		padding-right: 15px;
+	}
+	.t-template-item-sm.m-bl ul:not(.slick-dots) li:before,
+	.workarea ul:not(.slick-dots).m-blue li:before{
+		top: 2px;
+	}
+	.t-collect {
+		padding: 20px 0;
+	}
+	.t-template-item-sm{
+		&.m-bl{
+			margin-bottom: 20px;
+		}
+	}
+	.t-template-in{
+		br{
+			display: none;
+		}
+	}
+	// .t-template-item-sm:not(.m-bl),
+	// .t-template-item-sm:not(.m-gr){
+	// 	.t-template-in{
+	// 		padding-left: 0;
+	// 		padding-right: 0;
+	// 	}
+	// }
 }
 
 @media screen and (max-width:700px){

@@ -336,6 +336,9 @@
 
 .team{
 	margin-bottom: 40px;
+	h3{
+		margin-bottom: 35px;
+	}
 }
 .team__wrap{
 	display: flex;
@@ -346,12 +349,13 @@
 .team__item{
 	width: 33.333%;
 	padding-right: 20px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 .team__top{
 	font-size: 18px;
 	line-height: 27px;
 	margin-bottom: 6px;
+	color: #C5CDCF;
 }
 .team__person{
 	font-size: 24px;
