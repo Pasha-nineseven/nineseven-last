@@ -54,6 +54,7 @@
 .indent{
   padding-left: calc(8.33333% - 20px);
   padding-right: calc(8.33333% - 20px);
+  width: 100%;
 }
 
 .page-title{
@@ -4022,6 +4023,10 @@ margin-bottom: 60px;
 .mobile-target{
 	display: block;
 	pointer-events: none;
+	img{
+		display: block;
+		max-width: 100%;
+	}
 }
 
 .dropshadow{
