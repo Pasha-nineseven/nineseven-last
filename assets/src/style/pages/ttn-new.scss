@@ -216,13 +216,20 @@
 }
 .t-template__top{
     margin-bottom: 55px;
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 .t-template__img{
     display: flex;
     justify-content: center;
+    width: 100%;
     img{
         display: block;
         max-width: 100%;
+    }
+    &.m-left{
+        justify-content: flex-start;
     }
 }
 .t-template__txt{
@@ -300,6 +307,10 @@
 }
 .t-template-item__justify{
     justify-content: space-between;
+}
+
+.t-template-item__center{
+    justify-content: center;
 }
 
 .t-template-item__wrap{
@@ -476,6 +487,9 @@
     &.m-red{
         color: #E4002B;
     }
+    &.m-white{
+        color: #fff;
+    }
 }
 
 .p-architect__txt{
@@ -515,6 +529,9 @@
                 top: 10px;
             }
         }
+    }
+    &.m-margin{
+        margin-bottom: 70px;
     }
 }
 

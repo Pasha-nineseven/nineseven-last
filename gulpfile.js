@@ -8,6 +8,7 @@ var path = {
         js_libs: 'assets/build/js/libs/',
         css: 'assets/build/css/',
         img: 'assets/build/img/',
+        favicon: 'assets/build/favicon/',
         fonts: 'assets/build/fonts/'
     },
     src: {
@@ -15,6 +16,7 @@ var path = {
         js: 'assets/src/js/interface.js',
         style: 'assets/src/style/main.scss',
         img: 'assets/src/img/**/*.*',
+        favicon: 'assets/src/favicon/**/*.*',
         fonts: 'assets/src/fonts/**/*.*'
     },
     watch: {
@@ -22,6 +24,7 @@ var path = {
         js: 'assets/src/js/*.js',
         css: 'assets/src/style/**/*.scss',
         img: 'assets/build/img/**/*.*',
+        favicon: 'assets/build/favicon/**/*.*',
         fonts: 'assets/srs/fonts/**/*.*'
     },
     libs: {
@@ -81,7 +84,6 @@ gulp.task('css:build', function () {
         .pipe(sass()) // scss -> css
         .pipe(autoprefixer()) // добавим префиксы
         .pipe(gulp.dest(path.build.css))
-        //.pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS()) // минимизируем CSS
         .pipe(sourcemaps.write('./')) // записываем sourcemap
         .pipe(gulp.dest(path.build.css)) // выгружаем в build
@@ -90,13 +92,11 @@ gulp.task('css:build', function () {
 gulp.task('css_libs:build', function () {
     return gulp.src(path.libs.style) // получим main.scss
         .pipe(plumber()) // для отслеживания ошибок
-        //.pipe(sourcemaps.init()) // инициализируем sourcemap
+
         .pipe(sass()) // scss -> css
         .pipe(autoprefixer()) // добавим префиксы
-        //.pipe(gulp.dest(path.build.css))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS()) // минимизируем CSS
-        //.pipe(sourcemaps.write('./')) // записываем sourcemap
         .pipe(gulp.dest(path.build.css)) // выгружаем в build
         .pipe(webserver.reload({ stream: true })); // перезагрузим сервер
 });
@@ -111,10 +111,6 @@ gulp.task('js:build', function () {
         .pipe(plumber()) // для отслеживания ошибок
         .pipe(rigger()) // импортируем все указанные файлы в interface.js
         .pipe(gulp.dest(path.build.js))
-        //.pipe(rename({ suffix: '.min' }))
-        //.pipe(sourcemaps.init()) //инициализируем sourcemap
-        //.pipe(uglify()) // минимизируем js
-        //.pipe(sourcemaps.write('./')) //  записываем sourcemap
         .pipe(gulp.dest(path.build.js)) // положим готовый файл
         .pipe(webserver.reload({ stream: true })); // перезагрузим сервер
 });
@@ -158,6 +154,11 @@ gulp.task('image:build', function () {
         .pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
 });
 
+gulp.task('favicon:build', function () {
+    return gulp.src(path.src.favicon)
+        .pipe(gulp.dest(path.build.favicon));
+});
+
 // удаление каталога build 
 gulp.task('clean:build', function () {
     return del(path.clean);
@@ -178,6 +179,7 @@ gulp.task('build',
             'libs:build',
             'js:build',
             'fonts:build',
+            'favicon:build',
             'image:build'
         )
     )
@@ -192,6 +194,7 @@ gulp.task('watch', function () {
     gulp.watch(path.watch.js, gulp.series('js:build'));//+++
     gulp.watch(path.watch.img, gulp.series('image:build'));
     gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
+    gulp.watch(path.watch.fonts, gulp.series('favicon:build'));
 });
 
 // задача по умолчанию

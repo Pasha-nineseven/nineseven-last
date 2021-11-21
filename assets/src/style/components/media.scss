@@ -1923,6 +1923,11 @@
 	.workarea ul:not(.slick-dots).m-red li:before{
 		top: 6px;
 	}
+	h3{
+		&+br{
+			display: none;
+		}
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -3796,6 +3801,27 @@
 		br{
 			display: none;
 		}
+	}
+	.t-template__top{
+		br{
+			display: none;
+		}
+	}
+	.m-mobile-indent{
+		margin-bottom: 30px;
+	}
+	.t-template-in{
+		h3{
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		br{
+			display: none;
+		}
+	}
+	.m-mobile-margin{
+		margin-bottom: 20px;
 	}
 }
 

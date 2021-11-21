@@ -26,6 +26,9 @@
 	font-size: 36px;
 	line-height: 53px;
 	text-align: center;
+	&.m-left{
+		text-align: left;
+	}
 }
 
 .case-pre{
@@ -1368,4 +1371,15 @@
 	&.m-noPtop{
 		padding-top: 0;
 	}
+}
+
+.t-template-item__centered{
+	padding: 0 20px;
+	.case-top__txt{
+		text-align: left;
+	}
+}
+
+.m-red{
+	color: #E4002B;
 }
