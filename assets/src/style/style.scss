@@ -386,6 +386,7 @@ margin-bottom: 60px;
 		}
 
   	}
+	
 }
 
 .process{
@@ -1364,21 +1365,18 @@ margin-bottom: 60px;
 
 }
 .design__icon{
-  width: 106px;
-  min-width: 106px;
-  margin-right: 30px;
+  width: 136px;
+  min-width: 136px;
+  padding-right: 10px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   padding-top: 8px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 27px;
-  text-align: right;
-
-  /* Red */
-
-  color: #E4002B;
+  color: #141414;
+  font-family: 'circe-bold';
   img{
 	  display: block;
 	  margin-bottom: 11px;

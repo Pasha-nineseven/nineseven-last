@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		//= template/head.html
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			//= template/header.html
+			<main class="page-content workarea">
+				<div class="container-fluid">
+					<div class="page-title animated_el m-title">
+						<div class="indent">
+							<h1>
+                                Разработка конфигуратора автомобилей<br> Volkswagen
+							</h1>
+						</div>
+					</div>
+					<div class="p-case-top">
+						<div class="indent">
+							<div class="p-case-top__inner">
+								<div class="p-case-top__icon animated_el m-bottom">
+									<div class="p-case-top__logo">
+										<img src="img/svg/vw-logo.svg" alt="">
+									</div>
+									<a href="#" class="p-case-top__link" target="_blank">
+										www.vw.by
+									</a>
+								</div>
+								<div class="p-case-top-info">
+									<div class="p-case-top-info__item animated_el m-bottom">
+										<div class="p-case-top-info__pre">
+											Клиент
+										</div>
+										<div class="p-case-top-info__txt">
+											Международный автомобильный холдинг „Атлант-М“ торгует 10 автомобильными марками, в том числе Volkswagen. Для данного бренда нужно было обновить всю сетку региональных сайтов до пятого поколения и сменить движок.
+										</div>
+									</div>
+									<div class="p-case-top-info__item animated_el m-bottom">
+										<div class="p-case-top-info__pre">
+											Задача
+										</div>
+										<div class="p-case-top-info__txt">
+											Модели автомобилей собираются как конструктор Lego, но есть особенности. Например, черная крыша может идти только в комплектации Sport. Наш код должен это учитывать. У нас был рабочий образец конфигуратора на российском сайте, но не было доступов к исходном коду. Поэтому внешнюю логику и поведение мы могли снять, но модель хранения и управления контентом нужно было писать с нуля.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <div class="t-template-item-sm m-nopaddingtop">
+                        <div class="indent">
+							<div class="t-template__top">
+								<div class="row t-template-item__justify">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>
+											Архитектура приложения
+										</h3>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											Стояла задача собрать конфигуратор как отдельное приложение, которое можно интегрировать на любые дилерские сайты.
+										</p>
+                                        <p>
+                                            Основные данные приходят из SAP, далее в Битриксе контент-менеджеры дополняют выгрузку. 
+                                        </p>
+                                        <p>
+                                            Медиахранилище содержит сотни фотографий на каждую модель, так как учитываются цвет авто, колёса, модификации, галерея на день и на ночь. Для этого мы сделали отдельное приложение. 
+                                        </p>
+                                        <p>
+                                            После эти данные уходя по api на приложение на реакте.
+                                        </p>
+									</div>
+								</div>
+							</div>
+							<div class="t-template-item__centered animated_el m-bottom">
+								<div class="t-template__img">
+									<a href="img/svg/p-vw-sqheme2.svg" class="mobile-target" target="_blank">
+										<img src="img/svg/p-vw-sqheme2.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+
+					<div class="t-template-item-sm m-bl">
+						<div class="indent">
+							<div class="row t-template-item__justify m-mobile-indent">
+								<div class="col-lg-5 t-template-in animated_el m-bottom">
+									<h3>Процесс сборки автомобиля</h3>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Стояла задача собрать конфигуратор как отдельное приложение, которое можно интегрировать на любые дилерские сайты.
+									</p>
+									<p>
+                                        Основные данные приходят из SAP, далее в Битриксе контент-менеджеры дополняют выгрузку. 
+                                    </p>
+									<p>
+										Медиахранилище содержит сотни фотографий на каждую модель, так как учитываются цвет авто, колёса, модификации, галерея на день и на ночь. Для этого мы сделали отдельное приложение. 
+									</p>
+									<p>
+										После эти данные уходя по api на приложение на реакте.
+									</p>
+								</div>
+							</div>
+                            <br>
+                            <div class="t-template__img animated_el m-bottom">
+								<a href="img/svg/p-vw-sqheme3.svg" class="mobile-target" target="_blank">
+									<img src="img/svg/p-vw-sqheme3.svg" alt="">
+								</a>
+                            </div>
+						</div>
+					</div>
+
+                    <div class="t-template-item-sm">
+                        <div class="indent">
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <h3>Готовим шаблоны</h3>
+                                    </div>
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <p>
+											На каждый автомобиль клиент может задавать свою обложку и выбирать главные особенности.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="t-template__top">
+								<div class="t-template__img animated_el m-bottom">
+									<img src="img/content/p-vw14.png" alt="">
+								</div>
+							</div>
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <p>
+											Каждую комплектацию система сохраняет и при желании можно восстановить собранную конфигурацию по коду.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="t-template__img animated_el m-bottom">
+										<img src="img/content/p-vw15.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="t-template__img animated_el m-bottom">
+										<img src="img/content/p-vw16.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-gr">
+                        <div class="indent">
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Особенностью всех последующих шаблонов будет этот виджет. Изображение на нём меняется в зависимости от вашего выбора. Поставили новые диски? Выбрали другой цвет? Поменяли салон? Всё это отражается на данном виджете.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-vw17.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-bl">
+                        <div class="indent">
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Цвета не приходится заливать как картинки. Верстка сделана таким образом, что для задачи цвета достаточно записать его HEX-код. Если цвета два, то соотстветственно два кода. 
+									</p>
+									<p>
+										Эффект бликовой или матовой поверхности достигается за счет накладываемой поверх полупрозрачной маски.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-vw18.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm">
+                        <div class="indent">
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Как указывалось выше, для каждой модели собиралось не менее сотни изображений. Причем каждое изображение имеет еще две версии — дневное и ночное освещение.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-vw19.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-gr">
+                        <div class="indent">
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Пересечений может быть несколько, причем в обе стороны. Иногда нужно что-то добавить, иногда убрать. Система предлагает добавить недостающую опцию во всплывающем окне, не уводя со страницы.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-vw20.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm">
+                        <div class="indent">
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										После выбора цвета, колес и салона автомобиль можно дополнить разными пакетами. Поставить другие фары, улучшенную аудиосистему и т.д.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-vw21.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-bl">
+                        <div class="indent">
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>Мелочи</h3>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											Для проекта было реализовано много приятных мелочей как на фронте, так и на бэке: постраничная печать, изменение параметров автомобиля на итоговом экране, интерактивный виджет через все страницы.
+										</p>
+										<p>
+											Шеринг в соцсети и на почту, интегрированная с SAP форма заявки, открытый API для других сервисов и дилеров VW.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-vw22.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="vert-indent">
+										<div class="template__img__item">
+											<img src="img/content/p-vw23.png" alt="">
+										</div>
+									</div>
+									<div class="t-template__img__item">
+										<img src="img/content/p-vw24.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-vw25.png" alt="">
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="link-case__beat"></div>	
+					<div class="link-case animated_el m-bottom">
+						<div class="link-case__in m-vw">
+							<div class="indent">
+								<a href="#" class="link-case__btn">Посмотреть связанный кейс</a>
+								<div class="link-case__title">
+									Разработка сайта Volkswagen.by<br> и сайтов регионов
+								</div>
+							</div>
+							<div class="link-case__img">
+								<img src="img/content/car.png" alt="">
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="team animated_el m-bottom">
+						<div class="indent">
+							<h3>Команда проекта</h3>
+							<div class="team__wrap">
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Руководитель проекта</div>
+										<div class="team__person">Юра Иов</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">PHP разработчики</div>
+                                        <div class="team__person">Денис Иванов</div>
+										<div class="team__person">Игорь Билиба</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Команда клиента</div>
+										<div class="team__person">Кирилл Малышко</div>
+										<div class="team__person">Михаил Ярошук</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Фронтенд разработчик</div>
+										<div class="team__person">Игорь Билиба</div>
+									</div>
+								</div>
+                                <div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Верстка</div>
+										<div class="team__person">Влад Портной</div>
+									</div>
+								</div>
+                                
+							</div>
+						</div>	
+					</div>
+					<!--end CONTENT-PART -->
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		//= template/footer.html
+			
+		
+
+		<script src="js/libs/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+		<!-- <script src="js/pages.js"></script> -->
+	</body>
+</html>

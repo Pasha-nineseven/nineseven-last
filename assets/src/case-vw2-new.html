@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		//= template/head.html
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			//= template/header.html
+			<main class="page-content workarea">
+				<div class="container-fluid">
+					<div class="page-title animated_el m-title">
+						<div class="indent">
+							<h1>
+                                 Разработка сайта Volkswagen.by <br>
+                                 и сайтов регионов
+							</h1>
+						</div>
+					</div>
+					<div class="p-case-top">
+						<div class="indent">
+							<div class="p-case-top__inner">
+								<div class="p-case-top__icon animated_el m-bottom">
+									<div class="p-case-top__logo">
+										<img src="img/svg/vw-logo.svg" alt="">
+									</div>
+									<a href="#" class="p-case-top__link" target="_blank">
+										www.vw.by
+									</a>
+								</div>
+								<div class="p-case-top-info">
+									<div class="p-case-top-info__item animated_el m-bottom">
+										<div class="p-case-top-info__pre">
+											Клиент
+										</div>
+										<div class="p-case-top-info__txt">
+											Международный автомобильный холдинг „Атлант-М“ торгует 10 автомобильными марками, в том числе Volkswagen. Для данного бренда нужно было обновить всю сетку региональных сайтов до пятого поколения и сменить движок.
+										</div>
+									</div>
+									<div class="p-case-top-info__item animated_el m-bottom">
+										<div class="p-case-top-info__pre">
+											Задача
+										</div>
+										<div class="p-case-top-info__txt">
+											Изначальный объём контракта предполагал, что мы разработаем сайт импортера, всех минских дилеров, сайт коммерческих автомобилей, сайты региональных дилеров, а также разработаем конфигуратор автомобилей.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <div class="template__wrap animated_el m-bottom">
+						<div class="indent">
+							<div class="incut__inner">
+                                У VW, как у других автомобильных брендов, существует сменяемость поколений дизайна. С реализацией нового (пятого) поколения сайтов нужно было также сменить и уже устаревший немецкий движок.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="template__wrap">
+						<div class="indent">
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 animated_el m-bottom">
+                                        <div class="platform-img">
+                                            <img src="img/svg/n-bitrix.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+								<div class="col-lg-6 animated_el m-bottom">
+                                    В качестве платформы выбрали Битрикс, так как мы его хорошо знаем,   и он хорошо подходил для данной задачи. На сайте много контента, а админка битрикса хорошо подходит для работы с текстовыми страницами, как при использовании инфоблоков, так и при редактированиии файлов.
+                                </div>
+                                <div class="col-lg-6 animated_el m-bottom">
+                                    В рамках разработки требовалось также реализовать интеграцию форм с SAP, используя атлантовский api, но данная задача все равно потребовала бы ручной реализации на любом движке, так что на выбор это не повлияло.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="t-template-item-sm m-bl">
+						<div class="indent">
+							<div class="row bl-top">
+								<div class="col-lg-6 animated_el m-bottom">
+									<h3>Планируем архитектуру проекта</h3>
+								</div>
+								<div class="col-lg-6 animated_el m-bottom">
+									С технической точки зрения сайт имеет несложную структуру. Для реализации хватило движка Битрикс на PHP и MySQL и шаблонов на HTML5. Битрикс забирает через API каталоги автомобилей, пишет в БД, собирает шаблоны и маршрутизирует заявки через API в SAP клиента. Для регионов заявки уходят на эл.почту/1С.
+								</div>
+							</div>
+                            <div class="t-template__img animated_el m-bottom">
+								<a href="img/svg/vw-sqheme1.svg" class="mobile-target" target="_blank">
+									<img src="img/svg/vw-sqheme1.svg" alt="">
+								</a>
+							</div>
+                           
+						</div>
+					</div>
+
+                    <div class="t-template-item-sm m-gr">
+						<div class="indent">
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 animated_el m-bottom">
+                                        <h3>Планируем дорожную карту</h3>
+                                    </div>
+                                    <div class="col-lg-6 bl-top__txt animated_el m-bottom">
+                                        <p>
+                                            Особенностью проекта было то, что немцы планировали отключить старые CMS с 1 января 2018 года. Поэтому проект нужно было закончить фактически за осень — начало зимы.
+                                        </p>
+                                        <p>
+                                            Решили разбить спринты реализации проекта следующим образом:
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-architect__steps m-five">
+                                <div class="p-architect__step animated_el m-bottom">
+                                    <div class="p-architect__num m-blue">01</div>
+                                    <div class="p-architect__txt">
+                                        Подготовка HTML-шаблонов, первичная натяжка на Битрикс
+                                    </div>
+                                </div>
+                                <div class="p-architect__step animated_el m-bottom">
+                                    <div class="p-architect__num m-blue">02</div>
+                                    <div class="p-architect__txt">
+                                        Создание структуры в Битрикс, набивка статичных разделов контентом
+                                    </div>
+                                </div>
+                                <div class="p-architect__step animated_el m-bottom">
+                                    <div class="p-architect__num m-blue">03</div>
+                                    <div class="p-architect__txt">
+                                        Формы сайта (тест-драйв, оценка, поиск по номеру запчасти), настройка API
+                                    </div>
+                                </div>
+                                <div class="p-architect__step animated_el m-bottom">
+                                    <div class="p-architect__num m-blue">04</div>
+                                    <div class="p-architect__txt">
+                                        Каталоги автомобилей, посадочные для моделей
+                                    </div>
+                                </div>
+                                <div class="p-architect__step animated_el m-bottom">
+                                    <div class="p-architect__num m-blue">05</div>
+                                    <div class="p-architect__txt">
+                                        Каталоги автомобилей, посадочные для моделей
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 animated_el m-bottom"></div>
+								<div class="col-lg-6 bl-top__txt animated_el m-bottom">
+									<p>
+										Очередность этапов определяется их наследованием, например вы не можете делать формы на сайте, когда у вас ещё нет самих страниц, собранных на втором этапе.
+									</p>
+                                    <p>
+                                        Пока клиент занимается приёмкой этапа, команда делает следующий и так до победы.
+                                    </p>
+								</div>
+                            </div>
+						</div>
+					</div>
+
+                    <div class="t-template-item-sm">
+                        <div class="indent">
+							<div class="row t-template__top">
+								<div class="col-lg-6 animated_el m-bottom">
+									<h3>Собираем структуру проекта</h3>
+								</div>
+                                <div class="col-lg-6 t-template__txt animated_el m-bottom">
+									Чтобы потом два раза не переделывать, самым ранним этапом любого проекта должна быть сборка структуры. Лучше всего для этого подходит формат интелектуальных карт:
+								</div>
+							</div>
+                            <div class="t-template__img animated_el m-bottom">
+                                <img src="img/content/p-vw26.png" alt="">
+                            </div>
+						</div>
+                    </div>
+
+                    <div class="t-template-item-sm m-bl">
+                        <div class="indent">
+							<div class="row t-template__top">
+								<div class="col-lg-6 animated_el m-bottom">
+									<h3>Готовим шаблон</h3>
+								</div>
+                                <div class="col-lg-6 t-template__txt animated_el m-bottom">
+									<p>
+                                        Дизайн-гайды VW разрабатываются в Германии, а наша задача — реализовать их в соответствии с документацией. Отступы, кнопки, сетка, шрифты и размеры должны совпадать с общемировым стандартом бренда.
+                                    </p>
+                                    <p>
+                                        Так как это уже всё было собрано, и были уже реализованные сайты образцы, шаблоны мы готовили сразу в HTML.
+                                    </p>
+								</div>
+							</div>
+                            <div class="t-template__img animated_el m-bottom">
+                                <img src="img/content/p-vw27.png" alt="">
+                            </div>
+						</div>
+                    </div>
+
+					<div class="t-template-item-sm">
+						<div class="indent">
+							<div class="t-template-item__center">
+								<div class="t-template-item__centered">
+									<div class="case-top__txt">
+										<div class="t-template__top animated_el m-bottom">
+											<p>
+												Этому блоку реализовали индивидуальную настройку для каждой страницы таким образом, чтобы состав виджетов подходил по смыслу к содержанию страницы.
+											</p>
+										</div>
+										<div class="t-template__img animated_el m-bottom">
+											<img src="img/content/p-vw28.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+                        <div class="indent">
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>Работа с текстовыми страницами</h3>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											На сайте много текстовых страниц, а особенно их много на страницах моделей и в разделе сервис.
+										</p>
+										<p class="m-mobile-indent">
+											Чтобы эти страницы не смотрелись постно, мы сделали большую <strong>галерею сниппетов</strong>, которые использовались для наполнения страниц. Слайдеры, картинки на всю ширину, фото слева текст справа и остальное многообразие подачи контента готовилось сразу для частого использования и независимо от контента.
+										</p>
+									</div>
+								</div>
+								<br>
+								<div class="t-template__img animated_el m-bottom">
+									<img src="img/content/p-vw29.png" alt="">
+								</div>
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-bl m-nopaddig-b m-image-b">
+                        <div class="indent">
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="incut__inner">
+											Чтобы не запутаться в многообразии блоков,  мы собрали wiki с размерами фото                        и файл-образец каждого сниппета с превью:
+										</div>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="t-template__img__in">
+											<img src="img/content/p-vw30.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="half-list">
+								<ol class="animated_el m-bottom">
+									<li>Текстовый блок</li>
+									<li>Картинка слева, текст справа</li>
+									<li>Картинка справа, текст слева</li>
+									<li>Табы, картинка справа</li>
+									<li>Табы, картинка слева</li>
+									<li>Расхлоп</li>
+									<li>Картинка на всю ширину и текст слева</li>
+									<li>Картинка на всю ширину и текст справа</li>
+									<li>Три в ряд</li>
+									<li>Блок с видео</li>
+									<li>Картинка на всю ширину без текста</li>
+									<li>Набор иконок в два ряда</li>
+									<li>Две картинки в ряд с подписями</li>
+									<li>Поп-ап с контентом</li>
+									<li>Фото слайдер с картинками и табами</li>
+								</ol>
+							</div>
+							<div class="t-template__img m-bottom-negative animated_el m-bottom">
+								<img src="img/content/p-vw31.png" alt="">
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-nopaddig-b">
+                        <div class="indent">
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>Работа с автомобилями</h3>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											Каталог, подбор по характеристиками автомобилей, разбивка на цвета, комплектации модели.
+										</p>
+										<p>
+											Удобство каталога в том, что данные обновляются каждый день и берутся с реального склада, поэтому на сайте можно забронировать автомобиль нужного цвета и комплектации.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="t-template__img animated_el m-bottom m-run-over">
+								<img src="img/content/p-vw32.png" alt="">
+							</div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-bl m-run-into">
+                        <div class="indent">
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Еще стоило бы отметить работу со складом. Данные из API приходили в сыром виде, поэтому <strong>мы написали свою таблицу соответствия</strong>, которая реально отображала, что происходит с автомобилем.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<p>
+										Например:
+									</p>
+									<ul class="m-blue">
+										<li>На складе дилера (адрес)</li>
+										<li>На складе импортера</li>
+										<li>В процессе доставки</li>
+									</ul>
+									<p>
+										Данные обновляются каждый день, поэтому можно следить за доставкой автомобиля из Германии.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+						<div class="indent">
+							<div class="t-template__top">
+								<div class="row t-template-item__wrap m-center">
+									<div class="col-lg-8 animated_el m-bottom is-ready">
+										<div class="t-template__top">
+											<p>
+												Каждая посадочная страница модели собирается исходя из контента, поэтому каждая подача индивидуальна, но всегда в рамках гайда. <strong>Каждую страницу мы собираем вручную</strong>.
+											</p>
+										</div>
+										<img src="img/content/p-vw33.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 t-template-in animated_el m-bottom">
+									<p>
+										Модели интегрированы с каталогом, можно сразу посмотреть характеристики, посчитать размер кредита.
+									</p>
+								</div>
+								<div class="col-lg-8 t-template-in animated_el m-bottom m-run-over">
+									<div class="t-template__img__in">
+										<img src="img/content/p-vw34.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-gr m-run-into">
+						<div class="indent">
+							<div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 animated_el m-bottom">
+                                        <h3>Работа с формами</h3>
+                                    </div>
+                                    <div class="col-lg-6 animated_el m-bottom">
+										<p>
+											Работа с формами при сборке корпоративного сайта — самое сложное для дилетантов. Проблема в том, что чаще всего менеджеры просто не умеют правильно собирать к ним требования.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 animated_el m-bottom">
+									<h4>
+										Чтобы при разработке не было вопросов, нужно решить для каждой формы несколько ключевых моментов:
+									</h4>
+									<ul class="m-blue">
+										<li>Какие поля будут в форме</li>
+										<li>Какой формат у каждого поля (строка, множественная строка, список, чекбокс и т.д.)</li>
+										<li>Откуда поля типа список подгружают контент</li>
+										<li>Какие поля обязательные к заполнению</li>
+										<li>Какие поля требуют маску валидации по каким правилам</li>
+										<li>Нужна ли проверка капчей</li>
+										<li>Куда данные с формы отправляются и в каком виде</li>
+										<li>Что делаем после успешной отправки формы</li>
+										<li>Что делаем при неуспешной отправке</li>
+										<li>На какой странице располагается форма</li>
+									</ul>
+									<strong>
+										10 блоков описания, и это требуется для каждой формы на сайте!
+									</strong>
+								</div>
+								<div class="col-lg-6 animated_el m-bottom">
+									<div class="t-template__img__in">
+										<img src="img/content/p-vw35.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+						<div class="indent">
+							<div class="row">
+								<div class="col-lg-6 animated_el m-bottom">
+									<div class="incut__inner">
+										На сайте volkswagen.by было разработано 8 различных форм, по каждому направлению деятельности:
+									</div>
+								</div>
+								<div class="col-lg-6 animated_el m-bottom">
+									<ul class="m-blue">
+										<li>письмо руководству</li>
+										<li>заявка на сервис</li>
+										<li>заявка на тест-драйв</li>
+										<li>поиск запчасти</li>
+										<li>расчет ежемесячного ТО</li>
+										<li>форма на кузовной ремонт</li>
+										<li>заявка дилеру</li>
+										<li>заявка с предложениями</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-bl">
+						<div class="indent">
+							<div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 animated_el m-bottom">
+                                        <h3>Образец логики работы заявки на ТО</h3>
+                                    </div>
+                                    <div class="col-lg-6 animated_el m-bottom">
+										<p>
+											Иногда форма не только должна содержать все, описанные выше, поля, но ещё учитывать логику обработки и обогащения данных внешними сервисами по API:
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 animated_el m-bottom m-mobile-indent">
+									<div class="t-template__img__in">
+										<img src="img/content/p-vw36.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6 animated_el m-bottom">
+									<div class="t-template__img__in">
+										<a href="img/svg/vw-sqheme2.svg" class="mobile-target" target="_blank">
+											<img src="img/svg/vw-sqheme2.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+                    <div class="t-template-item-sm m-gr m-margin">
+						<div class="indent">
+							<h3 class="animated_el m-bottom">
+                                Работа с дилерами
+                            </h3>
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										Сайты дилеров и сайт коммерческих автомобилей можно было делать несколькими путями. Первый — реализовать их через многосайтовость на Битриксе". Это означало бы, что у всех сайтов будет единая панель администрирования. Это даёт преимущество в случае, когда один и тот же контент нужно отображать на разных сайтах.
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										Второй — сделать дубликаты с сайта донора и на отдельных лицензиях собрать свои сайты. Сайты будут полностью независимы, но это требует отдельную лицензию на каждый сайт и перенос контента с соседних сайтов в полуручном режиме (импорт xml).
+									</div>
+								</div>
+							</div>
+							<div class="t-template__img animated_el m-bottom">
+                                <a href="img/svg/vw-sqheme3.svg" class="mobile-target" target="_blank">
+									<img src="img/svg/vw-sqheme3.svg" alt="">
+								</a>
+                            </div>
+						</div>
+					</div>
+
+					<div class="team animated_el m-bottom">
+						<div class="indent">
+							<h3>Команда проекта</h3>
+							<div class="team__wrap">
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Руководители проекта</div>
+                                        <div class="team__person">Дима Хоружко</div>
+										<div class="team__person">Юра Иов</div>
+									</div>
+								</div>
+                                <div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Дизайн</div>
+										<div class="team__person">Сергей Шишпор</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">PHP разработчик</div>
+                                        <div class="team__person">Денис Иванов</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Архитектор</div>
+										<div class="team__person">Дима Хоружко</div>
+									</div>
+								</div>
+								
+                                <div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Верстка</div>
+										<div class="team__person">Павел Кряквин</div>
+									</div>
+								</div>
+                                <div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Команда клиента</div>
+										<div class="team__person">Михаил Ярошук</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!--end CONTENT-PART -->
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		//= template/footer.html
+			
+		
+
+		<script src="js/libs/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+		<!-- <script src="js/pages.js"></script> -->
+	</body>
+</html>

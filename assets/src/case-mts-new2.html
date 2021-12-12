@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		//= template/head.html
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout">
+			//= template/header.html
+			<main class="page-content workarea">
+				<div class="container-fluid">
+					<div class="page-title animated_el m-title">
+						<div class="indent">
+							<h1>
+                                Разработка и поддержка<br> 
+                                корпоративного сайта mts.by
+							</h1>
+						</div>
+					</div>
+					<div class="p-case-top">
+						<div class="indent">
+							<div class="p-case-top__inner">
+								<div class="p-case-top__icon animated_el m-bottom">
+									<div class="p-case-top__logo">
+										<img src="img/svg/mts-logo.svg" alt="">
+									</div>
+									<a href="#" class="p-case-top__link" target="_blank">
+										www.shop.mts.by
+									</a>
+								</div>
+								<div class="p-case-top-info">
+									<div class="p-case-top-info__item animated_el m-bottom">
+										<div class="p-case-top-info__pre">
+											Клиент
+										</div>
+										<div class="p-case-top-info__txt">
+											Компания СООО «Мобильные ТелеСистемы» крупнейший оператор связи в Республике Беларусь. Ключевой точкой взаимодействия с пользователями является сайт mts.by, ежедневным обслуживанием которого мы и занимаемся.
+										</div>
+									</div>
+									<div class="p-case-top-info__item animated_el m-bottom">
+										<div class="p-case-top-info__pre">
+											Задача
+										</div>
+										<div class="p-case-top-info__txt">
+											Прошлая версия сайта была разработана сторонней компанией и к ней было много вопросов. Когда пришло время рестайлинга, мы пересобрали сайт и заложили корректную архитектуру.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-blue m-nopddgbottom">
+                        <div class="indent">
+                            <div class="t-template__top">
+                                <div class="row t-template-item__justify">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>
+											Собираем первичную структуру
+										</h3>
+									</div>
+								</div>
+								<br>
+								<div class="t-template__img animated_el m-bottom">
+									<a href="img/content/p-mts24.png" class="mobile-target" target="_blank">
+                                        <img src="img/content/p-mts24.png" alt="">
+                                    </a>
+								</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="t-template-item-sm m-bl">
+						<div class="indent">
+							<div class="row">
+								<div class="col-lg-6 animated_el m-bottom">
+									<h3>Структура разделов сайта</h3>
+									<div class="t-collect">
+										<a href="img/svg/mts-sqheme3.svg" class="mobile-target" target="_blank">
+											<img src="img/svg/mts-sqheme3.svg" alt="">
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-6 bl-top__txt animated_el m-bottom">
+									<p>
+										Проект изначально имеет самую широкую аудиторию, и это нужно было учитывать в структуре. В частности:
+									</p>
+									<ul class="m-red-circle">
+										<li>Для физ.лиц</li>
+										<li>Для юр.лиц</li>
+										<li>Русскоговорящие</li>
+										<li>Белорусскоговорящие</li>
+										<li>Англоговорящие</li>
+										<li>Слабовидящие</li>
+									</ul>
+									<p>
+										Версии для разных языков сделаны как модуль многосайтовости Битрикс, но визуально навигация по ним выглядит как отдельные сайты. Версия для слабовидящих сделана на отдельной версии шаблонов, которые подключаются на все сайты.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+						<div class="t-template__top">
+							<div class="indent">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>
+											Навигация по сайту
+										</h3>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											Проект имеет обширную структуру. Только представьте, мы насчитали до пяти уровней вложенности. Например:
+										</p>
+										<p class="t-red">
+											Частным клиентам > Тарифы и услуги > Мобильный интернет > Акции > Страница выбранной акции
+										</p>
+										<p>
+											Для лучшего восприятия мы разделили навигацию на несколько меню и сделали расхлоп, где сразу в открытом виде показаны подразделы. Избыточные уровни оптимизировали еще на этапе проектирования структуры.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="t-template__img animated_el m-bottom">
+							<img src="img/content/p-mts25.png" alt="">
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-gr">
+						<div class="indent">
+							<div class="t-template__top">
+								<div class="row t-template-item__justify">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>
+											Готовим шаблоны
+										</h3>
+										<br>
+										<br>
+										<p>
+											Для страниц тарифов реализован локальный поиск, который работает как фильтр и показывает тарифы подходящие по текстовом совпадению. Работает без перезагрузки страницы.
+										</p>
+										<div class="template__img__item">
+											<img src="img/content/p-mts26.png" alt="">
+										</div>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											У МТС уже были разработаны гайды для веб-интерфейсов и даже свой HTML-фреймворк. Фреймворк нам не подошел, так как его элементы были сильно заточены под российский сайт. Но, используя гайды, мы серьезно сократили время сборки макетов страниц.
+										</p>
+										<br>
+										<div class="template__img__item">
+											<img src="img/content/p-mts27.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+						<div class="indent">
+							<div class="row t-template-item__center">
+								<div class="t-template-item__centered">
+									<div class="case-top__txt">
+										<div class="t-template__top animated_el m-bottom">
+											<p>
+												Для страниц тарифов реализован локальный поиск, который работает как фильтр и показывает тарифы подходящие по текстовому совпадению. Работает без перезагрузки страницы.
+											</p>
+										</div>
+										<div class="t-template__img animated_el m-bottom">
+											<img src="img/content/p-mts28.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-bl">
+						<div class="indent">
+							<div class="row">
+								<div class="col-lg-6 animated_el m-bottom">
+									<h3>Сборка остальных шаблонов сайта</h3>
+								</div>
+								<div class="col-lg-6 bl-top__txt animated_el m-bottom">
+									<p>
+										Структура проекта не отличалась, но требовалось переработать навигацию, переделать все макеты, все шаблоны страниц, пересобрать все заготовки для контрукторов форм.
+									</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="l-count animated_el m-bottom">
+							25 <span>макетов</span>
+						</div>
+						<div class="indent">
+							<div class="row">
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="t-template__img">
+										<img src="img/content/p-mts29.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-6 animated_el m-bottom">
+									<img src="img/content/p-mts30.png" alt="">
+								</div>
+								<div class="col-lg-2 animated_el m-bottom">
+									<img src="img/content/p-mts31.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+						<div class="indent">
+							<div class="t-template__top animated_el m-bottom">
+								<h3>В том числе шаблоны спецпроектов и событий</h3>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="vert-indent">
+										<div class="template__img__item">
+											<img src="img/content/p-mts32.png" alt="">
+										</div>
+									</div>
+									<div class="template__img__item">
+										<img src="img/content/p-mts33.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-mts34.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-4 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-mts35.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-gr">
+						<div class="indent">
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>
+											Адаптив для смартфонов
+										</h3>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											Изначально, ещё в 2014 году, мы разрабатывали мобильную версию для смартфонов. Но сейчас такой подход вытесняется адаптивной версией, так как это практичнее. При двух версиях приходится обновлять шаблоны по два раза, когда на адаптиве контент сам перестраивается под разрешение телефона.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-3 col-md-6 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-mts36.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-mts37.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-mts38.png" alt="">
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-6 animated_el m-bottom">
+									<div class="t-template__img__item">
+										<img src="img/content/p-mts39.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm">
+						<div class="indent">
+							<div class="t-template__top">
+								<div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h2>Технические решения и особеннности проекта</h2>
+									</div>
+								
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<p>
+											Некоторые вещи имеют за собой интересные технические ходы, поэтому мы решили о них рассказать отдельно.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<h3>Роуминг и таблицы цен</h3>
+									<p>
+										Мы реализовали отдельный справочник со всеми странами и дали клиенту функционал по сборке таблиц тарифов для каждой страны из справочника. Система сама подсказывает пользователю варианты подходящих стран и строит таблицу тарифов на основе данных заполненных в админке, без ковыряния html-кода.
+									</p>
+								</div>
+								<div class="col-lg-6 t-template-in animated_el m-bottom">
+									<div class="template__img__item">
+										<img src="img/content/p-mts40.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="t-template-item-sm m-bl">
+                        <div class="indent">
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <h3>Карта покрытия</h3>
+                                    </div>
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <p>
+											Карты покрытия плотно связаны с картографией. Для отображения слоёв обычно используются картинки-заготовки, которые привязываются к координатной сетке и отображаются на карте. Проблема с картинками в том, что они теряют в качестве при увеличении и размываются. Поэтому границы приёма отображаются некорректно. Это вызывало критику пользователей в адрес МТС.
+                                        </p>
+										<p>
+											А подключение детализированных изображений не подходило, так как у GMaps ограничение на размер 10 Мб.
+										</p>
+										<p>
+											Совместно со специалистами картографами МТС мы интегрировали на карты сервис, который динамически строит детальную карту покрытия в зависимости от расположения и масштаба у пользователя.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-template__img animated_el m-bottom is-ready">
+                                <img src="img/content/p-mts41.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm">
+                        <div class="indent">
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <h3>Пополнение баланса</h3>
+                                    </div>
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+                                        <p>
+											Для приёма платежей на сайте мы, с одной стороны, интегрировали биллинг от BePaid, а с другой — soap-сервис от МТС для проверки и валидации абонента по введенному номеру. 
+                                        </p>
+										<p>
+											Такая проверка исключает ситуацию, когда пользователь по ошибке может ввести номер другой сети.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-template__img animated_el m-bottom is-ready">
+                                <img src="img/content/p-mts42.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="t-template-item-sm m-gr m-margin">
+                        <div class="indent">
+                            <div class="t-template__top">
+                                <div class="row">
+                                    <div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h3>
+											Кроме этого, мы ежедневно поддерживаем сайт mts.by, решая рутинные задачи.
+										</h3>
+									</div>
+								</div>
+							</div>
+							<div class="t-template__top">
+                                <div class="row">
+									<div class="col-lg-4 t-template-in animated_el m-bottom">
+										<h4>Поддержка актуальных версий ПО</h4>
+										<p>
+											Раз в квартал мы обновляем ядро Битрикс, версии php и mysql, если потребуется. Делаем мониторинг безопасности и решаем возникающие проблемы, обновляем доступы входа.
+										</p>
+									</div>
+									<div class="col-lg-4 t-template-in animated_el m-bottom">
+										<h4>Работа с брендбуком</h4>
+										<p>
+											Периодически происходят изменения в визуальной подаче, поэтому мы обновляем стилеобразующие (формы, слайдеры, логотипы) элементы.
+										</p>
+									</div>
+									<div class="col-lg-4 t-template-in animated_el m-bottom">
+										<h4>Сборка лендингов и новых шаблонов</h4>
+										<p>
+											Мы отвечаем за сборку страниц с нетиповой подачей. Как правило, это страницы, которые не достаточно набрать текстом. Рисуем, верстаем, интегрируем.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="t-template__top">
+								<h4 class="animated_el m-bottom">Обновить хедер</h4>
+                                <div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="template__img__item">
+											<img src="img/content/p-mts43.png" alt="">
+										</div>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="template__img__item">
+											<img src="img/content/p-mts44.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="t-template__top">
+								<h4 class="animated_el m-bottom">Обновить подачу слайдеров</h4>
+                                <div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="template__img__item">
+											<img src="img/content/p-mts45.png" alt="">
+										</div>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="template__img__item">
+											<img src="img/content/p-mts46.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="t-template__top">
+                                <div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h4>Реализовать форму поиска и фильтрации вакансий</h4>
+										<div class="template__img__item">
+											<img src="img/content/p-mts47.png" alt="">
+										</div>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<h4>Элемент морфинга, с котейкой</h4>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="template__img__item">
+													<img src="img/content/p-mts48.png" alt="">
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<p>
+													Данный элемент используется в обновленном виде для визуалов на сайте и не имеет строгой формы. Он собирается в случайном порядке и меняет свою форму в реальном времени.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="t-template__top">
+								<h4 class="animated_el m-bottom">Обновление шрифтов</h4>
+                                <div class="row">
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="template__img__item">
+											<img src="img/content/p-mts49.png" alt="">
+										</div>
+									</div>
+									<div class="col-lg-6 t-template-in animated_el m-bottom">
+										<div class="template__img__item">
+											<img src="img/content/p-mts50.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+                    
+
+
+
+					<div class="team animated_el m-bottom">
+						<div class="indent">
+							<h3>Команда проекта</h3>
+							<div class="team__wrap">
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Руководители проекта</div>
+                                        <div class="team__person">Юра Иов</div>
+										<div class="team__person">Дима Хоружко</div>
+                                        <div class="team__person">Иван Самойлик</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Верстка</div>
+                                        <div class="team__person">Павел Кряквин</div>
+										<div class="team__person">Павел Стасюкевич</div>
+                                        <div class="team__person">Александр Савченко</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Команда клиента</div>
+										<div class="team__person">Иван Кривонос</div>
+									</div>
+								</div>
+								<div class="team__item">
+									<div class="team__line">
+										<div class="team__top">Дизайн</div>
+										<div class="team__person">Сергей Шишпор</div>
+									</div>
+									
+								</div>
+                                <div class="team__item">
+                                    <div class="team__line">
+										<div class="team__top">PHP разработчики</div>
+                                        <div class="team__person">Денис Иванов</div>
+									</div>
+                                </div>
+							</div>
+						</div>	
+					</div>
+					<!--end CONTENT-PART -->
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		//= template/footer.html
+			
+		
+
+		<script src="js/libs/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+		<!-- <script src="js/pages.js"></script> -->
+	</body>
+</html>

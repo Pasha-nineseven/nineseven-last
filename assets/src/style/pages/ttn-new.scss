@@ -215,7 +215,7 @@
     margin-bottom: 100px;
 }
 .t-template__top{
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     &:last-child{
         margin-bottom: 0;
     }
@@ -230,6 +230,11 @@
     }
     &.m-left{
         justify-content: flex-start;
+    }
+    &.m-bottom-negative{
+        img{
+            margin-bottom: -400px;
+        }
     }
 }
 .t-template__txt{
@@ -294,6 +299,9 @@
         background: #141414;
         color: #fff;
     }
+    &.m-blue{
+        background: #E6EEF2;
+    }
     img{
         display: block;
         max-width: 100%;
@@ -303,6 +311,22 @@
     }
     &.m-marg{
         margin-bottom: 100px;
+    }
+    &.m-nopddgbottom{
+        padding-bottom: 0;
+        color: #141414;
+        overflow: hidden;
+        .t-template__img{
+            img{
+                display: block;
+            }
+        }
+    }
+    &.m-nopaddig-b{
+        padding-bottom: 0;
+    }
+    &.m-image-b{
+        margin-bottom: 450px;
     }
 }
 .t-template-item__justify{
@@ -456,6 +480,10 @@
     &.m-five{
         .p-architect__step{
             width: 20%;
+            .p-architect__txt{
+                padding-right:10px;
+            }
+            
         }
     }
     &:not(:last-child){
@@ -489,6 +517,16 @@
     }
     &.m-white{
         color: #fff;
+    }
+    &.m-blue{
+        &:after{
+            background: #244EA2;
+        }
+    }
+    &.m-red-line{
+        &:after{
+            background: #E4002B;
+        }
     }
 }
 
@@ -533,6 +571,9 @@
     &.m-margin{
         margin-bottom: 70px;
     }
+    &.m-nopaddingtop{
+        padding-top: 0;
+    }
 }
 
 xmp{
@@ -571,4 +612,22 @@ xmp{
         max-width: 1150px;
         margin: 0 auto;
     }
+}
+.workarea ul:not(.slick-dots).m-red-circle{
+    li{
+        padding-left: 48px;
+        &:before{
+            width: 15px;
+            height: 15px;
+            background: #E4002B;
+            border-radius: 50%;
+            top: 9px;
+        }
+    }
+}
+
+.incut__inner{
+	ul:not(.slick-dots).m-red-circle li:before{
+		top: 21px;
+	}
 }
