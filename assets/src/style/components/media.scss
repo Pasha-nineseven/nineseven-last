@@ -3757,14 +3757,22 @@
 		font-size: 40px;
 	}
 	.t-template-item-sm{
-		padding-left: 0;
-		padding-right: 0;
+		padding: 0;
+		&.m-pbottom-mobile{
+			padding-bottom: 30px;
+		}
 	}
 	.p-architect, .p-case-top, .smart-filter, .t-experience, .t-template-item-sm.m-bl,.t-template-item-sm.m-gr, .t-template-item-sm.m-b-padd, .t-template-search {
-		padding: 20px;
+		padding: 30px 20px;
+	}
+	.p-case-top{
+		padding: 30px 20px;
 	}
 	.t-template-item-sm.m-blue{
-		padding: 20px 20px 0;
+		padding: 30px 20px;
+	}
+	.t-template-item-sm.m-nopddgbottom{
+		padding-bottom: 30px;
 	}
 	.peculiarities ul:not(.slick-dots) li:before,
 	.t-experience ul:not(.slick-dots) li:before{
@@ -3780,7 +3788,7 @@
 	}
 	.p-case-top__link {
 		font-size: inherit;
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 	.p-architect__num {
 		font-size: 60px;
@@ -3802,7 +3810,10 @@
 	}
 	.t-template-item-sm{
 		&.m-bl{
-			margin-bottom: 20px;
+			margin-bottom: 30px;
+		}
+		&.m-gr{
+			margin-bottom: 30px;
 		}
 	}
 	.t-template-in{
@@ -3962,6 +3973,35 @@
 	}
 	.t-template-item-sm.m-run-into {
 		padding-top: 120px;
+	}
+	.p-case-top__logo{
+		margin-bottom: 0;
+	}
+	.p-case-top-info__item{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.bl-inner, .bl-top, .incut.m-fresh, .p-architect, .p-architect-sqheme, .p-case-top, .p-framework, .t-roadmap-sprint, .t-template, .t-template-item-sm.m-marg, .t-template__top {
+		margin-bottom: 30px;
+	}
+
+
+	.t-template-item-sm,
+	.t-template-item{
+		h2{
+			line-height: 1.2;
+    		margin-bottom: 15px;
+		}
+		h3{
+			line-height: 1.2;
+			margin-bottom: 15px;
+		}
+		h4{
+			line-height: 1.2;
+			margin-bottom: 15px;
+		}
 	}
 }
 
@@ -4361,6 +4401,11 @@
 	}
 	.t-template-item-sm.m-image-b {
 		margin-bottom: 0;
+	}
+	.l-count {
+		font-size: 100px;
+		line-height: 50px;
+		margin-top: 40px;
 	}
 }
 
@@ -4783,6 +4828,18 @@
 		padding: 20px;
 		&.m-bottom{
 			padding: 20px 0 0;
+		}
+	}
+	.t-template-item-sm,
+	.t-template-item{
+		h2{
+    		margin-bottom: 10px;
+		}
+		h3{
+			margin-bottom: 10px;
+		}
+		h4{
+			margin-bottom: 10px;
 		}
 	}
 }
