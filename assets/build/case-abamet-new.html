@@ -229,13 +229,15 @@
                                         В общем виде обмен выглядит так:
                                     </p>
                                 </div>
-                                <div class="t-collect">
-                                    <div class="p-architect-sqheme animated_el m-bottom">
-                                        <a href="img/svg/ab-sqheme1.svg" class="mobile-target" target="_blank">
-                                            <img src="img/svg/ab-sqheme1.svg" alt="">
-                                        </a>
-                                    </div>
-                                </div>
+								<div class="col-lg-12">
+									<div class="t-collect">
+										<div class="p-architect-sqheme animated_el m-bottom">
+											<a href="img/svg/ab-sqheme1.svg" class="mobile-target" target="_blank">
+												<img src="img/svg/ab-sqheme1.svg" alt="">
+											</a>
+										</div>
+									</div>
+								</div>
                                 <div class="col-lg-6 animated_el m-bottom">
                                     <p>
                                         В отличие от REST на SOAP формируется одна точка входа, а за маршрутизацию методов отвечает специальный WSDL-файл. Это xml-файл который описает методы и их структуру.
@@ -386,7 +388,7 @@
 								</div>
 								<div class="col-lg-6"></div>
                             </div>
-                            <div class="t-collect animated_el m-bottom">
+                            <div class="animated_el m-bottom">
 								<a href="img/svg/ab-sqheme3.svg" class="mobile-target" target="_blank">
 									<img src="img/svg/ab-sqheme3.svg" alt="">
 								</a>
@@ -397,16 +399,12 @@
 
 					<div class="t-template">
 						<div class="indent">
-							<div class="row t-template__top">
-								<div class="col-lg-12 animated_el m-bottom">
-									<h3>Как описывать обмен для разработчика  и не облажаться?</h3>
-								</div>
-							</div>
-							<div class="row t-template__top m-desktop">
-								<div class="col-lg-12 animated_el m-bottom">
-									ТЗ нужно разделить на три части (вырезки и рабочего ТЗ):
-								</div>
-							</div>
+							
+							<h3>Как описывать обмен для разработчика  и не облажаться?</h3>
+								
+							<p>
+								ТЗ нужно разделить на три части (вырезки и рабочего ТЗ):
+							</p>
 							<div class="row case-compare__wrap">
 								<div class="col-lg-4 case-compare__item animated_el m-bottom">
 									<div class="case-compare__title">
@@ -515,22 +513,21 @@
 									</p>
 								</div>
 							</div>
-							<div class="row">
-								<div class="service-sqheme animated_el m-bottom">
-									<div class="service-sqheme-top">
-										<div class="service-sqheme-top__item">
-											<div class="service-sqheme-top__in">Скрипт слушает все коды ошибок</div>
-										</div>
-										<div class="service-sqheme-top__item">
-											<div class="service-sqheme-top__in">При возникновении ошибки событие логгируется вместе с методом и записывается в инфоблок с меткой времени</div>
-										</div>
-										<div class="service-sqheme-top__item">
-											<div class="service-sqheme-top__in">Если метка времени в логе инфоблока по событию старше лимита в настройках, то пробуем отправить повторно</div>
-										</div>
+
+							<div class="service-sqheme animated_el m-bottom">
+								<div class="service-sqheme-top">
+									<div class="service-sqheme-top__item">
+										<div class="service-sqheme-top__in">Скрипт слушает все коды ошибок</div>
 									</div>
-									<div class="service-sqheme__img">
-										<img src="img/content/abamet9.jpg" alt="">
+									<div class="service-sqheme-top__item">
+										<div class="service-sqheme-top__in">При возникновении ошибки событие логгируется вместе с методом и записывается в инфоблок с меткой времени</div>
 									</div>
+									<div class="service-sqheme-top__item">
+										<div class="service-sqheme-top__in">Если метка времени в логе инфоблока по событию старше лимита в настройках, то пробуем отправить повторно</div>
+									</div>
+								</div>
+								<div class="service-sqheme__img">
+									<img src="img/content/abamet9.jpg" alt="">
 								</div>
 							</div>
 						</div>
@@ -544,7 +541,6 @@
 							<div class="row">
 								<div class="col-lg-6 animated_el m-bottom">
 									<h3>Класс работы с логами</h3>
-									<br>
 									<h4>Как функции выполняет класс работы с логами</h4>
 									<ul class="m-red">
 										<li>Единая структура логгирования событий</li>
